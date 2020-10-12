@@ -1,6 +1,7 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
 
-= ENTER TITLE HERE
+// CHANGE TITLE HERE
+= TEMPLATE
 
 // INCLUDE ASSEMBLIES HERE
-// include::assemblies/assembly-1.adoc[]
+include::assemblies/template-assembly.adoc[]
