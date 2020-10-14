@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="release-notes"]
+:context: release-notes
+
+= Release notes
+
+Here be content for this assembly for {product-name} {product-version}.
+
+include::modules/whats-new.adoc[leveloffset=+1]

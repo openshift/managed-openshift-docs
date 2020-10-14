@@ -1,0 +1,51 @@
+// Module included in the following assemblies:
+//
+// * assemblies/getting-started.adoc
+
+[id="osd-create-cluster_{context}"]
+= Creating a standard cluster
+
+To create your {product-title} cluster:
+
+. Log in to link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift].
+
+. Click *Create Cluster* -> *Red Hat OpenShift Dedicated*.
+
+. Select an infrastructure provider.
+
+. Enter your *Cluster name*. The *Standard* billing model is selected by default.
+
+. Select a *Region* and choose either a *Single zone* or *Multizone* availability.
+
+. Select your *Compute node instance type* and the *Compute node count*. The number and types of nodes available to you depend
+upon your {product-title} subscription.
+
+. Select the amount of *Persistent storage* and *Load balancers* you want set on the deployed cluster or accept the defaults.
+
+. The *Basic* Network configuration is selected by default. This setting creates a new VPC for your cluster using the default values.
+If you want to configure your networking IP ranges or set your cluster privacy, select *Advanced*. The
+following are the default ranges available for your networking IP ranges:
+
+.. Node CIDR: 10.0.0.0/16
+
+.. Service CIDR: 172.30.0.0/16
+
+.. Pod CIDR: 10.128.0.0/14
+
+.. Host Prefix: /23
++
+[IMPORTANT]
+====
+CIDR configurations cannot be changed later. Confirm your selections with your network administrator before proceeding.
+====
++
+[IMPORTANT]
+====
+If the cluster privacy is set to *Private*, you will not be able to access your cluster until you edit the network settings in your cloud provider.
+====
+
+. Click *Create cluster*. The cluster creation process begins and will take about 30-40 minutes to complete.
+
+
+The *Installing cluster* heading, under the *Overview* tab, will indicate the cluster is installing and where it is in the process. You can also view the installation logs from this heading. The *Status*
+indicator under the *Details* heading will indicate when your cluster is *Ready* for use.

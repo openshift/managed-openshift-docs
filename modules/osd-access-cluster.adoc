@@ -1,0 +1,13 @@
+// Module included in the following assemblies:
+//
+// * assemblies/creating-your-cluster.adoc
+
+[id="creating-your-cluster_{context}"]
+= Accessing your cluster
+
+To access your {product-title} cluster:
+
+. From link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift], click
+ on the cluster you want to access.
+
+ . Click *Open Console*.

@@ -1,0 +1,8 @@
+// Module included in the following assemblies:
+//
+// * assemblies/getting-started.adoc
+
+[id="getting-started_{context}"]
+= [{product-title] overview}]
+
+Here be content for this module.
