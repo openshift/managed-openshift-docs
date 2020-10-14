@@ -1,4 +1,4 @@
 // common attributes
-:product-name: OpenShift Dedicated
+:product-title: OpenShift Dedicated
 :product-short-name: OpenShift Dedicated
 :product-version: 4.5

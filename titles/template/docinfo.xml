@@ -1,5 +1,5 @@
 <title>ENTER TITLE HERE</title>
-<productname>{product-name}</productname>
+<productname>{product-title}</productname>
 <productnumber>{product-version}</productnumber>
 <subtitle>ENTER SUB-TITLE HERE</subtitle>
 <abstract>
