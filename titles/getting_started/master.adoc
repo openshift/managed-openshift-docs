@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Getting started
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/getting-started.adoc[]

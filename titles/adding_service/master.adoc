@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Adding a service to your cluster
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/adding-service.adoc[]
