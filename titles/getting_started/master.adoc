@@ -4,4 +4,6 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Getting started
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/getting-started.adoc[]
+include::assemblies/account-setup.adoc[]
+include::assemblies/creating-your-cluster.adoc[]
+include::assemblies/config-identity-providers.adoc[]

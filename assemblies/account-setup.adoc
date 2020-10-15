@@ -23,4 +23,4 @@ Once you create your Red Hat account you can do the following, and much more, al
 * View exam history
 * Download certification-related logos and documents
 
-include::modules/osd-create-rh-account.adoc[leveloffset=+1]
+include::modules/create-rh-account.adoc[leveloffset=+1]

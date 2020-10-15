@@ -6,6 +6,6 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 Once you have an {product-title} {product-version} subscription, you can access your services.
 
-include::modules/osd-create-cluster.adoc[leveloffset=+1]
-include::modules/osd-create-aws-ccs-cluster.adoc[leveloffset=+1]
-include::modules/osd-access-cluster.adoc[leveloffset=+1]
+include::modules/create-cluster.adoc[leveloffset=+1]
+include::modules/create-aws-ccs-cluster.adoc[leveloffset=+1]
+include::modules/access-cluster.adoc[leveloffset=+1]
