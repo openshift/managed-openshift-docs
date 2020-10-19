@@ -11,3 +11,5 @@ To access your {product-title} cluster:
  on the cluster you want to access.
 
  . Click *Open Console*.
+
+ . Click on your identity provider and provide your credentials to log into the cluster.

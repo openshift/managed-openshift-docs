@@ -1,0 +1,13 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="config-aws-private-connections"]
+:context: config-aws-private-connections
+
+= Configuring AWS private connections
+
+
+include::modules/osd-understanding-aws.adoc[leveloffset=+1]
+include::modules/osd-config-aws-access.adoc[leveloffset=+1]
+include::modules/osd-aws-peering.adoc[leveloffset=+1]
+include::modules/osd-aws-vpn.adoc[leveloffset=+1]
+include::modules/osd-aws-dc.adoc[leveloffset=+1]
+include::modules/osd-aws-private-cluster.adoc[leveloffset=+1]

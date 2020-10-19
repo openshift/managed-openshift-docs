@@ -39,5 +39,6 @@ To access your Red Hat account:
  the *Log in* icon in the upper toolbar and enter your credentials.
 
 Once logged in, you can now access various Red Hat services.
+
 You can access your account and log in, or log out, in the upper toolbar of any page you access.
 It is recommended, for your security, that you log out when you have finished using your Red Hat services.

@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+//
+// * assemblies/osd-private-cluster.adoc
+
+[id="osd-private-cluster_{context}"]
+= Enabling public cluster on a private cluster
+
+You can set a private cluster to public facing:
+
+.Procedure
+
+. Access your cluster in the OpenShift Cluster Manager.
+. Navigate to the *Networking* tab.
+. Deselect *Make API private* under *Master API endpoint* and click *Change settings*.
++
+[NOTE]
+====
+Transitioning your cluster between private and public can take several minutes to complete.
+====
