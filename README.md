@@ -9,6 +9,7 @@ To get started, clone this repo on your local machine (no need to fork into your
 
 ```
 git clone git@gitlab.cee.redhat.com:red-hat-openshift-dedicated-documentation/doc-4.git
+cd doc-4
 git checkout 4.5
 ```
 
