@@ -20,7 +20,7 @@ To add a new title make a copy of the `template` folder (within the `titles` fol
 
 *For example*, to create a new title called `Release notes` copy the `template` folder within the `titles` folder and call it `release_notes`.
 
-**Make sure to preserve the symbolic links. There are three symbolic links in this `template` folder. On a Mac, for example, use `cp -a template release_notes`. The use of `-a` preserves the symbolic links.**
+**Make sure to preserve the symbolic links or add these links yourself. There are three symbolic links in this `template` folder. On a Mac, for example, use `cp -a template release_notes`. The use of `-a` preserves the symbolic links.**
 
 Then add and edit the files in this new `release_notes` folder.
 
