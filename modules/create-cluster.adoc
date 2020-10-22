@@ -3,7 +3,7 @@
 // * assemblies/getting-started.adoc
 
 [id="osd-create-cluster_{context}"]
-= Creating a standard cluster
+= Creating a cluster
 
 To create your {product-title} cluster:
 
@@ -11,7 +11,7 @@ To create your {product-title} cluster:
 
 . Click *Create Cluster* -> *Red Hat OpenShift Dedicated*.
 
-. Select an infrastructure provider.
+. Select a cloud infrastructure provider.
 
 . Enter your *Cluster name*. The *Standard* billing model is selected by default.
 
@@ -23,8 +23,8 @@ upon your {product-title} subscription.
 . Select the amount of *Persistent storage* and *Load balancers* you want set on the deployed cluster or accept the defaults.
 
 . The *Basic* Network configuration is selected by default. This setting creates a new VPC for your cluster using the default values.
-If you want to configure your networking IP ranges or set your cluster privacy, select *Advanced*. The
-following are the default ranges available for your networking IP ranges:
+If you want to configure your networking IP ranges or set your cluster privacy, select *Advanced*. Note: Private clusters are only enabled for AWS at this time.
+ The following are the default ranges available for your networking IP ranges:
 
 .. Node CIDR: 10.0.0.0/16
 

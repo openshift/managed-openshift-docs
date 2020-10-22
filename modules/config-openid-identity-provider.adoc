@@ -41,6 +41,9 @@ See the
 link:http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims[OpenID claims documentation]
 for more information.
 
+.Prerequisite
+Before you configure OpenID Connect, check the installation prerequisites for any Red Hat product or service you want to use with your {product-title} cluster. 
+
 .Procedure
 
 To configure an OpenID identity provider for your {product-title} cluster:

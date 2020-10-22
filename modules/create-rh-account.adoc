@@ -3,7 +3,28 @@
 // * assemblies/account-setup.adoc
 
 [id="account-setup_{context}"]
-= Creating a Red Hat account
+= Setting up your Red Hat account
+
+Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:
+
+* Customer Portal
+* User management
+* Red Hat Connect for Business Parters
+* Certification Central
+
+Once you create your Red Hat account you can do the following, and much more, all in one place:
+
+* View product documentation
+* Browse Knowledgebase articles
+* Manage support cases and subscriptions
+* Download updates
+* View users in your organization
+* Edit user's account information, preferences, and permissions
+* Manage your Red Hat certifications
+* View exam history
+* Download certification-related logos and documents
+
+= Creating your Red Hat account
 
 To create your Red Hat account:
 
@@ -22,9 +43,9 @@ To create your Red Hat account:
 
 . Enter your email address.
 
-. Enter a password and confirm the password. Your password must be at least 8 charcters long.
+. Enter a password and confirm the password. Your password must be at least 8 characters long.
 
-. Enter your  *Company* and *Title* information.
+. Enter your *Company* and *Title* information.
 
 . Enter your *Contact Information* in the provided fields.
 

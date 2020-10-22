@@ -5,7 +5,18 @@
 [id="creating-your-cluster_{context}"]
 = Creating an AWS CCS Cluster
 
+You can create a cluster with a Customer Cloud Subscription (CCS). With this subscription option, the cluster will be provisioned in an AWS account owned by you or your company. This allows you to pay AWS directly for public cloud costs, leveraging your existing relationship.
+
 To create your {product-title} AWS CSS cluster:
+
+.Prerequisites
+- Your AWS account has no services deployed in it.
+- Your AWS account has the necessary quotas and limits to support the desired cluster size.
+- An IAM user called 'osdCcsAdmin' exists with the AdministratorAccess policy.
+- An Organization Service Control Policy (SCP) is set up.
+- It is recommended that you have at least *Business Support* from AWS.
+
+.Procedure
 
 . Log in to link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift].
 
@@ -13,7 +24,7 @@ To create your {product-title} AWS CSS cluster:
 
 . Select *AWS* as your infrastructure provider.
 
-. Select *Customer cloud subscription*. An informational dialogue window will open. Review the pre-requisites for installing an AWS CCS cluster and click *Close*.
+. Select *Customer cloud subscription*. An informational dialogue window will open. Review the prerequisites for installing an AWS CCS cluster and click *Close*.
 
 . Enter your *AWS account ID*.
 
