@@ -1,11 +1,10 @@
-<title>ENTER TITLE HERE</title>
+<title>{product-title} Policies</title>
 <productname>{product-title}</productname>
 <productnumber>{product-version}</productnumber>
-<subtitle>ENTER SUB-TITLE HERE</subtitle>
 <abstract>
-    <para>ENTER ABSTRACT HERE</para>
+    <para>This guide provides a list of the policies that apply to your use of Red Hat® {product-title}.</para>
 </abstract>
 <authorgroup>
-    <orgname>OpenShift Docs Team</orgname>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
 </authorgroup>
 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -1,0 +1,13 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="osd_service_definition"]
+:context: osd_service_definition
+
+= {product-title} Service Definition
+
+include::modules/osd_sd_account_management.adoc[leveloffset=+1]
+include::modules/osd_sd_logging.adoc[leveloffset=+1]
+include::modules/osd_sd_monitoring.adoc[leveloffset=+1]
+include::modules/osd_sd_networking.adoc[leveloffset=+1]
+include::modules/osd_sd_storage.adoc[leveloffset=+1]
+include::modules/osd_sd_platform.adoc[leveloffset=+1]
+include::modules/osd_sd_security.adoc[leveloffset=+1]

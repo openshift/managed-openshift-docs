@@ -5,3 +5,4 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Setting up your accounts
 
 include::modules/create-rh-account.adoc[leveloffset=+1]
+include::modules/setup-gcp-account.adoc[leveloffset=+1]

@@ -1,0 +1,8 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="osd_understand_availability"]
+:context: osd_understand_availability
+
+= Understanding availability for {product-title}
+Availability and disaster avoidance are extremely important aspects of any application platform. {product-tile} provides many protections against failures at several levels, but customer-deployed applications must be appropriately configured for high availability. In addition, in order to account for cloud provider outages that may occur, other options are available, such as deploying a cluster across multiple availability zones or maintaining multiple clusters with failover mechanisms.
+
+include::modules/osd_failure_points.adoc[leveloffset=+1]

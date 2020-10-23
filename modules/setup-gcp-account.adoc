@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/template-assembly.adoc
+// * assemblies/account-setup.adoc
 
-[id="template_assembly_{context}"]
-= Template module
+[id="account-setup_{context}"]
+= Setting up your Google Cloud Platform account
 
 Here be content for this module.

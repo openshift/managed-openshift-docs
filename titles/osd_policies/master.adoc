@@ -1,0 +1,10 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= {product-title} Policies
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/osd_service_definition.adoc[]
+include::assemblies/osd_responsibility_matrix.adoc[]
+include::assemblies/osd_process_security.adoc[]
+include::assemblies/osd_understanding_availability.adoc[]
