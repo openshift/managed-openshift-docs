@@ -5,19 +5,20 @@
 [id="osd_shared_responsibility_{context}"]
 = Shared responsibility matrix by area and task
 
-= Incident and operations management
+== Incident and operations management
 The customer and Red Hat share responsibility for the monitoring and maintenance of an {product-title} cluster. The customer is responsible for incident and operations management of customer application data and any custom networking the customer may have configured for the cluster network or virtual network.
-[cols= "3",options="header"]
+[cols= "2a,3a,3a",options="header"]
 |===
 
-|Resource
-| Red Hat responsibilities
-| Customer responsibilities
+|Resource | Red Hat responsibilities | Customer responsibilities
 
 |Application networking
 |Monitor cloud load balancers and native OpenShift router service, and respond to alerts.
-|- Monitor health of service load balancer endpoints
+|
+- Monitor health of service load balancer endpoints
+
 - Monitor health of application routes, and the endpoints behind them.
+
 - Report outages to Red Hat.
 
 |Virtual networking
@@ -27,10 +28,10 @@ The customer and Red Hat share responsibility for the monitoring and maintenance
 |===
 
 
-= Change management
+== Change management
 Red Hat is responsible for enabling changes to the cluster infrastructure and services that the customer will control, as well as maintaining versions for the master nodes, infrastructure nodes and services, and worker nodes. The customer is responsible for initiating infrastructure change requests and installing and maintaining optional services and networking configurations on the cluster, as well as all changes to customer data and customer applications.
 
-[cols="3",options="header"]
+[cols="2a,3a,3a",options="header"]
 |===
 
 |Resource |Red Hat Responsibilities | Customer responsibilities
@@ -38,9 +39,13 @@ Red Hat is responsible for enabling changes to the cluster infrastructure and se
 
 |Logging
 |- Centrally aggregate and monitor platform audit logs.
+
 - Provide and maintain a logging operator to enable the customer to deploy a logging stack for default application logging.
+
 - Provide audit logs upon customer request.
-|- Install the optional default application logging operator on the cluster.
+
+|
+- Install the optional default application logging operator on the cluster.
 - Install, configure, and maintain any optional app logging solutions, such as logging sidecar containers or third-party logging applications.
 - Tune size and frequency of application logs being produced by customer applications if they are affecting the stability of the logging stack or the cluster.
 - Request platform audit logs through a support case for researching specific incidents.
@@ -84,10 +89,10 @@ Red Hat is responsible for enabling changes to the cluster infrastructure and se
 
 |===
 
-= Identity and access management
+== Identity and access management
 The Identity and Access Management matrix includes responsibilities for managing authorized access to clusters, applications, and infrastructure resources. This includes tasks such as providing access control mechanisms, authentication, authorization, and managing access to resources.
 
-[cols="3",options="header"]
+[cols="2a,3a,3a",options="header"]
 |===
 |Resource
 | Red Hat responsibilities
@@ -118,10 +123,10 @@ The Identity and Access Management matrix includes responsibilities for managing
 |===
 
 
-= Security and regulation compliance
+== Security and regulation compliance
 The following are the responsibilities and controls related to compliance:
 
-[cols="3",options="header"]
+[cols="2a,3a,3a",options="header"]
 |===
 
 |Resource
@@ -134,26 +139,29 @@ The following are the responsibilities and controls related to compliance:
 
 |Virtual networking
 |- Monitor virtual networking components for potential issues and security threats.
+
 - Leverage additional public cloud provider tools for additional monitoring and protection.
-|- Monitor optionally-configured virtual networking components for potential issues and security threats.
+|
+- Monitor optionally-configured virtual networking components for potential issues and security threats.
+
 - Configure any necessary firewall rules or data center protections as required.
 
 |===
 
 
-= Disaster recovery
+== Disaster recovery
 Disaster recovery includes data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
 
-[cols="3",options="header"]
+[cols="2a,3a,3a" ,options="header"]
 |===
-|Resource
-| Red Hat responsibilities
-| Customer responsibilities
+|Resource | Red Hat responsibilities | Customer responsibilities
 
 |Virtual networking
 |Restore or recreate affected virtual network components that are necessary for the platform to function.
-|- Configure virtual networking connections with more than one tunnel where possible for protection against outages as recommended by the public cloud provider.
+|
+- Configure virtual networking connections with more than one tunnel where possible for protection against outages as recommended by the public cloud provider.
+
 - Maintain failover DNS and load balancing if using a global load balancer with multiple clusters.
 
 |===

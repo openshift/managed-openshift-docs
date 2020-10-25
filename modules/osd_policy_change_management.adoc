@@ -36,3 +36,25 @@ SRE-initiated changes that require manual intervention generally follow the belo
 * Corrective actions are implemented.
 
 Note: SREs consider manual changes a failure and this is only used as a fallback process.
+
+== Configuration management
+
+The infrastructure and configuration of the {product-title} environment is managed as code. Red Hat SRE manages changes to the {product-title} environment using a gitops workflow and automated CI/CD pipeline.
+
+Each proposed change undergoes a series of automated verifications immediately upon check-in. Changes are then deployed to a Staging environment where they undergo automated integration testing. Finally, changes are deployed to the Production environment. Each step is fully automated.
+
+An authorized SRE reviewer must approve advancement to each step. The reviewer may not be the same individual who proposed the change. All changes and approvals are fully auditable as part of the gitops workflow.
+
+== Patch management
+
+OpenShift Container Platform software and the underlying immutable Red Hat Enterprise Linux CoreOS (RHCOS) operating system image are patched for bugs and vulnerabilities as a side effect of regular z-stream upgrades. Read more about link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/html/architecture/architecture-rhcos[RHCOS architecture] in the OpenShift Container Platform documentation.
+
+== Relase management
+
+{product-title} clusters are upgraded as frequently as weekly to ensure the latest security patches and bug fixes are applied to {product-title} clusters.
+
+Patch-level upgrades, also referred to as z-stream upgrades (e.g. 4.3.18 to 4.3.19), are automatically deployed on Tuesdays. New z-stream releases are tested nightly with automated {product-title} integration testing and released only once validated in the OSD environment.
+
+Minor version upgrades, also referred to as y-stream upgrades (e.g. 4.3 to 4.4), are coordinated with customers via email notification.
+
+Customers can review the history of all cluster upgrade events in their OCM web console.

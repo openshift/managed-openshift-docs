@@ -5,7 +5,7 @@
 [id="osd_sd_platform_{context}"]
 = Platform
 
-= Cluster backup policy
+== Cluster backup policy
 
 [IMPORTANT]
 ====
@@ -26,10 +26,10 @@ The following table shows the frequency of backups:
 |Full object store backup   | Hourly at 17 minutes past the hour    | 24 hours  | This is a full backup of all kubernetes objects. No PVs are backed up in this backup schedule.
 |===
 
-= Autoscaling
+== Autoscaling
 Node autoscaling is not available on {product-title} at this time.
 
-= Daemonsets
+== Daemonsets
 Customers may create and run DaemonSets on {product-title}. In order to restrict DaemonSets to only running on worker nodes, use the following nodeSelector:
 ----
 ...
@@ -39,28 +39,28 @@ spec:
 ...
 ----
 
-= Multiple availability zone
-In a multiple availability zone cluster, master nodes are distributed across availability zones and at least three worker nodes are required in each AZ.
+== Multi availability zone
+In a multiple availability zone cluster, master nodes are distributed across availability zones and at least three worker nodes are required in each availability zone.
 
-= Node labels
+== Node labels
 Custom node labels are created by Red Hat during node creation and cannot be changed on {product-title} clusters at this time.
 
-= Openshift version
+== Openshift version
 {product-title} is run as a service and is kept up-to-date with the latest OpenShift Container Platform version.
 
-= Upgrades
+== Upgrades
 Patch level (also known as z-stream; x.y.Z) updates are applied automatically the week following their release as long as {product-title}-specific end-to-end tests pass.
 
 Minor version updates (x.Y.z) may include Kubernetes version upgrades and/or API changes. Therefore, customers are notified by email two weeks in advance before these upgrades are automatically applied.
 
-= Window containers
+== Window containers
 Window containers are not available on {product-title} at this time.
 
-= Container engine
+== Container engine
 {product-title} runs on OpenShift 4 and uses link:https://www.redhat.com/en/blog/red-hat-openshift-container-platform-4-now-defaults-cri-o-underlying-container-engine[CRI-O ] as the only available container engine.
 
-= Operating system
+== Operating system
 {product-title} runs on OpenShift 4 and uses Red Hat Enterprise Linux CoreOS as the operating system for all master and worker nodes.
 
-= Kubernetes operator support
+== Kubernetes operator support
 {product-title} supports non-privileged Operators created by Red Hat and Certified ISVs.

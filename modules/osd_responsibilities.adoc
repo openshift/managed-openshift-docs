@@ -9,12 +9,12 @@ While Red Hat manages the {product-title} service, the customer shares responsib
 
 [IMPORTANT]
 ====
-If the 'cluster-admin' role is enabled on a cluster, please see the responsibilities and exclusion notes in the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
+If the `cluster-admin` role is enabled on a cluster, please see the responsibilities and exclusion notes in the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
 ====
 
 [cols="6",options="header"]
 |===
-|Resource   | Incident and operations management    | Change management   | Identity and access management    | Security and regulation compliance  | Disaster recovery
+|Resource | Incident and operations management    | Change management   | Identity and access management    | Security and regulation compliance  | Disaster recovery
 |Customer data| Customer| Customer| Customer| Customer| Customer
 |Customer applications| Customer| Customer| Customer| Customer| Customer
 |Developer services | Customer| Customer| Customer| Customer| Customer

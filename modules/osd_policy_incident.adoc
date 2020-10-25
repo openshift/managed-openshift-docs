@@ -51,10 +51,15 @@ All {product-title) clusters are backed up using cloud provider snapshots. Notab
 |Component  | Snapshot frequency | Retention | Notes
 
 |Full object store backup, all SRE-managed cluster Persistent Volumes (PVs)
-|- Daily
-- Weekly
-|- 7 days
--30 days
+|
+Daily
+
+Weekly
+
+|
+7 days
+
+30 days
 |This is a full backup of all kubernetes objects like etcd, as well as all SRE-managed PVs in the cluster.
 
 |Full object store backup

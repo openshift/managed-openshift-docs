@@ -1,5 +1,5 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
-[id="policies/osd_service_definition"]
+[id="osd_service_definition"]
 :context: osd_service_definition
 
 = {product-title} Service Definition

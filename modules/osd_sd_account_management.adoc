@@ -5,7 +5,7 @@
 [id="osd_sd_account_management_{context}"]
 = Account management
 
-= Billing
+== Billing
 Each {product-title} cluster requires a minimum annual base cluster purchase and there are two billing options available for each cluster, Standard and Customer Cloud Subscription (CCS).
 
 Standard {product-title} clusters are deployed in to their own cloud infrastructure accounts, each owned by Red Hat. Red Hat is responsible for this account, and cloud infrastructure costs are paid directly by Red Hat. The customer will only pay the Red Hat subscription costs.
@@ -20,18 +20,18 @@ Additional resources may be purchased for an OpenShift Dedicated Cluster, includ
 - Additional 12 TiB Network I/O (standard only)
 - Load Balancers for Services are available in bundles of 4; enables non-HTTP/SNI traffic or non-standard ports (standard only)
 
-= Cluster self-service
+== Cluster self-service
 
 Customers can create, scale, and delete their clusters from link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)], provided they've pre-purchased the necessary subscriptions.
 
-= Cloud providers
+== Cloud providers
 
 {product-title} offers OpenShift Container Platform clusters as a managed service on the following cloud providers:
 
 - Amazon Web Services (AWS)
 - Google Cloud Platform (GCP)
 
-= Compute
+== Compute
 
 Single availability zone clusters require a minimum of 4 worker nodes deployed to a single availability zone. These 4 worker nodes are included in the base subscription.
 
@@ -45,7 +45,7 @@ Master and infrastructure nodes are also provided by Red Hat. There are at least
 
 Note: 1 vCPU core and 1 GiB of memory are reserved on each worker node to run processes required as part of the managed service. This includes, but is not limited to, audit log aggregation, metrics collection, DNS, image registry, and SDN.
 
-= AWS compute types
+== AWS compute types
 
 {product-title} offers the following worker node types and sizes:
 
@@ -66,7 +66,7 @@ Compute-optimized
 - C5.2xlarge (8 vCPU, 16 GiB)
 - C5.4xlarge (16 vCPU, 32 GiB)
 
-= Google Cloud Platform compute types
+== Google Cloud compute types
 
 {product-title} offers the following worker node types and sizes on GCP:
 
@@ -87,7 +87,7 @@ Compute-optimized
 - custom-8-16384 (8 vCPU, 16 GiB)
 - custom-16-32768 (16 vCPU, 32 GiB)
 
-= Regions and availability zones
+== Regions and availability zones
 The following AWS regions are supported by Red Hat OpenShift 4 and are supported for {product-title}. Note: China and GovCloud (US) regions are not supported, regardless of their support on OpenShift 4.
 
 - ap-northeast-1 (Tokyo)
@@ -124,16 +124,16 @@ The following Google Cloud regions are currently supported:
 - us-west1, The Dalles, Oregon, USA
 - us-west2, Los Angeles, California, USA
 
-Multi availability zone clusters can only be deployed in regions with at least 3 availability clouds (see AWS and Google Cloud).
+Multi availability zone clusters can only be deployed in regions with at least 3 availability clouds (see link:https://aws.amazon.com/about-aws/global-infrastructure/regions_az/[AWS] and link:https://cloud.google.com/compute/docs/regions-zones[Google Cloud]).
 
-Each new {produt-title} cluster is installed within a dedicated Virtual Private Cloud (VPC) in a single Region, with the option to deploy into a single Availability Zone (Single-AZ) or across multiple Availability Zones (Multi-AZ). This provides cluster-level network and resource isolation, and enables cloud-provider VPC settings, such as VPN connections and VPC Peering. Persistent volumes are backed by cloud block storage and are specific to the availability zone in which they are provisioned. Persistent volumes do not bind to a volume until the associated pod resource is assigned into a specific AZ in order to prevent unschedulable pods. AZ-specific resources are only usable by resources in the same AZ.
+Each new {produt-title} cluster is installed within a dedicated Virtual Private Cloud (VPC) in a single Region, with the option to deploy into a single Availability Zone (Single-AZ) or across multiple Availability Zones (Multi-AZ). This provides cluster-level network and resource isolation, and enables cloud-provider VPC settings, such as VPN connections and VPC Peering. Persistent volumes are backed by cloud block storage and are specific to the availability zone in which they are provisioned. Persistent volumes do not bind to a volume until the associated pod resource is assigned into a specific availability zone in order to prevent unschedulable pods. availability zone-specific resources are only usable by resources in the same availability zone.
 
 Note: The region and the choice of single or multi availability zone cannot be changed once a cluster has been deployed.
 
-= Service Level Agreement (SLA)
+== Service Level Agreement (SLA)
 Any SLAs for the service itself are defined in Appendix 4 of the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
 
-= Support
+== Support
 {product-title} includes Red Hat Premium Support, which can be accessed by using the link:https://access.redhat.com/support?extIdCarryOver=true&sc_cid=701f2000001Css5AAC[Red Hat Customer Portal].
 
 Please see our link:https://access.redhat.com/support/offerings/production/soc[Scope of Coverage Page] for link:https://access.redhat.com/support/offerings/production/scope_moredetail[more details] on what is covered with included support for {product-title}.
