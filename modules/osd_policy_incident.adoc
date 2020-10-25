@@ -9,7 +9,7 @@
 The following figure illustrates the basic {product-title} architecture:
 
 .{product-title} architecture
-image::osd_architecture_overview.png[ {product-title} architecture]
+image::osd_architecture_overview.png[{product-title} architecture]
 
 
 == Platform monitoring
