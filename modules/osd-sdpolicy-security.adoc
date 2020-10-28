@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_security_{context}"]
+[id="osd-sdpolicy-security_{context}"]
 = Security
 
 == Authentication provider

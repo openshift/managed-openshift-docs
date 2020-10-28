@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_process_security.adoc
+// * assemblies/osd-process-security.adoc
 
-[id="osd_policy_identity_access_management_{context}"]
+[id="osd-policy-identity-access-management_{context}"]
 = Identity and access management
 
 == Automated access

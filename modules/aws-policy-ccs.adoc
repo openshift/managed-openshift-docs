@@ -1,0 +1,435 @@
+// Module included in the following assemblies:
+//
+// * assemblies/osd-policy-ccs-requirements.adoc
+
+[id="aws-policy-ccs_{context}"]
+= Requirements for AWS
+
+Red Hat recommends the usage of Organizations to manage multiple AWS accounts.
+
+The Organization, managed by the customer, hosts multiple AWS accounts. There is a root account in the organization that all accounts ultimately refer to in the account hierarchy.
+
+It is a best practice for the {product-title} CCS cluster to be hosted in an AWS account within an AWS Organizational Unit. A SCP is created and applied to the Organizational Unit that manages what services the AWS sub-accounts are permitted to access. The SCP applies only to available permissions within a single AWS account for all sub-accounts within the Organizational Unit. You can also apply a SCP to a single account. All other accounts in the customer’s Organization are managed in whatever manner the customer requires. Red Hat SRE will not have any control over SCPs within the AWS Organization.
+
+image::osd-aws-ccs.png[Red Hat recommended AWS Organization and Account structure]
+
+
+
+== Customer Procedure
+
+image::osd-aws-config[AWS configuration procedure]
+
+1. If the customer is utilizing AWS Organizations, you must use an AWS account within your organization or link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html#orgs_manage_accounts_create-new[create a new one].
+
+2. In order to ensure that Red Hat can perform the necessary actions, you must either create a Service Control Policy or ensure that none is applied to the AWS account.
+
+3. link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html[Attach] the Service Control Policy (SCP) to the AWS account.
+
+4. Within the AWS account, you must link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html[create] an `osdCcsAdmin` IAM user with the following requirements:
+* This user needs at least *Programmatic access* enabled.
+* This user must have the *AdministratorAccess* policy attached to it.
+
+5. Provide the IAM user credentials to Red Hat.
+* You must provide the *access key ID* and *secret access key* in the link:https://cloud.redhat.com/openshift/create/osd[OpenShift Cluster Manager creation form].
+
+
+== Minimum required Service Control Policy (SCP)
+Service Control Policy (SCP) management is the responsibility of the customer. These policies are maintained in the AWS Organization and control what services are available within the attached AWS accounts.
+
+[cols="2a,2a,2a,2a",options="header"]
+
+|===
+|
+| Service
+| Actions
+| Effect
+
+.15+| Required
+|Amazon EC2 | All |Allow
+|Amazon EC2 Auto Scaling | All |Allow
+|Amazon S3| All |Allow
+|Identity And Access Management | All |Allow
+|Elastic Load Balancing | All |Allow
+|Elastic Load Balancing V2| All |Allow
+|Amazon CloudWatch | All |Allow
+|Amazon CloudWatch Events | All |Allow
+|Amazon CloudWatch Logs | All |Allow
+|AWS Support | All |Allow
+|AWS Key Management Service | All |Allow
+|AWS Security Token Service | All |Allow
+|AWS Resource Tagging | All |Allow
+|AWS Route53 DNS | All |Allow
+|AWS Service Quotas | ListServices
+
+GetRequestedServiceQuotaChange
+
+GetServiceQuota
+
+RequestServiceQuotaIncrease
+
+ListServiceQuotas
+| Allow
+
+
+.3+|Optional
+
+| AWS Billing
+| ViewAccount
+
+Viewbilling
+
+ViewUsage
+| Allow
+
+|AWS Cost and Usage Report
+|All
+|Allow
+
+|AWS Cost Explorer Services
+|All
+|Allow
+
+
+|===
+
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "elasticloadbalancing:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "events:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "support:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sts:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "tag:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "servicequotas:ListServices",
+                "servicequotas:GetRequestedServiceQuotaChange",
+                "servicequotas:GetServiceQuota",
+                "servicequotas:RequestServiceQuotaIncrease",
+                "servicequotas:ListServiceQuotas"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
+
+----
+
+== Red Hat managed IAM references for AWS
+
+Red Hat is responsible for creating the following AWS resources.
+
+=== IAM Policies
+
+These policies are subject to modification as the capabilities of {product-title} change.
+
+- The *AdministratorAccess* policy is used by the `admin` role. It provides Red Hat the access necessary to administer the {product-title} cluster in the customer-provided AWS account.
+
++
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "*",
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+
+- The *CustomerAdministatorAccess* role provides the customer access to administer a subset of services within the AWS account. At this time, the following are allowed:
+
+* VPC Peering
+* VPN Setup
+* Direct Connect (only available if granted through the SCP policy)
++
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVpnGateway",
+                "ec2:DescribeVpnConnections",
+                "ec2:AcceptVpcPeeringConnection",
+                "ec2:DeleteVpcPeeringConnection",
+                "ec2:DescribeVpcPeeringConnections",
+                "ec2:CreateVpnConnectionRoute",
+                "ec2:RejectVpcPeeringConnection",
+                "ec2:DetachVpnGateway",
+                "ec2:DeleteVpnConnectionRoute",
+                "ec2:DeleteVpnGateway",
+                "ec2:DescribeVpcs",
+                "ec2:CreateVpnGateway",
+                "ec2:ModifyVpcPeeringConnectionOptions",
+                "ec2:DeleteVpnConnection",
+                "ec2:CreateVpcPeeringConnection",
+                "ec2:DescribeVpnGateways",
+                "ec2:CreateVpnConnection",
+                "ec2:DescribeRouteTables",
+                "ec2:CreateTags",
+                "ec2:CreateRoute",
+          "directconnect:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+
+- The *BillingReadOnlyAccess* role provides read-only access to view billing and usage information for the account if it is enabled.
++
+Billing and usage access is only granted if the root account in the AWS Organization has it enabled. This is an optional step the customer must perform to enable read-only billing and usage access and does not impact the creation of this profile and the role that uses it. If not enabled, users will not see billing and usage information. See this tutorial on link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html#tutorial-billing-step1[how to enable access to billing data].
++
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "aws-portal:ViewAccount",
+                "aws-portal:ViewBilling"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+
+=== IAM users
+
+- The *osdManagedAdmin* is created immediately after taking control of the customer-provided AWS account. This is the user that will be performing the {product-title} cluster install.
+
+=== IAM roles
+
+- The *network-mgmt* role provides customer-federated administrative access to the AWS account through a separate AWS account. It also has the same access as a read-only role. The following policies are attached to the role:
+* AmazonEC2ReadOnlyAccess
+* AmazonEC2ReadOnlyAccess
+
+- The *read-only* role provides customer-federated read-only access to the AWS account through a separate AWS account. The following policies are attached to the role:
+* AWSAccountUsageReportAccess
+* AmazonEC2ReadOnlyAccess
+* AmazonS3ReadOnlyAccess
+* IAMReadOnlyAccess
+* BillingReadOnlyAccess
+
+
+== Provisioned AWS Infrastructure
+This is an overview of {product-title} specific deployments. For a more detailed listing of all AWS components provisioned, you can refer to the link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/[OpenShift Container Platform documentation].
+
+=== EC2 instances
+
+AWS EC2 instances are required for deploying the control plane and data plane functions of {product-title} in the AWS public cloud.
+
+- Three m5.xlarge minimum (Masters Nodes)
+- Three m5.xlarge minimum (Infrastructure Nodes)
+- Four m5.xlarge minimum but highly variable (Compute Nodes)
+
+=== EBS storage
+
+Amazon EBS block storage is used for both local node storage and persistent volume storage.
+
+Volume requirements for each EC2 instance:
+
+- Master Volume
+* size: 350GB
+* type: io1
+* iops: 1000
+- Infrastructure Volume
+* size: 300GB
+* type: gp2
+* Iops: 100
+- Compute Volume
+* size: 300GB
+* type: gp2
+* Iops: 100
+
+=== Elastic load balancers
+
+Up to two Network Elastic Load Balancers (ELBs) for API and up to two Classic ELBs for application router. See here for more details on link:https://aws.amazon.com/elasticloadbalancing/features/#Details_for_Elastic_Load_Balancing_Products[ELBs].
+
+
+=== S3 storage
+The image registry and EBS volume snapshots are backed by AWS S3 storage. Pruning of resources is performed regularly to optimize S3 usage and cluster performance.
+
+Note: Two buckets are required with a typical size of 2TB each.
+
+=== VPC
+Customers should expect to see one VPC per cluster. Additionally, the VPC will need following configurations:
+
+- Subnets
+* Two subnets for a cluster with a single availability zone is preferred
+* Six subnets for a cluster with mutltiple availability zones is preferred
+- Router Tables
+* One router table per private subnet and one additional table per cluster
+- Internet Gateways
+* One per cluster
+- NAT Gateways
+* One per public subnet
+
+=== Security groups
+
+AWS security groups are associated with EC2 instances and Elastic Load Balancers and provide security at the protocol and port access level. Each security group, working much the same way as a firewall, contains a set of rules that filter traffic coming into and out of an EC2 instance. You must ensure the ports required for the OpenShift installation are open on your network and configured to allow access between hosts.
+
+[cols="2a,2a,2a,2a",options="header"]
+|===
+
+|Group
+|Type
+|IP Protocol
+|Port range
+
+
+.4+|MasterSecurityGroup
+.4+|`AWS::EC2::SecurityGroup`
+|`icmp`
+|`0`
+
+|`tcp`
+|`22`
+
+|`tcp`
+|`6443`
+
+|`tcp`
+|`22623`
+
+.2+|WorkerSecurityGroup
+.2+|`AWS::EC2::SecurityGroup`
+|`icmp`
+|`0`
+
+|`tcp`
+|`22`
+
+
+.2+|BootstrapSecurityGroup
+.2+|`AWS::EC2::SecurityGroup`
+
+|`tcp`
+|`22`
+
+|`tcp`
+|`19531`
+
+|===

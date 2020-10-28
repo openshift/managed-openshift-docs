@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_logging_{context}"]
+[id="osd-sdpolicy-logging_{context}"]
 = Logging
 
 {product-title} includes an optional logging stack based on Elasticsearch, Fluentd, and Kibana (EFK). When deployed, a three shard Elasticsearch cluster with 8GB of allocated memory and 4GB heap is deployed with one replica per shard. The logging stack in OpenShift is designed for short-term retention to aid application troubleshooting, not for long-term log archiving.

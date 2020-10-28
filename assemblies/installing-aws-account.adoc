@@ -1,0 +1,21 @@
+[id="installing-aws-account"]
+= Configuring an AWS account
+include::modules/common-attributes.adoc[]
+:context: installing-aws-account
+
+toc::[]
+
+Before you can install {product-title}, you must configure an
+Amazon Web Services (AWS) account.
+
+include::modules/installation-aws-route53.adoc[leveloffset=+1]
+
+include::modules/nw-endpoint-route53.adoc[leveloffset=+2]
+
+include::modules/installation-aws-limits.adoc[leveloffset=+1]
+
+include::modules/installation-aws-permissions.adoc[leveloffset=+1]
+
+include::modules/installation-aws-iam-user.adoc[leveloffset=+1]
+
+include::modules/installation-aws-regions.adoc[leveloffset=+1]

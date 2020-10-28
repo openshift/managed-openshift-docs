@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_networking_{context}"]
+[id="osd-sdpolicy-networking_{context}"]
 = Networking
 
 == Custom domains for applications

@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_storage_{context}"]
+[id="osd-sdpolicy-storage_{context}"]
 = Storage
 
 == Encrypted-at-rest OS/Node storage

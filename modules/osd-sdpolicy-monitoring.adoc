@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_monitoring_{context}"]
+[id="osd-sdpolicy-monitoring_{context}"]
 = Monitoring
 
 == Cluster metrics

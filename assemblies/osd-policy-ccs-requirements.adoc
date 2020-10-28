@@ -1,0 +1,64 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="osd-policy-ccs-requirements"]
+:context: osd-policy-ccs-requirements
+
+= Requirements for Customer Cloud Subscriptions (CCS)
+
+Red Hat {product-title} provides a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage {product-title} into a customer's AWS or Google Cloud account. Red Hat requires several prerequisites be met in order to provide this service. This service is supported by Red Hat Site Reliability Engineers (SRE).
+
+
+=== Account requirements
+
+- The customer ensures link:https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html[AWS] and link:https://cloud.google.com/storage/quotas[Google Cloud] limits are sufficient to support managed services provisioned within the customer-provided cloud account.
+
+- The customer-provided AWS account should be in the customer's AWS Organization with the applicable Service Control Policy applied.
+* Note: It is not a requirement that the customer-provided account be within an AWS Organization or for the Service Control Policy to be applied. However, Red Hat must be able to perform all the actions listed in the Service Control Policy without restriction.
+
+- Customer-provided Google Cloud account should be in the customer's Google Cloud Organization with the applicable Service Account applied.
+
+- Customer-provided AWS or Google Cloud account should not be transferable to Red Hat.
+
+- Customer may not impose AWS or Google Cloud usage restrictions on Red Hat activities. Imposing restrictions will severely hinder Red Hat's ability to respond to incidents.
+Red Hat will deploy monitoring into AWS or Google Cloud to alert Red Hat when a highly privileged account, e.g., a root account, logs into the customer-provided cloud account.
+
+- Customer may deploy native AWS or Google Cloud services within the same customer-provided cloud account
+* Note: Customers are encouraged, but not mandated, to deploy resources in a Virtual Private Cloud (VPC) separate from the VPC hosting OpenShift Dedicated and other Red Hat supported services.
+
+=== Access requirements
+
+- Red Hat must have the `AdministratorAccess` policy applied to the `admin` role at all times in order to appropriately manage the {product-title} service.
+* Note: This only provides Red Hat with permissions and capabilities to affect resources in the customer-provided cloud account.
+
+- Red Hat must have AWS or Google Cloud Console access to the customer-provided cloud account. This access is protected and managed by Red Hat.
+
+- Customer must not utilize the AWS or Google Cloud account to elevate their permissions within the {product-title} cluster.
+
+- Actions available in the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)] must not be directly performed in the customer-provided cloud account.
+
+- {product-title} CCS customers will be able to self-service role federation through the OpenShift Cluster Manager (OCM).
+
+=== Support requirements
+
+- Red Hat recommends that the customer have at least link:https://aws.amazon.com/premiumsupport/plans/[Business Support from AWS] or link:https://cloud.google.com/support[Production Support from Google Cloud].
+
+- Red Hat has authority from the customer to request AWS or Google Cloud support on behalf of the customer.
+
+- Red Hat has authority from the customer to request AWS or Google Cloud resource limit increases on the customer-provided account.
+
+- Red Hat manages all {product-title} clusters in the same manner including the same restrictions, limitations, expectations, and defaults unless otherwise specified in this requirements section.
+
+=== Security requirements
+
+- Customer-provided IAM credentials should be unique to the customer-provided cloud account and should not be stored anywhere in the customer-provided cloud account.
+
+- Volume snapshots will remain within the customer-provided cloud account and customer-specified region.
+
+- Red Hat must have ingress access to the API server, as well as access to EC2 hosts for AWS, through white-listed Red Hat machines.
+
+- Red Hat must have egress allowed in order to forward system and audit logs to a Red Hat managed central logging stack.
+
+
+
+
+include::modules/aws-policy-ccs.adoc[leveloffset=+1]
+include::modules/gcp-policy-ccs.adoc[leveloffset=+1]

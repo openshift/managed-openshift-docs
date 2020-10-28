@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_process_security.adoc
+// * assemblies/osd-process-security.adoc
 
-[id="osd_policy_security_regulation_compliance_{context}"]
+[id="osd-policy-security-regulation-compliance_{context}"]
 = Security and regulation compliance
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 

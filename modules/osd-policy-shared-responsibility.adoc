@@ -1,24 +1,24 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_responsibility_matrix.adoc
+// * assemblies/osd-policy-responsibility-matrix.adoc
 
-[id="osd_shared_responsibility_{context}"]
+[id="osd-policy-shared-responsibility_{context}"]
 = Shared responsibility matrix by area and task
 
 == Incident and operations management
 The customer and Red Hat share responsibility for the monitoring and maintenance of an {product-title} cluster. The customer is responsible for incident and operations management of customer application data and any custom networking the customer may have configured for the cluster network or virtual network.
+
 [cols= "2a,3a,3a",options="header"]
 |===
 
-|Resource | Red Hat responsibilities | Customer responsibilities
+|Resource
+|Red Hat responsibilities
+|Customer responsibilities
 
 |Application networking
 |Monitor cloud load balancers and native OpenShift router service, and respond to alerts.
-|
-- Monitor health of service load balancer endpoints
-
+|- Monitor health of service load balancer endpoints
 - Monitor health of application routes, and the endpoints behind them.
-
 - Report outages to Red Hat.
 
 |Virtual networking
@@ -34,18 +34,16 @@ Red Hat is responsible for enabling changes to the cluster infrastructure and se
 [cols="2a,3a,3a",options="header"]
 |===
 
-|Resource |Red Hat Responsibilities | Customer responsibilities
+|Resource
+|Red Hat responsibilities
+|Customer responsibilities
 
 
 |Logging
 |- Centrally aggregate and monitor platform audit logs.
-
 - Provide and maintain a logging operator to enable the customer to deploy a logging stack for default application logging.
-
 - Provide audit logs upon customer request.
-
-|
-- Install the optional default application logging operator on the cluster.
+|- Install the optional default application logging operator on the cluster.
 - Install, configure, and maintain any optional app logging solutions, such as logging sidecar containers or third-party logging applications.
 - Tune size and frequency of application logs being produced by customer applications if they are affecting the stability of the logging stack or the cluster.
 - Request platform audit logs through a support case for researching specific incidents.
@@ -95,8 +93,8 @@ The Identity and Access Management matrix includes responsibilities for managing
 [cols="2a,3a,3a",options="header"]
 |===
 |Resource
-| Red Hat responsibilities
-| Customer responsibilities
+|Red Hat responsibilities
+|Customer responsibilities
 
 |Logging
 |- Adhere to an industry standards-based tiered internal access process for platform audit logs.
@@ -130,8 +128,8 @@ The following are the responsibilities and controls related to compliance:
 |===
 
 |Resource
-| Red Hat responsibilities
-| Customer responsibilities
+|Red Hat responsibilities
+|Customer responsibilities
 
 |Logging
 |Send cluster audit logs to a Red Hat SIEM to analyze for security events. Retain audit logs for a defined period of time to support forensic analysis.
@@ -139,11 +137,8 @@ The following are the responsibilities and controls related to compliance:
 
 |Virtual networking
 |- Monitor virtual networking components for potential issues and security threats.
-
 - Leverage additional public cloud provider tools for additional monitoring and protection.
-|
-- Monitor optionally-configured virtual networking components for potential issues and security threats.
-
+|- Monitor optionally-configured virtual networking components for potential issues and security threats.
 - Configure any necessary firewall rules or data center protections as required.
 
 |===
@@ -155,13 +150,13 @@ Disaster recovery includes data and configuration backup, replicating data and c
 
 [cols="2a,3a,3a" ,options="header"]
 |===
-|Resource | Red Hat responsibilities | Customer responsibilities
+|Resource
+|Red Hat responsibilities
+|Customer responsibilities
 
 |Virtual networking
 |Restore or recreate affected virtual network components that are necessary for the platform to function.
-|
-- Configure virtual networking connections with more than one tunnel where possible for protection against outages as recommended by the public cloud provider.
-
+|- Configure virtual networking connections with more than one tunnel where possible for protection against outages as recommended by the public cloud provider.
 - Maintain failover DNS and load balancing if using a global load balancer with multiple clusters.
 
 |===

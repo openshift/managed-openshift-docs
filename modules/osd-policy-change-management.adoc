@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_process_security.adoc
+// * assemblies/osd-process-security.adoc
 
-[id="osd_policy_change_management_{context}"]
+[id="osd-policy-change-management_{context}"]
 = Change management
 Cluster changes are initiated in one of two ways:
 
@@ -47,7 +47,7 @@ An authorized SRE reviewer must approve advancement to each step. The reviewer m
 
 == Patch management
 
-OpenShift Container Platform software and the underlying immutable Red Hat Enterprise Linux CoreOS (RHCOS) operating system image are patched for bugs and vulnerabilities as a side effect of regular z-stream upgrades. Read more about link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/html/architecture/architecture-rhcos[RHCOS architecture] in the OpenShift Container Platform documentation.
+OpenShift Container Platform software and the underlying immutable Red Hat Enterprise Linux CoreOS (RHCOS) operating system image are patched for bugs and vulnerabilities as a side effect of regular z-stream upgrades. Read more about link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.6/html/architecture/architecture-rhcos[RHCOS architecture] in the OpenShift Container Platform documentation.
 
 == Relase management
 

@@ -1,0 +1,13 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="osd-process-security"]
+:context: osd-process-security
+
+= {product-title} process and security overview
+
+
+include::modules/osd-policy-incident.adoc[leveloffset=+1]
+include::modules/osd-policy-change-management.adoc[leveloffset=+1]
+include::modules/osd-policy-identity-access-management.adoc[leveloffset=+1]
+include::modules/osd-policy-security-regulation-compliance.adoc[leveloffset=+1]
+include::modules/osd-policy-disaster-recovery.adoc[leveloffset=+1]

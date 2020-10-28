@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/osd_service_definition.adoc
+// * assemblies/osd-policy-service-definition.adoc
 
-[id="osd_sd_platform_{context}"]
+[id="osd-sdpolicy-platform_{context}"]
 = Platform
 
 == Cluster backup policy
@@ -20,10 +20,27 @@ Node root volumes are not backed up as Red Hat Enterprise Linux CoreOS is fully 
 The following table shows the frequency of backups:
 [cols="4",options="header"]
 |===
-|Component    | Snapshot Frequency    | Retention   |Notes
-|Full object store backup, all cluster PVs     | Daily at 0100 UTC   | 7 days   | This is a full backup of all kubernetes objects, as well as all mounted PVs in the cluster.
-|Full object store backup, all cluster PVs    | Weekly on Mondays at 0200 UTC  | 30 days  | This is a full backup of all kubernetes objects, as well as all mounted PVs in the cluster.
-|Full object store backup   | Hourly at 17 minutes past the hour    | 24 hours  | This is a full backup of all kubernetes objects. No PVs are backed up in this backup schedule.
+
+|Component
+|Snapshot Frequency
+|Retention
+|Notes
+
+|Full object store backup, all cluster PVs
+|Daily at 0100 UTC
+|7 days
+|This is a full backup of all kubernetes objects, as well as all mounted PVs in the cluster.
+
+|Full object store backup, all cluster PVs
+|Weekly on Mondays at 0200 UTC
+|30 days
+|This is a full backup of all kubernetes objects, as well as all mounted PVs in the cluster.
+
+|Full object store backup
+|Hourly at 17 minutes past the hour
+|24 hours
+|This is a full backup of all kubernetes objects. No PVs are backed up in this backup schedule.
+
 |===
 
 == Autoscaling
@@ -39,7 +56,7 @@ spec:
 ...
 ----
 
-== Multi availability zone
+== Multiple availability zone
 In a multiple availability zone cluster, master nodes are distributed across availability zones and at least three worker nodes are required in each availability zone.
 
 == Node labels
