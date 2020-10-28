@@ -21,7 +21,7 @@ image::osd-aws-config[AWS configuration procedure]
 
 1. If the customer is utilizing AWS Organizations, you must use an AWS account within your organization or link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html#orgs_manage_accounts_create-new[create a new one].
 
-2. In order to ensure that Red Hat can perform the necessary actions, you must either create a Service Control Policy or ensure that none is applied to the AWS account.
+2. To ensure that Red Hat can perform necessary actions, you must either create a Service Control Policy or ensure that none is applied to the AWS account.
 
 3. link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html[Attach] the Service Control Policy (SCP) to the AWS account.
 
@@ -318,15 +318,15 @@ Billing and usage access is only granted if the root account in the AWS Organiza
 
 === IAM users
 
-- The *osdManagedAdmin* is created immediately after taking control of the customer-provided AWS account. This is the user that will be performing the {product-title} cluster install.
+- The `osdManagedAdmin` is created immediately after taking control of the customer-provided AWS account. This is the user that will be performing the {product-title} cluster install.
 
 === IAM roles
 
-- The *network-mgmt* role provides customer-federated administrative access to the AWS account through a separate AWS account. It also has the same access as a read-only role. The following policies are attached to the role:
+- The `network-mgmt` role provides customer-federated administrative access to the AWS account through a separate AWS account. It also has the same access as a read-only role. The following policies are attached to the role:
 * AmazonEC2ReadOnlyAccess
 * AmazonEC2ReadOnlyAccess
 
-- The *read-only* role provides customer-federated read-only access to the AWS account through a separate AWS account. The following policies are attached to the role:
+- The `read-only` role provides customer-federated read-only access to the AWS account through a separate AWS account. The following policies are attached to the role:
 * AWSAccountUsageReportAccess
 * AmazonEC2ReadOnlyAccess
 * AmazonS3ReadOnlyAccess

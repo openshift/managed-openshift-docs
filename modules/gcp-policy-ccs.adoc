@@ -7,13 +7,12 @@
 
 Red Hat recommends the usage of a Google Cloud project, managed by the customer, to organize all of your Google Cloud resources. A project consists of a set of users; a set of APIs; and billing, authentication, and monitoring settings for those APIs.
 
-It is a best practice for the {product-title} CCS cluster to be hosted in a Google Cloud project within a Google Cloud organization. The Organization resource is the root node of the Google Cloud resource hierarchy and all resources that belong to an organization are grouped under the organization node. An IAM Service Account with certain roles attached is created and applied to the Google Cloud project. When you make calls to the API, you typically provide service account keys for authentication. Each service account is owned by a specific project, but service accounts may be provided roles to access resources for other projects. Red Hat SRE will not have any control over the Service Account within the Google Cloud project.
-
+It is a best practice for the {product-title} CCS cluster to be hosted in a Google Cloud project within a Google Cloud organization. The Organization resource is the root node of the Google Cloud resource hierarchy and all resources that belong to an organization are grouped under the organization node. An IAM service account with certain roles granted is created and applied to the Google Cloud project. When you make calls to the API, you typically provide service account keys for authentication. Each service account is owned by a specific project, but service accounts can be provided roles to access resources for other projects.
 
 == Customer procedure
 
 1. link:https://cloud.google.com/resource-manager/docs/creating-managing-projects[Create a Google Cloud project] to host the {product-title} cluster. Note: The project name must be 10 characters or less.
-2. link:https://cloud.google.com/service-usage/docs/enable-disable#enabling[Enable ] the following required APIs in the project that hosts your {product-title} cluster.
+2. link:https://cloud.google.com/service-usage/docs/enable-disable#enabling[Enable ] the following required APIs in the project that hosts your {product-title} cluster:
 +
 .Required API services
 [cols="2a,3a",options="header"]
@@ -57,91 +56,92 @@ endif::template[]
 
 |===
 
-3. Within the Google Cloud project, you must create an `osdCcsAdmin` IAM Service Account user with the following roles attached:
+3. To ensure that Red Hat can perform necessary actions, you must create an `osd-ccs-admin` IAM link:https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account[service account] user within the Google Cloud project. The following roles must be link:https://cloud.google.com/iam/docs/granting-roles-to-service-accounts#granting_access_to_a_service_account_for_a_resource[granted to the service account]:
 +
-
+.Required roles
 [cols="2a,3a",options="header"]
+
 |===
 
 |Role|Console role name
 
+|Compute Admin
+|`roles/compute.admin`
 
-|DNS Administrator
+|DNS Admin
 |`roles/dns.admin`
 
-|Organization Policy View
-|`cloudapis.googleapis.com`
+|Organizational Policy Viewer
+|`roles/orgpolicy.policyViewer`
 
-|Cloud Resource Manager API
-|`cloudresourcemanager.googleapis.com`
+|Owner
+|`roles/owner`
 
-|Google DNS API
-|`dns.googleapis.com`
+|Project Deleter
+|`roles/resourcemanager.projectDeleter`
 
-|IAM Service Account Credentials API
-|`iamcredentials.googleapis.com`
+|Project IAM Admin
+|`roles/resourcemanager.projectIamAdmin`
 
-|Identity and Access Management (IAM) API
-|`iam.googleapis.com`
+|Service Management Administrator
+|`roles/servicemanagement.admin`
 
-|Service Management API
-|`servicemanagement.googleapis.com`
+|Service Usage Admin
+|`roles/serviceusage.serviceUsageAdmin`
 
-|Service Usage API
-|`serviceusage.googleapis.com`
+|Storage Admin
+|`roles/storage.admin`
 
-|Google Cloud Storage JSON API
-|`storage-api.googleapis.com`
-
-|Cloud Storage
-|`storage-component.googleapis.com`
 
 |===
 
-- Organization Policy View
-- Owner
-Project Deleter
-Project IAM Admin
-Service Management Admin
-Service Usage Admin
-Storage Admin
-4. Add toles to SA
-5. Create key for SA
+4. link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys[Create the service account key] for the `osd-ccs-admin` IAM service account. Export the key to a file named `osServiceAccount.json`, this JSON file will be uploaded in OpenShift Cluster Manager (OCM) when you create your cluster.
 
-
-create project
-Project must be 10 chars or less!  If not, the openshift-installer will fail.
-Add IAM service account
-in GCP Console: IAM -> Service Accounts
-"+Create Service Account"
-Add name, description
-Add the following roles to the the new SA:
-Project Billing Manager
-DNS Administrator
-Organization Policy View
-Owner
-Organization Admin
-Project Deleter
-Project IAM Admin
-Service Management Admin
-Service Usage Admin
-Storage Admin
-Create a key for the SA
-in GCP Console: IAM -> Service Accounts -> SA Created -> Add Key -> Create New Key
-Select JSON
-Save key (will be a text file that is json).
-This JSON file will be uploaded OCM
-
-
-DNS Administrator
-Organization Policy View
-Owner
-Project Deleter
-Project IAM Admin
-Service Management Admin
-Service Usage Admin
-Storage Admin
 
 = Red Hat managed Google Cloud resources
 
-== IAM
+== IAM Users
+
+- The `osd-managed-admin` IAM service account is created immediately after taking control of the customer-provided Google Cloud account. This is the user that will be performing the {product-title} cluster install.
+
+== IAM roles
+
+[cols="2a,3a,2a",options="header"]
+
+|===
+
+|Role |Console role name |Description
+
+|Compute Admin
+|`roles/compute.admin`
+|Provides full control of all Compute Engine resources.
+
+|DNS Administrator
+|`roles/dns.admin`
+|Provides read-write access to all Cloud DNS resources.
+
+|Security Admin
+|`roles/iam.securityAdmin`
+|Security admin role, with permissions to get and set any IAM policy.
+
+|Storage Admin
+|`roles/storage.admin`
+|Grants full control of objects and buckets.
+
+When applied to an individual *bucket*, control applies only to the specified bucket and objects within the bucket.
+
+|Service Account Admin
+|`roles/iam.serviceAccountAdmin`
+|Create and manage service accounts.
+
+|Service Account Key Admin
+|`roles/iam.serviceAccountKeyAdmin`
+|Create and manage (and rotate) service account keys.
+
+|Service Account User
+|`roles/iam.serviceAccountUser`
+|Run operations as the service account.
+
+|===
+
+== Provisioned Google Cloud Infrastructure
