@@ -1,8 +1,9 @@
-<title>{product-title} Policies</title>
-<productname>{product-title}</productname>
-<productnumber>{product-version}</productnumber>
+<title>OpenShift Dedicated Policies</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle>Understanding the policies that apply to your use of Red Hat OpenShift Dedicated.</subtitle>
 <abstract>
-    <para>This guide provides a list of the policies that apply to your use of Red Hat® {product-title}.</para>
+    <para>This guide provides the policies that apply to your use of Red Hat OpenShift Dedicated.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat OpenShift Documentation Team</orgname>

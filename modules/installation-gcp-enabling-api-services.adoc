@@ -1,18 +1,6 @@
 // Module included in the following assemblies:
 //
-// * installing/installing_gcp/installing-gcp-account.adoc
-// * installing/installing_gcp/installing-gcp-user-infra.adoc
-// * installing/installing_gcp/installing-restricted-networks-gcp.adoc
-
-ifeval::["{context}" == "installing-gcp-user-infra"]
-:template:
-endif::[]
-ifeval::["{context}" == "installing-gcp-user-infra-vpc"]
-:template:
-endif::[]
-ifeval::["{context}" == "installing-gcp-restricted-networks"]
-:template:
-endif::[]
+// * assemblies/installing-gcp-account.adoc
 
 [id="installation-gcp-enabling-api-services_{context}"]
 = Enabling API services in GCP
@@ -22,7 +10,7 @@ to complete {product-title} installation.
 
 .Prerequisites
 
-* You created a project to host your cluster.
+You created a project to host your cluster.
 
 .Procedure
 
@@ -33,13 +21,13 @@ in the GCP documentation.
 +
 .Required API services
 [cols="2a,3a",options="header"]
+
 |===
+
 |API service |Console service name
 
-ifdef::template[]
 |Cloud Deployment Manager V2 API
 |`deploymentmanager.googleapis.com`
-endif::template[]
 
 |Compute Engine API
 |`compute.googleapis.com`
@@ -72,13 +60,3 @@ endif::template[]
 |`storage-component.googleapis.com`
 
 |===
-
-ifeval::["{context}" == "installing-gcp-user-infra"]
-:!template:
-endif::[]
-ifeval::["{context}" == "installing-gcp-user-infra-vpc"]
-:!template:
-endif::[]
-ifeval::["{context}" == "installing-gcp-restricted-networks"]
-:!template:
-endif::[]

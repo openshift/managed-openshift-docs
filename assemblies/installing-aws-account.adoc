@@ -1,9 +1,7 @@
 [id="installing-aws-account"]
 = Configuring an AWS account
-include::modules/common-attributes.adoc[]
+include::_attributes/attributes-openshift-dedicated.adoc[]
 :context: installing-aws-account
-
-toc::[]
 
 Before you can install {product-title}, you must configure an
 Amazon Web Services (AWS) account.
