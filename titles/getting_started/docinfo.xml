@@ -1,11 +1,11 @@
 <title>Getting started</title>
-<productname>{product-name}</productname>
-<productnumber>{product-version}</productnumber>
-<subtitle>ENTER SUB-TITLE HERE</subtitle>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle>Getting started with OpenShift Dedicated</subtitle>
 <abstract>
-    <para>ENTER ABSTRACT HERE</para>
+    <para>Create and provision your OpenShift Dedicated cluster. /para>
 </abstract>
 <authorgroup>
-    <orgname>OpenShift Docs Team</orgname>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
 </authorgroup>
 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

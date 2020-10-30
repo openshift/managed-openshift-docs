@@ -2,7 +2,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 [id="config-aws-private-connections"]
 :context: config-aws-private-connections
 
-= Configuring AWS private connections
+= Configuring private connections for AWS
 
 
 include::modules/osd-understanding-aws.adoc[leveloffset=+1]

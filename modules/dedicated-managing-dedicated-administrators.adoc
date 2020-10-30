@@ -1,0 +1,22 @@
+// Module included in the following assemblies:
+//
+// assemblies/dedicated-admin-role.adoc
+
+[id="dedicated-managing-dedicated-administrators_{context}"]
+=  Managing {product-title} administrators
+
+Administrator roles are managed using a `dedicated-admins` group on the cluster.
+Existing members of this group can edit membership through the
+link:https://cloud.redhat.com/openshift[Red Hat OpenShift Cluster Manager] site.
+
+[id="dedicated-administrators-adding-user_{context}"]
+== Adding a user
+. Navigate to the *Access control* page and *Cluster administrative users*.
+. Click the *Add user* button.
+. Enter the user name and select the group (*dedicated-admins*)
+. Click the *Add* button.
+
+[id="dedicated-administrators-removing-user_{context}"]
+== Removing a user
+. Navigate to the *Access control* page and *Cluster administrative users*.
+. Click the action menu to the right of the user / group combination and select *delete*.

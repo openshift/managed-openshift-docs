@@ -7,6 +7,16 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 Once you have an {product-title} {product-version} subscription, you can access your services.
 
 include::modules/create-cluster.adoc[leveloffset=+1]
+
+.Additional resources
+
+* xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+
+
 include::modules/create-aws-ccs-cluster.adoc[leveloffset=+1]
-include::modules/create-gcp-ccs-cluster.adoc[leveloffset=+1]
+
+.Additional resources
+
+* xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+
 include::modules/access-cluster.adoc[leveloffset=+1]

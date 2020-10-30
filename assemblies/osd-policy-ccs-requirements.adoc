@@ -7,7 +7,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 Red Hat {product-title} provides a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage {product-title} into a customer's AWS or Google Cloud account. Red Hat requires several prerequisites be met in order to provide this service. This service is supported by Red Hat Site Reliability Engineers (SRE).
 
 
-=== Account requirements
+== Account requirements
 
 - The customer ensures link:https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html[AWS] and link:https://cloud.google.com/storage/quotas[Google Cloud] limits are sufficient to support managed services provisioned within the customer-provided cloud account.
 
@@ -24,7 +24,7 @@ Red Hat will deploy monitoring into AWS or Google Cloud to alert Red Hat when a 
 - Customer may deploy native AWS or Google Cloud services within the same customer-provided cloud account
 * Note: Customers are encouraged, but not mandated, to deploy resources in a Virtual Private Cloud (VPC) separate from the VPC hosting OpenShift Dedicated and other Red Hat supported services.
 
-=== Access requirements
+== Access requirements
 
 - Red Hat must have the `AdministratorAccess` policy applied to the `admin` role at all times in order to appropriately manage the {product-title} service.
 * Note: This only provides Red Hat with permissions and capabilities to affect resources in the customer-provided cloud account.
@@ -37,7 +37,7 @@ Red Hat will deploy monitoring into AWS or Google Cloud to alert Red Hat when a 
 
 - {product-title} CCS customers will be able to self-service role federation through the OpenShift Cluster Manager (OCM).
 
-=== Support requirements
+== Support requirements
 
 - Red Hat recommends that the customer have at least link:https://aws.amazon.com/premiumsupport/plans/[Business Support from AWS] or link:https://cloud.google.com/support[Production Support from Google Cloud].
 
@@ -47,7 +47,7 @@ Red Hat will deploy monitoring into AWS or Google Cloud to alert Red Hat when a 
 
 - Red Hat manages all {product-title} clusters in the same manner including the same restrictions, limitations, expectations, and defaults unless otherwise specified in this requirements section.
 
-=== Security requirements
+== Security requirements
 
 - Customer-provided IAM credentials should be unique to the customer-provided cloud account and should not be stored anywhere in the customer-provided cloud account.
 
@@ -61,4 +61,3 @@ Red Hat will deploy monitoring into AWS or Google Cloud to alert Red Hat when a 
 
 
 include::modules/aws-policy-ccs.adoc[leveloffset=+1]
-include::modules/gcp-policy-ccs.adoc[leveloffset=+1]
