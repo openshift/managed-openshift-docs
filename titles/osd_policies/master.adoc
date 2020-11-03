@@ -1,4 +1,6 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
+include::images[]
+
 
 // CHANGE TITLE HERE
 = {product-title} Policies
