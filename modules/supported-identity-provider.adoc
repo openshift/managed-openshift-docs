@@ -14,24 +14,24 @@ You can configure the following types of identity providers:
 |Description
 
 
-|xref:../modules/config-github-identity-provider.adoc#config-github-identity-provider[GitHub or GitHub Enterprise]
+|GitHub or GitHub Enterprise
 |Configure a `github` identity provider to validate user names and passwords
 against GitHub or GitHub Enterprise's OAuth authentication server.
 
-|xref:../modules/config-gitlab-identity-provider.adoc#config-gitlab-identity-provider[GitLab]
+|GitLab
 |Configure a `gitlab` identity provider to use
 link:https://gitlab.com/[GitLab.com] or any other GitLab instance as an identity
 provider.
 
-|xref:../modules/config-google-identity-provider.adoc#config-google-identity-provider[Google]
+|Google
 |Configure a `google` identity provider using
 link:https://developers.google.com/identity/protocols/OpenIDConnect[Google's OpenID Connect integration].
 
-|xref:../modules/config-ldap-identity-provider.adoc#conf-ldap-identity-provider[LDAP]
+|LDAP
 |Configure the `ldap` identity provider to validate user names and passwords
 against an LDAPv3 server, using simple bind authentication.
 
-|xref:../modules/config-oidc-identity-provider.adoc#config-oidc-identity-provider[OpenID Connect]
+|OpenID Connect
 |Configure an `oidc` identity provider to integrate with an OpenID Connect
 identity provider using an
 link:http://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth[Authorization Code Flow].

@@ -5,6 +5,8 @@
 [id="creating-your-cluster_{context}"]
 = Configuring a Google identity provider
 
+Configure a Google identity provider to allow users to authenticate with their Google credentials.
+
 .Prerequisite
 
 Configure a Google identity provider using
