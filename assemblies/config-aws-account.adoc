@@ -1,5 +1,5 @@
-[id="installing-aws-account"]
-= Configuring an AWS account
+[id="config-aws-account"]
+= Configuring your AWS account to use {product-title}
 include::_attributes/attributes-openshift-dedicated.adoc[]
 :context: installing-aws-account
 

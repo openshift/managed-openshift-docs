@@ -9,15 +9,14 @@ Red Hat recommends the usage of Organizations to manage multiple AWS accounts.
 
 The Organization, managed by the customer, hosts multiple AWS accounts. There is a root account in the organization that all accounts ultimately refer to in the account hierarchy.
 
-It is a best practice for the {product-title} CCS cluster to be hosted in an AWS account within an AWS Organizational Unit. A SCP is created and applied to the Organizational Unit that manages what services the AWS sub-accounts are permitted to access. The SCP applies only to available permissions within a single AWS account for all sub-accounts within the Organizational Unit. You can also apply a SCP to a single account. All other accounts in the customer’s Organization are managed in whatever manner the customer requires. Red Hat SRE will not have any control over SCPs within the AWS Organization.
-
 image::osd-aws-ccs.png[Red Hat recommended AWS Organization and Account structure]
 
+It is a best practice for the {product-title} CCS cluster to be hosted in an AWS account within an AWS Organizational Unit. A SCP is created and applied to the Organizational Unit that manages what services the AWS sub-accounts are permitted to access. The SCP applies only to available permissions within a single AWS account for all sub-accounts within the Organizational Unit. You can also apply a SCP to a single account. All other accounts in the customer’s Organization are managed in whatever manner the customer requires. Red Hat SRE will not have any control over SCPs within the AWS Organization.
 
 
 == Customer Procedure
 
-image::osd-aws-config[AWS configuration procedure]
+image::osd-aws-config.png[AWS configuration procedure]
 
 1. If the customer is utilizing AWS Organizations, you must use an AWS account within your organization or link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html#orgs_manage_accounts_create-new[create a new one].
 

@@ -1,8 +1,6 @@
+= Planning for OpenShift Dedicated
 include::_attributes/attributes-openshift-dedicated.adoc[]
 :imagesdir: images
-
-// CHANGE TITLE HERE
-= {product-title} Policies
 
 // INCLUDE ASSEMBLIES HERE
 include::assemblies/osd-policy-service-definition.adoc[]
@@ -10,3 +8,6 @@ include::assemblies/osd-policy-ccs-requirements.adoc[]
 include::assemblies/osd-policy-responsibility-matrix.adoc[]
 include::assemblies/osd-policy-process-security.adoc[]
 include::assemblies/osd-policy-understand-availability.adoc[]
+include::assemblies/rh-account-setup.adoc[]
+include::assemblies/config-aws-account.adoc[]
+include::assemblies/config-gcp-account.adoc[]

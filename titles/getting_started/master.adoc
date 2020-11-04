@@ -1,17 +1,13 @@
+= Getting started with {product-title}
 include::_attributes/attributes-openshift-dedicated.adoc[]
 
-// CHANGE TITLE HERE
-= Getting started with {product-title}
-
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/account-setup.adoc[]
+
 include::assemblies/creating-your-cluster.adoc[]
 include::assemblies/config-identity-providers.adoc[]
 include::assemblies/config-aws-private-connections.adoc[]
 include::assemblies/managing-admin-roles-and-users.adoc[]
-include::assemblies/.adoc[]
-include::assemblies/.adoc[]
-include::assemblies/.adoc[]
-include::assemblies/.adoc[]
-include::assemblies/.adoc[]
-include::assemblies/.adoc[]
+include::assemblies/osd-dns-custom-domains.adoc[]
+include::assemblies/osd-cluster-logging.adoc[]
+include::assemblies/working-with-quotas.adoc[]
+include::assemblies/configuring-egress-firewall.adoc[]

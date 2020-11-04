@@ -1,10 +1,10 @@
-include::_attributes/attributes-openshift-dedicated.adoc[]
+= Creating your cluster
 [id="creating-your-cluster]
 :context: creating-your-cluster
+include::_attributes/attributes-openshift-dedicated.adoc[]
 
-= Creating your cluster
 
-Once you have an {product-title} {product-version} subscription, you can access your services.
+Once you have an {product-title} subscription, you can access your services and create your cluster.
 
 include::modules/create-cluster.adoc[leveloffset=+1]
 
@@ -18,5 +18,8 @@ include::modules/create-aws-ccs-cluster.adoc[leveloffset=+1]
 .Additional resources
 
 * xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+
+// SF- Content GA 11/16/20
+// include::modules/create-gcp-ccs-cluster.adoc[leveloffset=+1]
 
 include::modules/access-cluster.adoc[leveloffset=+1]

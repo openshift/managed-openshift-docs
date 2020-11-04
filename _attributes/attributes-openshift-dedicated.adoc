@@ -2,3 +2,4 @@
 :product-title: OpenShift Dedicated
 :product-short-name: OpenShift Dedicated
 :product-version: 4.5
+:imagesdir: images
