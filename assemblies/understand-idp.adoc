@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="assembly-template"]
+:context: template-assembly
+
+= Assembly Title
+
+Here be content for this assembly for {product-title} {product-version}.
+
+include::modules/template-module.adoc[leveloffset=+1]

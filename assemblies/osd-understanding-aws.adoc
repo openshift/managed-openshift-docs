@@ -1,16 +1,12 @@
 // Module included in the following assemblies:
 //
-// * assemblies/aws-cloud-infrastructure-access.adoc
+// * assemblies/config-aws-private-connections.adoc
 
-[id="template_assembly_{context}"]
+[id="osd-understanding-aws_{context}"]
 = Understanding cloud infrastructure access
-include::modules/common-attributes.adoc[]
+include::_attributes/attributes-openshift-dedicated.adoc[]
 
-Amazon Web Services (AWS) infrastructure access permits
-link:https://access.redhat.com/node/3610411[Customer Portal Organization Administrators]
-and cluster owners to enable AWS Identity and Access Management (IAM) users to
-have federated access to the AWS Management Console for their {product-title}
-cluster.
+
 
 [id="enabling-aws-access"]
 == Enabling AWS access

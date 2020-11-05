@@ -17,9 +17,14 @@ include::modules/create-aws-ccs-cluster.adoc[leveloffset=+1]
 
 .Additional resources
 
-* xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+* xref:../assemblies/config-aws-account[Configuring your AWS account to use {product-title}]
 
 // SF- Content GA 11/16/20
 // include::modules/create-gcp-ccs-cluster.adoc[leveloffset=+1]
+
+//.Additional resources
+
+//* xref:../assemblies/config-gcp-account[Configuring your GCP account to use {product-title}]
+
 
 include::modules/access-cluster.adoc[leveloffset=+1]

@@ -9,7 +9,6 @@ Before you can configure access to an AWS infrastructure, you will need to set u
 
 .Procedure
 
-
 . Log in to your AWS account. If necessary, you can create a new AWS account by following the link:https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/[AWS documentation].
 
 . Create an IAM user with `STS:AllowAssumeRole` permissions within the AWS account.
@@ -20,8 +19,7 @@ Before you can configure access to an AWS infrastructure, you will need to set u
 
 .. Select the `JSON` tab and replace the existing text with the following:
 
-+
-[source,json]
++ 
 ----
   {
     "Version": "2012-10-17",
