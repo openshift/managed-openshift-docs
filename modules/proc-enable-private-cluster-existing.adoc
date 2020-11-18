@@ -1,0 +1,29 @@
+// Module included in the following assemblies:
+//
+// * assemblies/assembly-private-cluster.adoc
+
+[id="proc-private-cluster_{context}"]
+= Enabling an existing cluster to be private
+
+[role="_abstract"]
+After a cluster has been created, you can later enable the cluster to be private.
+
+.Prerequisites
+
+- The following private connections must be configured in AWS to allow private access:
+* AWS VPC Peering
+* VPN
+* DirectConnect
+* TransitGateway
+
+.Procedure
+
+. Access your cluster in the OpenShift Cluster Manager.
+. Navigate to the *Networking* tab.
+. Select *Make API private* under *Master API endpoint*
+. Click *Change settings*.
++
+[NOTE]
+====
+Transitioning your cluster between private and public can take several minutes to complete.
+====

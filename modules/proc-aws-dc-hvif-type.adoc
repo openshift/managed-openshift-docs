@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+//
+// * aws_private_connections/assembly-aws-dc.adoc
+
+[id="proc-aws-dc-hvif-type"]
+= Determining the type of Direct Connect connection
+
+[role="_abstract"]
+Before you can create the hosted VIF, you must first view the Direct Connect Virtual Interface details to determine the type of connection.
+
+.Prerequisites
+
+* {product-title} AWS Account ID.
+
+.Procedure
+
+. Log in to the OSD AWS Account Dashboard and select the correct region.
+. Select *Direct Connect* from the *Services* menu.
+. There will be one or more Virtual Interfaces waiting to be accepted, select one of them to view the *Summary*.
+. View the Virtual Interface type: private or public.
+. Record the *Amazon side ASN* value.
+
+If the Direct Connect Virtual Interface type is *Private*, a Virtual Private Gateway is created. If the Direct Connect Virtual Interface is *Public*, a Direct
+Connect Gateway is created.

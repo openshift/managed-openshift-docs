@@ -1,0 +1,20 @@
+// Module included in the following assemblies:
+//
+// * assemblies/assembly-aws-access.adoc
+
+[id="proc-aws-ocm-iam-role_{context}"]
+= Granting the IAM role from the OpenShift Cluster Manager
+
+[role="_abstract"]
+Once you have created an AWS account with the proper IAM permissions, you must grant the IAM role from *OpenShift Cluster Manger (OCM)*.
+
+.Procedure
+
+. Open the {product-title} Cluster Manager in your browser and select the cluster you want to allow AWS infrastructure access.
+. Select the *Access control* tab, and scroll to the *AWS Infrastructure Access* section.
+. Click *Grant role*.
+. Paste the AWS IAM ARN and select `Network Management` or `Read-only` permissions in the pop-up window, then click *Grant role*.
+. An *AWS OSD console URL* will generate, copy the URL to your clipboard when the status reads *Ready*.
+. Sign in to your AWS account with your Account ID or alias, IAM user name, and password.
+. In a new browser tab, paste the AWS OSD Console URL that will be used to route to the AWS Switch Role page.
+. Your account number and role will be filled in already. Choose a display name if necessary, then click *Switch Role*. You will now see *IAM* under *Recently visited services*.

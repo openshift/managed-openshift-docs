@@ -1,0 +1,10 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="assembly-release-notes"]
+:context: OSD-release-notes
+
+= Release notes
+
+[role="_abstract"]
+Here be content for this assembly for {product-name} {product-version}.
+
+include::modules/ref-whats-new.adoc[leveloffset=+1]

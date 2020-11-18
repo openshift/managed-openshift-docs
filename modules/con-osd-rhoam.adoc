@@ -1,0 +1,18 @@
+
+[id="con-osd-rhoam_{context}"]
+
+= Red Hat OpenShift API Management
+
+[role="_abstract"]
+The Red Hat OpenShift API Management service is available as an add-on to your {product-title} cluster. Red Hat OpenShift API Management is a managed API traffic control and API program management solution that is based on the 3scale API Management platform.
+Red Hat OpenShift API Management includes an implementation of the Red Hat Single Sign-on to secure and protect your API and for API Management (e.g. restricting access to your APIs and the 3scale Developer Portal) and not as a company-wide SSO solution. It is important to note that if you install the API Management Service on a cluster, it is configured to take resource priority over other workloads.
+Specifically other pods will be lower priority and may be killed to free space for API Management Service according to the table above.  To avoid this, please ensure that you have allocated enough compute resources to your OpenShift Dedicated cluster.
+When you install and configure the Red Hat OpenShift API Management Service it is automatically distributed to your {product-title} compute nodes; there is no way to control which nodes it is distributed to.
+
+
+Red Hat OpenShift API Management Service is available only on {product-title} clusters using an AWS cloud provider. {product-title} can be configured to be private, public, or public/private.  Red Hat OpenShift API Management is available in all of those configurations; however, the visibility of the clusters determines which APIs can be managed.  It is critical to test your configuration before releasing to production to validate that the routes are available and working as expected.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For more information, see the Red Hat OpenShift API Management documentation.

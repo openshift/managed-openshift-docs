@@ -1,0 +1,31 @@
+
+[id="proc-access-service_{context}"]
+
+= Accessing installed services on your cluster
+
+[role="_abstract"]
+Once you have successfully installed a service on your cluster, you can then access it through the {product-title} console.
+
+
+.Prerequisites
+
+* You have successfully installed a service on your {product-title} cluster.
+
+
+.Procedure
+
+. Navigate to the *Clusters* page in link:https://cloud.redhat.com/openshift/[OpenShift Cluster Manager].
+
+. Select the cluster with an installed service you want to access.
+
+. Navigate to the *Add-ons* tab, and locate the installed service you want to access.
+
+. Click *View on console* from within the service tile to open the {product-title} console.
+
+. Enter your credentials to log in to the {product-title} console.
+
+. Click the application switcher menu in the upper toolbar to access your installed Red Hat applications and services.
+
+. Select the service you want to open. A new browser tab will open and you will be required to authenticate through Red Hat Single Sign-On.
+
+You have now accessed your service and can begin using it.

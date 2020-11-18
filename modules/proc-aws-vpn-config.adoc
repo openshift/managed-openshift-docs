@@ -1,0 +1,26 @@
+// Module included in the following assemblies:
+//
+// * aws_private_connections/assembly-aws-vpn.adoc
+
+[id="proc-aws-vpn-config"]
+= Configuring the VPN connection
+
+.Procedure
+
+. Log in to the OSD AWS Account console, click *Services* -> *VPC* to access the VPC dashboard.
+. Click on *VPCs* and identify the name and VPC ID for the VPC containing the {product-title} cluster.
+. From the VPC Dashboard, click *Customer Gateway*.
+. Click *Create Customer Gateway* and give it a meaningful name.
+. Select the routing method: *Dynamic* or *Static*.
+..  If Dynamic, enter the *BGP ASN* in the field that appears.
+. Paste in the VPN gateway endpoint IP address.
+. Choose the *Certificate ARN* from the drop-down list.
+. Optional: Enter a *Device* identifier.
+. Click *Create Customer Gateway*.
+. If you do not already have a Virtual Private Gateway attached to the intended VPC:
+.. From the VPC Dashboard, click on *Virtual Private Gateways*.
+.. Click *Create Virtual Private Gateway* and give it a meaningful name.
+.. Leave the default Amazon default ASN.
+.. Click *Create Virtual Private Gateway*.
+.. Select the newly created gateway, and click *Attach to VPC* from the *Actions* drop-down menu.
+.. Select the VPC you identified earlier from the drop-down list, and click *Yes, Attach*.

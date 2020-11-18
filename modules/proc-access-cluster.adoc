@@ -1,0 +1,16 @@
+// Module included in the following assemblies:
+//
+// * assemblies/assembly-creating-your-cluster.adoc
+// * getting_started/assembly-quickstart-osd.adoc
+
+[id="proc-access-cluster_{context}"]
+= Accessing your cluster
+
+To access your {product-title} cluster:
+
+. From link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift], click
+ on the cluster you want to access.
+
+ . Click *Open Console*.
+
+ . Click on your identity provider and provide your credentials to log into the cluster.

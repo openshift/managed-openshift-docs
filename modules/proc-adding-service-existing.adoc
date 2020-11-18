@@ -1,0 +1,27 @@
+
+[id="proc-adding-service-existing_{context}"]
+
+= Adding on a service to your cluster
+
+[role="_abstract"]
+You can add on a service to an existing {product-title} cluster through the OpenShift Cluster Manager (OCM).
+
+
+.Prerequisites
+
+- You already have an {product-title} cluster created and provisioned.
+- Verify that your cluster meets all prerequisites necessary for the service you want to add on to your cluster.
+
+
+.Procedure
+
+. Navigate to the *Clusters* page in link:https://cloud.redhat.com/openshift/[OpenShift Cluster Manager].
+
+. Select the cluster you want to add a service to.
+
+. Click the *Add-ons* tab.
+
+. Navigate to the service you want to add, click *Install* in the tile space for the service. An installing icon will appear to indicate that the service has begun installing.
+
+
+A green check mark will appear in the service tile when the installation is complete. When the service is *Installed*, you can click *View in console* to access the service.

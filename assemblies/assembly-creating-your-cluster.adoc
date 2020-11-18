@@ -1,0 +1,32 @@
+= Creating your cluster
+[id="creating-your-cluster]
+:context: creating-your-cluster
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+
+Once you have an {product-title} subscription, you can access your services and create your cluster.
+
+include::modules/proc_create-cluster.adoc[leveloffset=+1]
+
+.Additional resources
+
+* xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+* xref:../assemblies/config-aws-account[Configuring your AWS account to use {product-title}]
+//* xref:../assemblies/config-gcp-account[Configuring your GCP account to use {product-title}]
+
+include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
+
+.Additional resources
+
+* xref:../assemblies/config-aws-account[Configuring your AWS account to use {product-title}]
+* xref:../assemblies/aws-ccs-policy[Requirements for an AWS CCS cluster]
+* xref:../assemblies/config-aws-private-connections[Configuring private connections for AWS]
+
+include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
+
+.Additional resources
+
+* xref:../assemblies/config-gcp-account[Configuring your GCP account to use {product-title}]
+* xref:../assemblies/gcp-ccs-policy[Requirements for a GCP CCS cluster]
+
+include::modules/proc-access-cluster.adoc[leveloffset=+1]
