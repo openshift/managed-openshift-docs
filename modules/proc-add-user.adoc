@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * getting_started/assembly-quickstart-osd.adoc
+// * assemblies/assembly-quickstart-osd.adoc
 
 [id="proc-add-user_{context}"]
 = Adding a user

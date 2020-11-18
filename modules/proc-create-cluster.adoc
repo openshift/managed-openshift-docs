@@ -1,6 +1,8 @@
 // Module included in the following assemblies:
 //
-// * assemblies/creating-your-cluster.adoc
+// * assemblies/assembly-creating-your-cluster.adoc
+// * assemblies/assembly-quickstart-osd.adoc
+
 
 [id="proc_create-cluster_{context}"]
 = Creating a cluster

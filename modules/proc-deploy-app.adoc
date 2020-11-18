@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * getting_started/assembly-quickstart-osd.adoc
+// * assemblies/assembly-quickstart-osd.adoc
 
 [id="proc-deploy-app_{context}"]
 = Deploying an app with the OpenShift service catalog

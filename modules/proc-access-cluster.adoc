@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 //
 // * assemblies/assembly-creating-your-cluster.adoc
-// * getting_started/assembly-quickstart-osd.adoc
+// * assemblies/assembly-quickstart-osd.adoc
 
 [id="proc-access-cluster_{context}"]
 = Accessing your cluster

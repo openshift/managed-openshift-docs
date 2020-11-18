@@ -1,6 +1,7 @@
 // Module included in the following assemblies:
 //
 // * assemblies/assembly-config-identity-providers.adoc
+// * assemblies/assembly-quickstart-osd.adoc
 
 [id="proc-conig-gitlab-idp_{context}"]
 = Configuring a Gitlab identity provider

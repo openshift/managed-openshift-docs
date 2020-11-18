@@ -3,11 +3,4 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 // INCLUDE ASSEMBLIES HERE
 
-include::assemblies/creating-your-cluster.adoc[]
-include::assemblies/config-identity-providers.adoc[]
-include::assemblies/config-aws-private-connections.adoc[]
-include::assemblies/managing-admin-roles-and-users.adoc[]
-include::assemblies/osd-dns-custom-domains.adoc[]
-include::assemblies/osd-cluster-logging.adoc[]
-include::assemblies/working-with-quotas.adoc[]
-include::assemblies/configuring-egress-firewall.adoc[]
+include::assemblies/assembly-quickstart-osd.adoc[]

@@ -1,5 +1,5 @@
 = Creating your cluster
-[id="creating-your-cluster]
+[id="assembly-creating-your-cluster]
 :context: creating-your-cluster
 include::_attributes/attributes-openshift-dedicated.adoc[]
 
