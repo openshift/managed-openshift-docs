@@ -1,8 +1,0 @@
-// Module included in the following assemblies:
-//
-// * assemblies/osd-cluster-logging.adoc
-
-[id="viewing-cluster-logs_{context}"]
-= Viewing cluster logs
-
-Detail OCM and Kibana here.

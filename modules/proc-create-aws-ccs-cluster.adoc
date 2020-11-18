@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * assemblies/creating-your-cluster.adoc
+// * assemblies/assembly-creating-your-cluster.adoc
 
 [id="create-aws-ccs-cluster_{context}"]
 = Creating an AWS CCS Cluster

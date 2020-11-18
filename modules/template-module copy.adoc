@@ -1,8 +1,0 @@
-// Module included in the following assemblies:
-//
-// * assemblies/template-assembly.adoc
-
-[id="template_assembly_{context}"]
-= Template module
-
-Here be content for this module.

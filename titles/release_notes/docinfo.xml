@@ -1,8 +1,8 @@
 <title>Release notes</title>
-<productname>{product-name}</productname>
-<productnumber>{product-version}</productnumber>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
 <abstract>
-    <para>Release notes for {product-title}</para>
+    <para>Release notes for {product-title}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat OpenShift Documentation Team</orgname>

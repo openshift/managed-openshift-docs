@@ -1,8 +1,0 @@
-// Module included in the following assemblies:
-//
-// * assemblies/release-notes.adoc
-
-[id="whats-new_{context}"]
-= Whats new
-
-Here be content for this module.

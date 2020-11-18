@@ -1,10 +1,10 @@
 // Module included in the following assemblies:
 //
-// * assemblies/creating-your-cluster.adoc
+// * assemblies/assembly-creating-your-cluster.adoc
 
 //SF- Commenting out cluster privacy settings coming soon. ONLY FOR CCS!
 
-[id="create-gcp-ccs-cluster_{context}"]
+[id="proc-create-gcp-ccs-cluster_{context}"]
 = Creating a GCP CCS Cluster
 
 You can create a {product-title} cluster with a Customer Cloud Subscription (CCS) on Google Cloud Platform (GCP). With this subscription option, the cluster will be provisioned in a GCP account owned by you or your company. This allows you to pay GCP directly for public cloud costs, leveraging your existing relationship.
