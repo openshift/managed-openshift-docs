@@ -1,11 +1,11 @@
-<title>Adding a service to your cluster/title>
-<productname>{product-name}</productname>
-<productnumber>{product-version}</productnumber>
-<subtitle>ENTER SUB-TITLE HERE</subtitle>
+<title>Adding a service to your cluster</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
 <abstract>
-    <para>ENTER ABSTRACT HERE</para>
+    <para>You can add on services to your OpenShift Dedicated cluster.</para>
 </abstract>
 <authorgroup>
-    <orgname>OpenShift Docs Team</orgname>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
 </authorgroup>
 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
