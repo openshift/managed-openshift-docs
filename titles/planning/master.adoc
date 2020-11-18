@@ -3,11 +3,10 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 :imagesdir: images
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/osd-policy-service-definition.adoc[]
-include::assemblies/osd-policy-ccs-requirements.adoc[]
-include::assemblies/osd-policy-responsibility-matrix.adoc[]
-include::assemblies/osd-policy-process-security.adoc[]
-include::assemblies/osd-policy-understand-availability.adoc[]
-include::assemblies/rh-account-setup.adoc[]
-include::assemblies/config-aws-account.adoc[]
-include::assemblies/config-gcp-account.adoc[]
+
+include::assemblies/assembly-rh-account-setup.adoc[]
+include::assemblies/assembly-planning-ccs-requirements.adoc[]
+include::assemblies/assembly-aws-policy-ccs.adoc[]
+include::assemblies/.adoc[]
+include::assemblies/.adoc[]
+include::assemblies/.adoc[]

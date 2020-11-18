@@ -5,8 +5,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = {product-title} Policies
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/osd-policy-service-definition.adoc[]
-include::assemblies/osd-policy-ccs-requirements.adoc[]
-include::assemblies/osd-policy-responsibility-matrix.adoc[]
-include::assemblies/osd-policy-process-security.adoc[]
-include::assemblies/osd-policy-understand-availability.adoc[]
+include::assemblies/assembly-osd-service-definition.adoc[]
+include::assemblies/assembly-policy-responsibility-matrix.adoc[]
+include::assemblies/assembly-policy-process-security.adoc[]
+include::assemblies/assembly-policy-understand-availability.adoc[]
