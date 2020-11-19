@@ -9,7 +9,7 @@ Once your {product-title} cluster is created, you must configure your identity p
 include::modules/ref-supported-idp.adoc[leveloffset=+1]
 include::modules/ref-idp-paramaters.adoc[leveloffset=+1]
 include::modules/proc-config-github-idp.adoc[leveloffset=+1]
-include::modules/proc-conig-gitlab-idp.adoc[leveloffset=+1]
+include::modules/proc-config-gitlab-idp.adoc[leveloffset=+1]
 include::modules/proc-config-google-idp.adoc[leveloffset=+1]
 include::modules/proc-config-ldap-idp.adoc[leveloffset=+1]
 include::modules/proc-config-openid-idp.adoc[leveloffset=+1]
