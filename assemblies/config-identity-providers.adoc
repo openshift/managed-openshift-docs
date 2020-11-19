@@ -6,9 +6,9 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 Once your {product-title} cluster is created, you must configure your identity providers. Identity providers determine how users log into the cluster.
 
-include::modules/supported-identity-provider.adoc[leveloffset=+1]
-include::modules/identity-provider-paramaters.adoc[leveloffset=+1]
-include::modules/config-github-identity-provider.adoc[leveloffset=+1]
+include::modules/ref-supported-identity-provider.adoc[leveloffset=+1]
+include::modules/ref-identity-provider-paramaters.adoc[leveloffset=+1]
+include::modules/proc-config-github-identity-provider.adoc[leveloffset=+1]
 include::modules/config-gitlab-identity-provider.adoc[leveloffset=+1]
 include::modules/config-google-identity-provider.adoc[leveloffset=+1]
 include::modules/config-ldap-identity-provider.adoc[leveloffset=+1]

@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Creating and provisioning your cluster
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/assembly-creating-your-cluster.adoc[]
+include::assemblies/assembly-config-identity-providers.adoc[]
+//include::assemblies/template-assembly.adoc[]

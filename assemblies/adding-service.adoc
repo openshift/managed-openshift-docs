@@ -1,9 +1,0 @@
-include::_attributes/attributes-openshift-dedicated.adoc[]
-[id="adding-service"]
-:context: adding-service
-
-= Adding a service
-
-Here be content for this assembly for {product-title} {product-version}.
-
-include::modules/template-module.adoc[leveloffset=+1]

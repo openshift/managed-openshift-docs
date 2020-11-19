@@ -7,11 +7,12 @@
 [id="proc_create-cluster_{context}"]
 = Creating a cluster
 
+[role="_abstract"]
 You can create a standard {product-title} cluster, which deploys in cloud provider accounts owned by Red Hat.
 
 .Procedure
 
-. Log in to link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift].
+. Log in to link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)].
 
 . Click *Create Cluster* -> *Red Hat OpenShift Dedicated*.
 

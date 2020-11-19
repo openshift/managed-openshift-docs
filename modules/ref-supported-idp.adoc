@@ -3,8 +3,9 @@
 // * assemblies/assembly-config-identity-providers.adoc
 
 [id="ref-supported-idp_{context}"]
-== Supported identity providers
+= Supported identity providers
 
+[role="_abstract"]
 You can configure the following types of identity providers:
 
 [cols="2a,8a",options="header"]
