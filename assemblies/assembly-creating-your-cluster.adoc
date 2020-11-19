@@ -6,30 +6,39 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 [role="_abstract"]
 Once you have an {product-title} subscription, you can access your services and create your cluster.
 
+//Create a standard cluster
 include::modules/proc-create-cluster.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
+.Next Steps
+
+* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
+
+[role="_additional-resources"]
 .Additional resources
 
 * xref:../assemblies/assembly-config-aws-private-connections[Configuring private connections for AWS]
-* xref:../assemblies/assembly-config-aws-account[Configuring your AWS account to use {product-title}]
-* xref:../assemblies/assembly-config-gcp-account[Configuring your GCP account to use {product-title}]
 
+//Create AWS CCS cluster
 include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
-.Additional resources
+.Next Steps
 
-* xref:../assemblies/assembly-config-aws-account[Configuring your AWS account to use {product-title}]
-* xref:../assemblies/assembly-aws-ccs[Requirements for an AWS CCS cluster]
-* xref:../assemblies/assembly-config-aws-private-connections[Configuring private connections for AWS]
-
-include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
+* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
 
 [role="_additional-resources"]
 .Additional resources
 
-* xref:../assemblies/assembly-config-gcp-account[Configuring your GCP account to use {product-title}]
-* xref:../assemblies/assembly-gcp-ccs[Requirements for a GCP CCS cluster]
+* xref:../assemblies/assembly-config-aws-private-connections[Configuring private connections for AWS]
 
+// Create GCP CCS cluster
+include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Next Steps
+
+* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
+
+// Accessing the cluster
 include::modules/proc-access-cluster.adoc[leveloffset=+1]

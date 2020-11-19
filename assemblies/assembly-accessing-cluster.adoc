@@ -1,0 +1,10 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="assembly-accessing-cluster"]
+= Accessing the cluster
+:context: assembly-accessing-cluster
+
+[role="_abstract"]
+Once your cluster has been created and provisioned, you can access it from the OpenShift Cluster Manager (OCM).
+
+include::modules/proc-access-cluster.adoc[leveloffset=+1]

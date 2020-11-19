@@ -2,7 +2,7 @@
 //
 // * assemblies/assembly-private-cluster.adoc
 
-[id="proc-private-cluster_{context}"]
+[id="proc-enable-private-cluster-new_{context}"]
 = Enabling a private cluster during cluster creation
 
 [role="_abstract"]

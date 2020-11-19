@@ -2,7 +2,7 @@
 //
 // * assemblies/assembly-private-cluster.adoc
 
-[id="proc-private-cluster_{context}"]
+[id="proc-enable-private-cluster-existing_{context}"]
 = Enabling an existing cluster to be private
 
 [role="_abstract"]
