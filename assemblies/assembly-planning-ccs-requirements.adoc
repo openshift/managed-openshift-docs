@@ -7,4 +7,6 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 [role="_abstract"]
 Red Hat {product-title} provides a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage {product-title} into a customer's AWS or Google Cloud account. Red Hat requires several prerequisites be met in order to provide this service. This service is supported by Red Hat Site Reliability Engineers (SRE).
 
+There are currently three offerings of Red Hat 
+
 include::modules/con-ccs-requirements.adoc[leveloffset=+1]

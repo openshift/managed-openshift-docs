@@ -1,4 +1,4 @@
-= Planning for OpenShift Dedicated
+= Planning for {product-title}
 include::_attributes/attributes-openshift-dedicated.adoc[]
 :imagesdir: images
 
@@ -6,7 +6,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 include::assemblies/assembly-rh-account-setup.adoc[]
 include::assemblies/assembly-planning-ccs-requirements.adoc[]
-include::assemblies/assembly-aws-policy-ccs.adoc[]
-include::assemblies/.adoc[]
+include::assemblies/assembly-aws-ccs.adoc[]
+include::assemblies/assembly-gcp-ccs.adoc[]
 include::assemblies/.adoc[]
 include::assemblies/.adoc[]

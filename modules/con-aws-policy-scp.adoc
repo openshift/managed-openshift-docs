@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * assemblies/assembly-aws-policy-ccs.adoc
+// * assemblies/assembly-aws-ccs.adoc
 
 [id="con-aws-policy-scp_{context}"]
 = Minimum required Service Control Policy (SCP)

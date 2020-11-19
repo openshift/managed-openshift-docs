@@ -6,7 +6,9 @@
 [id="proc-access-cluster_{context}"]
 = Accessing your cluster
 
-To access your {product-title} cluster:
+Once your cluster has been created and provisioned, you can access it from the OpenShift Cluster Manager (OCM).
+
+.Procedure
 
 . From link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift], click
  on the cluster you want to access.

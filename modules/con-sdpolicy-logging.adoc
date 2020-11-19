@@ -5,7 +5,7 @@
 [id="con-sdpolicy-logging_{context}"]
 = Logging
 
-{product-title} includes an optional logging stack based on Elasticsearch, Fluentd, and Kibana (EFK). When deployed, a three shard Elasticsearch cluster with 16GB of allocated memory and 4GB heap is deployed with one replica per shard. The logging stack in OpenShift is designed for short-term retention to aid application troubleshooting, not for long-term log archiving.
+{product-title} includes an optional logging stack based on Elasticsearch, Fluentd, and Kibana (EFK). When deployed, a three shard Elasticsearch cluster is deployed with one replica per shard. The logging stack in OpenShift is designed for short-term retention to aid application troubleshooting, not for long-term log archiving.
 
 == Cluster operations logging
 Red Hat provides services to maintain the health and performance of each {product-title} cluster and its components. This includes cluster operations and audit logs. Cluster operations logs are enabled through the optional Cluster Logging Operator and Elasticsearch Operator as described in the {product-title} product documentation. When deployed, the cluster will aggregate cluster logs from the OpenShift cluster, nodes, and pods and retain them for 1 hour to assist the SRE team in cluster troubleshooting. It is not intended for customers to have access to operations logs, they will remain under full control of Red Hat.

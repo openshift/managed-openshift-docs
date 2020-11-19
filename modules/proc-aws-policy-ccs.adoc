@@ -1,12 +1,12 @@
 // Module included in the following assemblies:
 //
-// * assemblies/assembly-aws-policy-ccs.adoc
+// * assemblies/assembly-aws-ccs.adoc
 
 [id="proc-aws-policy-ccs_{context}"]
-= Customer Procedure
+= Required customer procedure
 
 [role="_abstract"]
-Customers are responsible for
+The CCS model allows Red Hat to deploy and manage OpenShift managed services into a customer’s AWS account. Red Hat requires several prerequisites in order to provide these services.
 
 .Procedure
 
