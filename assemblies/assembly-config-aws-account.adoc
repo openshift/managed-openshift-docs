@@ -1,0 +1,19 @@
+[id="assembly-config-aws-account"]
+= Configuring your AWS account to use {product-title}
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: installing-aws-account
+
+[role="_abstract"]
+Before you can install {product-title}, you must configure an Amazon Web Services (AWS) account.
+
+include::modules/proc-aws-route53.adoc[leveloffset=+1]
+
+include::modules/ref-nw-endpoint-route53.adoc[leveloffset=+2]
+
+include::modules/ref-aws-limits.adoc[leveloffset=+1]
+
+include::modules/ref-aws-permissions.adoc[leveloffset=+1]
+
+include::modules/proc-aws-iam-user.adoc[leveloffset=+1]
+
+include::modules/ref-aws-regions.adoc[leveloffset=+1]
