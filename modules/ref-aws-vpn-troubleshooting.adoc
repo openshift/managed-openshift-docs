@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-vpn.adoc
+// *assemblies/assembly-aws-vpn.adoc
 
 [id="ref-aws-vpn-troubleshooting"]
 = Troubleshooting the VPN connection

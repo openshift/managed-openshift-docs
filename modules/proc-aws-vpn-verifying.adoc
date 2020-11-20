@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-vpn.adoc
+// *assemblies/assembly-aws-vpn.adoc
 
 [id="proc-aws-vpn-verifying"]
 = Verifying the VPN connection
@@ -10,7 +10,7 @@ After you have set up your side of the VPN tunnel, you can verify that the tunne
 
 .Prerequisites
 
-* Created a VPN connection.
+* You have created a VPN connection.
 
 .Procedure
 

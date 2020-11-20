@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-vpn.adoc
+// *assemblies/assembly-aws-vpn.adoc
 
 [id="proc-aws-vpn-establishing"]
 = Establishing the VPN Connection
@@ -11,7 +11,9 @@ After you have configured the VPN connection, you must establish the VPN connect
 .Procedure
 
 . Log in to the OSD AWS Account console, click *Services* -> *VPC* to access the VPC dashboard.
+
 . Click on *Site-to-Site VPN Connections*.
+
 . Click *Create VPN Connection*.
 .. Enter a unique name tag.
 .. Select *Virtual Private Gateway* and select the previously created gateway from the drop-down list.
@@ -24,10 +26,8 @@ After you have configured the VPN connection, you must establish the VPN connect
 .. Click *Create VPN Connection*.
 .. Wait for VPN status to change to *Available*, approximately 5 to 10 minutes.
 . Select the VPN you just created and click *Download Configuration*.
-.. From the dropdown list, select the vendor, platform, and version of the customer
-gateway device, then click *Download*.
-.. The *Generic* vendor configuration is also available for retrieving information
-in a plain text format.
+.. From the dropdown list, select the vendor, platform, and version of the customer gateway device, then click *Download*.
+.. The *Generic* vendor configuration is also available for retrieving information in a plain text format.
 
 [NOTE]
 ====
