@@ -20,16 +20,6 @@ Routing all traffic, for example `0.0.0.0/0`, through a private connection is no
 
 For more information about connecting an AWS VPC to remote networks using a hardware VPN device, see the Amazon VPC link:https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html[VPN Connections] documentation.
 
-.Prerequisites
-
-* Hardware VPN gateway device model and software version, for example Cisco ASA
-running version 8.3. See the Amazon VPC
-link:https://docs.aws.amazon.com/vpc/latest/adminguide/Introduction.html#DevicesTested[Network Administrator Guide]
-to confirm whether your gateway device is supported by AWS.
-* Public, static IP address for the VPN gateway device.
-* BGP or static routing: if BGP, the ASN is required. If static routing, you must
-configure at least one static route.
-* Optional: IP and Port/Protocol of a reachable service to test the VPN connection.
 
 include::modules/proc-aws-vpn-config.adoc[leveloffset=+1]
 include::modules/proc-aws-vpn-establishing.adoc[leveloffset=+1]
