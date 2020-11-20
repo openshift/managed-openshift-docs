@@ -1,8 +1,0 @@
-include::_attributes/attributes-openshift-dedicated.adoc[]
-[id="managing-admin-roles-and-users"]
-:context: managing-admin-roles-and-users
-
-= Managing administration roles and users
-
-include::modules/dedicated-administrator-role.adoc[leveloffset=+1]
-include::modules/cluster-administrator-role.adoc[leveloffset=+1]

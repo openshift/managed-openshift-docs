@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-peering.adoc
+// * assemblies/assembly-aws-peering.adoc
 
 [id="ref-aws-vpc-peering-terms"]
 = VPC peering terms

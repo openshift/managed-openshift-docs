@@ -1,8 +1,0 @@
-// Module included in the following assemblies:
-//
-// * assemblies/account-setup.adoc
-
-[id="account-setup_{context}"]
-= Setting up your Google Cloud Platform account
-
-Here be content for this module.

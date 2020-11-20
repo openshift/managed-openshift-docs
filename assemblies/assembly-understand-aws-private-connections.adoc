@@ -8,9 +8,6 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 [role="_abstract"]
 Amazon Web Services (AWS) permits link:https://access.redhat.com/node/3610411[Customer Portal Organization Administrators] and cluster owners to enable AWS Identity and Access Management (IAM) users to have federated access to the AWS Management Console for their {product-title} cluster. This AWS access is necessary if the cluster privacy is set to *Private*. You cannot access your private cluster until you configure private connections in AWS.
 
-//Note: Customer Cloud Subscription (CCS) clusters for {product-title} are deployed by Red Hat with these prerequisites already met for private clusters.
-
-
 .Prerequisites
 
 - An AWS user and account has been created.

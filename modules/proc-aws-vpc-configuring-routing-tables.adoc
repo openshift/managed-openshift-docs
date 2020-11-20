@@ -1,12 +1,12 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-peering.adoc
+// * assemblies/assembly-aws-peering.adoc
 
 [id="proc-aws-vpc-configuring-routing-tables"]
 = Configuring the routing tables
 
 [role="_abstract"]
-After you accept the VPC peering request, both VPCs must configure their routes to communicate across the peering connection.
+After you accept the VPC peering request, the routes for both VPCs must be configured to communicate across the peering connection.
 
 .Prerequisites
 
@@ -20,8 +20,7 @@ After you accept the VPC peering request, both VPCs must configure their routes 
 +
 [NOTE]
 ====
-On some clusters, there may be more than one route table for a particular VPC.
-Select the private one that has a number of explicitly associated subnets.
+On some clusters, there may be more than one route table for a particular VPC. Select the private one that has a number of explicitly associated subnets.
 ====
 
 . Select the *Routes* tab, then *Edit routes*.

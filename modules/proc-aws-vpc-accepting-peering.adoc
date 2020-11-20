@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * aws_private_conncections/assembly-aws-peering.adoc
+// * assemblies/assembly-aws-peering.adoc
 
 [id="proc-aws-vpc-accepting-peering"]
 = Accepting the VPC peer request

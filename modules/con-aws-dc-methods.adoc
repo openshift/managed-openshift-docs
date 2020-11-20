@@ -1,10 +1,11 @@
 // Module included in the following assemblies:
 //
-// * aws_private_connections/assembly-aws-dc.adoc
+// * assemblies/assembly-aws-direct-connect.adoc
 
 [id="con-aws-dc-methods"]
 = AWS Direct Connect methods
 
+[role="_abstract"]
 A Direct Connect connection requires a hosted Virtual Interface (VIF) connected to a Direct Connect Gateway (DXGateway), which is in turn associated to a Virtual Gateway (VGW) or a Transit Gateway in order to access a remote VPC in the same or another account.
 
 If you do not have an existing DXGateway, the typical process involves creating the hosted VIF, with the DXGateway and VGW being created in the OSD AWS Account.

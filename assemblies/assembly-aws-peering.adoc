@@ -7,7 +7,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 This sample process configures an Amazon Web Services (AWS) VPC containing an {product-title} cluster to peer with another AWS VPC network. For more information about creating an AWS VPC Peering connection or for other possible configurations, see the link:http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide/Welcome.html[AWS VPC Peering] guide.
 
 
-[IMPORTANT]
+[WARNING]
 ====
 Private clusters cannot be fully deleted by the OpenShift Cluster Manager (OCM) if the VPC the cluster is installed in is peered.
 ====
@@ -17,7 +17,7 @@ include::modules/proc-aws-vpc-initiating-peering.adoc[leveloffset=+1]
 
 .Additional resources
 
-* xref:../aws_private_conncections/assembly-aws-access.adoc#proc-aws-ocm-iam-role[Logging into the Web Console for the OSD AWS Account]
+* xref:proc-aws-ocm-iam-role[Logging into the Web Console for the OSD AWS Account]
 
 include::modules/proc-aws-vpc-accepting-peering.adoc[leveloffset=+1]
 include::modules/proc-aws-vpc-configuring-routing-tables.adoc[leveloffset=+1]

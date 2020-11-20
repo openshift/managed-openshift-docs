@@ -6,4 +6,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 // INCLUDE ASSEMBLIES HERE
 include::assemblies/assembly-understand-aws-private-connections.adoc[]
 include::assemblies/assembly-aws-access.adoc[]
-include::assemblies/assembly-assembly-aws-peering.adoc[]
+include::assemblies/assembly-aws-peering.adoc[]
+include::assemblies/assembly-aws-vpn.adoc[]
+include::assemblies/assembly-aws-direct-connect.adoc[]
+include::assemblies/assembly-private-cluster.adoc[]

@@ -1,7 +1,0 @@
-[id="osd-dns-custom-domains"]
-= Configuring your custom domain
-:context: osd-dns-custom-domains
-include::_attributes/attributes-openshift-dedicated.adoc[]
-
-include::modules/osd-configuring-your-application-routes.adoc[leveloffset=+1]
-include::modules/osd-exposing-TCP-services.adoc[leveloffset=+1]
