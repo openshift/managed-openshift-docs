@@ -12,7 +12,7 @@ include::modules/proc-create-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Next Steps
 
-* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
+* xref:assembly-config-identity-providers[Configuring your identity providers]
 
 [role="_additional-resources"]
 .Additional resources
@@ -25,7 +25,7 @@ include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Next Steps
 
-* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
+* xref:assembly-config-identity-providers[Configuring your identity providers]
 
 [role="_additional-resources"]
 .Additional resources
@@ -38,7 +38,7 @@ include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Next Steps
 
-* xref:../assemblies/assembly-config-identity-providers[Configuring your identity providers]
+* xref:assembly-config-identity-providers[Configuring your identity providers]
 
 // Accessing the cluster
 include::modules/proc-access-cluster.adoc[leveloffset=+1]
