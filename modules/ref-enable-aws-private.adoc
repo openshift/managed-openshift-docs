@@ -6,14 +6,14 @@
 After you have access to the OpenShift Dedicated AWS account, use one or more of the following methods to establish a private connection to your cluster:
 
 
-- xref:assembly-aws-peering.adoc#dedicated-aws-peering[Configuring AWS VPC peering]: Enable VPC peering to route network traffic between two private IP addresses.
+- xref:assembly-aws-peering.adoc[Configuring AWS VPC peering]: Enable VPC peering to route network traffic between two private IP addresses.
 
-- xref:ssembly-aws-vpn.adoc#dedicated-aws-vpn[Configuring AWS VPN]: Establish a Virtual Private Network to securely connect your private network to your Amazon Virtual Private Cloud.
+- xref:ssembly-aws-vpn.adoc[Configuring AWS VPN]: Establish a Virtual Private Network to securely connect your private network to your Amazon Virtual Private Cloud.
 
-- xref:assembly-aws-dc.adoc#dedicated-aws-dc[Configuring AWS Direct Connect]: Configure AWS Direct Connect to establish a dedicated network connection between your private network and an AWS Direct Connect location.
+- xref:assembly-aws-dc.adoc[Configuring AWS Direct Connect]: Configure AWS Direct Connect to establish a dedicated network connection between your private network and an AWS Direct Connect location.
 
 
 [role="_additional-resources"]
 .Next steps
 
-- After configuring your cloud infrastructure access, learn more about xref:assembly-aws-private-cluster.adoc#assembly-aws-private-cluster[Configuring a private cluster].
+- After configuring your cloud infrastructure access, learn more about xref:assembly-aws-private-cluster.adoc[Configuring a private cluster].

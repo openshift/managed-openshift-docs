@@ -15,7 +15,9 @@ After you accept the VPC peering request, the routes for both VPCs must be confi
 .Procedure
 
 . Log in to the AWS Web Console for the OSD AWS Account.
+
 . Navigate to the *VPC Service*, then *Route Tables*.
+
 . Select the Route Table for the {product-title} Cluster VPC.
 +
 [NOTE]
@@ -24,8 +26,11 @@ On some clusters, there may be more than one route table for a particular VPC. S
 ====
 
 . Select the *Routes* tab, then *Edit routes*.
+
 . Enter the Customer VPC CIDR block for the *Destination*.
+
 . Enter the Peering Connection ID for the *Target*.
+
 . Click *Save routes*.
 
 . You must complete the same process with the other VPC's CIDR block:
