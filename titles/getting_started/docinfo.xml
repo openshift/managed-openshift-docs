@@ -1,7 +1,7 @@
-<title>Getting started</title>
+<title>Getting started with OpenShift Dedicated</title>
 <productname>OpenShift Dedicated</productname>
 <productnumber>4.5</productnumber>
-<subtitle>Getting started with OpenShift Dedicated</subtitle>
+<subtitle></subtitle>
 <abstract>
     <para>Create a cluster, access the cluster, and deploy an application to get started with {product-title}. </para>
 </abstract>
