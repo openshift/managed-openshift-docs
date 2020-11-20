@@ -14,11 +14,6 @@ Private clusters cannot be fully deleted by the OpenShift Cluster Manager (OCM) 
 
 include::modules/ref-aws-vpc-peering-terms.adoc[leveloffset=+1]
 include::modules/proc-aws-vpc-initiating-peering.adoc[leveloffset=+1]
-
-//.Additional resources
-
-//* xref:proc-aws-ocm-iam-role[Logging into the Web Console for the OSD AWS Account]
-
 include::modules/proc-aws-vpc-accepting-peering.adoc[leveloffset=+1]
 include::modules/proc-aws-vpc-configuring-routing-tables.adoc[leveloffset=+1]
 include::modules/proc-aws-vpc-verifying-troubleshooting.adoc[leveloffset=+1]
