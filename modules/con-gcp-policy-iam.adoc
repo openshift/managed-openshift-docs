@@ -6,7 +6,7 @@
 [role="_abstract"]
 Red Hat is responsible for creating the following Google Cloud resources.
 
-== IAM users and roles
+== IAM user and roles
 
 The `osd-managed-admin` IAM service account is created immediately after taking control of the customer-provided GCP account. This is the user that will be performing the {product-title} cluster install.
 
@@ -51,10 +51,11 @@ When applied to an individual *bucket*, control applies only to the specified bu
 
 |===
 
+== Google group and roles
 
-The `sd-sre-platform-gcp-access` IAM service account is created to allow Red Hat Site Reliability Engineering (SRE) access to the console for emergency troubleshooting purposes.
+The `sd-sre-platform-gcp-access` Google group is created to allow Red Hat Site Reliability Engineering (SRE) access to the console for emergency troubleshooting purposes.
 
-The following roles are attached to the service account:
+The following roles are attached to the group:
 
 .IAM roles for sd-sre-platform-gcp-access
 [cols="2a,3a,2a",options="header"]
