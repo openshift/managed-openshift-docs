@@ -17,7 +17,7 @@ include::modules/proc-create-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Additional resources
 
-* xref:assembly-config-aws-private-connections[Configuring private connections for AWS]
+* xref:../assemblies/assembly-config-aws-private-connections[Configuring private connections for AWS]
 
 //Create AWS CCS cluster
 include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
@@ -30,7 +30,7 @@ include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Additional resources
 
-* xref:assembly-config-aws-private-connections[Configuring private connections for AWS]
+* xref:../assemblies/assembly-config-aws-private-connections[Configuring private connections for AWS]
 
 // Create GCP CCS cluster
 include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
