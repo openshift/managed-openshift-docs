@@ -53,7 +53,7 @@ When applied to an individual *bucket*, control applies only to the specified bu
 
 == Google group and roles
 
-The `sd-sre-platform-gcp-access` Google group is created to allow Red Hat Site Reliability Engineering (SRE) access to the console for emergency troubleshooting purposes.
+The `sd-sre-platform-gcp-access@redhat.com` Google group is granted access to the GCP project to allow Red Hat Site Reliability Engineering (SRE) access to the console for emergency troubleshooting purposes.
 
 The following roles are attached to the group:
 
