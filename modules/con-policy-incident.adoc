@@ -6,7 +6,7 @@
 = Incident and operations management
 
 [role="_abstract"]
-This documentation details the Red Hat responsibilities for the OpenShift Dedicated managed service.
+This documentation details the Red Hat responsibilities for the {product-title} managed service.
 
 
 == Platform monitoring

@@ -27,7 +27,7 @@ Red Hat SRE adheres to the principle of least privilege when accessing {product-
 
 Each of these access types have different levels of access to components:
 
-[cols= "4a,6a,5a,4a,3a",options="header"]
+[cols= "2a,2a,2a,2a,2a",options="header"]
 
 |===
 
@@ -52,7 +52,7 @@ In Google Cloud, SREs access resources after being authenticated against a Red H
 == Red Hat support access
 Members of the Red Hat CEE team will typically have read-only access to parts of the cluster. Specifically, CEE has limited access to the core and product namespaces and does not have access to the customer namespaces.
 
-[cols= "2a,4a,4a,4a,4a",options="header"]
+[cols= "2a,2a,2a,2a,2a",options="header"]
 
 |===
 

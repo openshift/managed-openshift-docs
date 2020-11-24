@@ -55,7 +55,7 @@ An authorized SRE reviewer must approve advancement to each step. The reviewer m
 
 OpenShift Container Platform software and the underlying immutable Red Hat Enterprise Linux CoreOS (RHCOS) operating system image are patched for bugs and vulnerabilities as a side effect of regular z-stream upgrades. Read more about link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.6/html/architecture/architecture-rhcos[RHCOS architecture] in the OpenShift Container Platform documentation.
 
-== Relase management
+== Release management
 
 {product-title} clusters are upgraded as frequently as weekly to ensure the latest security patches and bug fixes are applied to {product-title} clusters.
 
