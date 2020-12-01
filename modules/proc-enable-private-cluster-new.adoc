@@ -10,11 +10,13 @@ You can enable private cluster settings when creating a new cluster.
 
 .Prerequisites
 
-- The following private connections must be configured in AWS to allow private access:
-* AWS VPC Peering
-* VPN
-* DirectConnect
-* TransitGateway
+- The following private connections must be configured to allow private access:
+* VPC Peering
+* Cloud VPN
+* DirectConnect (AWS only)
+* TransitGateway (AWS only)
+* Cloud Interconnect (GCP only)
+
 
 .Procedure
 

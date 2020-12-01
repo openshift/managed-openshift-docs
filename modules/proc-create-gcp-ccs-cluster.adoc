@@ -2,8 +2,6 @@
 //
 // * assemblies/assembly-creating-your-cluster.adoc
 
-//SF- Commenting out cluster privacy settings coming soon. ONLY FOR CCS!
-
 [id="proc-create-gcp-ccs-cluster_{context}"]
 = Creating a GCP CCS Cluster
 
@@ -14,8 +12,8 @@ You can create a {product-title} cluster with a Customer Cloud Subscription (CCS
 
 - Your GCP account has been configured for use with {product-title}.
 - Your Google Cloud account has the necessary resource quotas and limits to support the desired cluster size.
-- A GCP project has already been created. Note: The `projectID` length should not be more than 10 characters.
-- An IAM service account in GCP called `osdCcsAdmin` with the following roles attached:
+- A GCP project has already been created. Note: The project name must be 10 characters or less.
+- An IAM service account in GCP called `osd-ccs-admin` with the following roles attached:
   * DNS Administrator
   * Organization Policy Viewer Owner
   * Project IAM Admin
@@ -47,9 +45,7 @@ You can create a {product-title} cluster with a Customer Cloud Subscription (CCS
 . Optional: Expand *Edit node labels* to add labels to your nodes. Labels must be comma separated pairs in key=value format.
 
 . The *Basic* Network configuration is selected by default. This setting creates a new VPC for your cluster using the default values.
-If you want to configure your networking IP ranges,
-// or set your cluster privacy
-select *Advanced*. The following are the default ranges available for your networking IP ranges:
+If you want to configure your networking IP ranges, or set your cluster privacy, select *Advanced*. The following are the default ranges available for your networking IP ranges:
 
 .. Node CIDR: 10.0.0.0/16
 

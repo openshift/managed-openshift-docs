@@ -2,10 +2,10 @@
 = Understanding OpenShift Dedicated
 include::_attributes/attributes-openshift-dedicated.adoc[]
 :context: osd-overview
+:imagesdir: images
 
 [role="_abstract"]
 {product-title} is a fully managed service of Red Hat OpenShift on Amazon Web Services (AWS) and Google Cloud (GCP). {product-title} is configured for high-availability and dedicated to a single customer, which reduces operational complexity and helps you to focus on building and scaling applications that add more value to your business.
 
-include::modules/TEMPLATE_CONCEPT_explaining_a_concept.adoc[leveloffset=+1]
-
+include::modules/con-osd-overview.adoc[leveloffset=+1]
 include::modules/ref-osd-vs-ocp.adoc[leveloffset=+1]

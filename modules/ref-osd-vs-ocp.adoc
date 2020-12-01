@@ -1,6 +1,6 @@
 [id="ref-osd-vs-ocp{context}"]
 
-= Compare OpenShift Dedicated to Red Hat OpenShift Container Platform
+= Comparing OpenShift Dedicated to Red Hat OpenShift Container Platform
 
 [role="_abstract"]
 Because {product-title} is a fully managed service, many of the {product-title} components and settings that you manually set up in Red Hat OpenShift Container Platform are set up for you by default. Review the following differences between {product-title} and and a standard installation of Red Hat OpenShift Container Platform on your own infrastructure.
@@ -28,7 +28,7 @@ Because {product-title} is a fully managed service, many of the {product-title} 
 |You are responsible for updating the underlying infrastructure for the master and worker nodes. You can use the OpenShift web console to update RHOCP versions.
 |Red Hat automatically applies updates to the master, and provides version updates and security patch updates for the worker nodes.
 
-|Support is provided per the terms of your Red Hat subscription or cloud provider. 
+|Support is provided per the terms of your Red Hat subscription or cloud provider.
 |Engineered, operated, and supported by Red Hat with a 99.95% uptime SLA and link:https://access.redhat.com/support/offerings/openshift/sla[24x7] coverage.
 
 |====

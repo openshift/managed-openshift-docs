@@ -34,7 +34,7 @@ If you want to configure your networking IP ranges or set your cluster privacy, 
 +
 [IMPORTANT]
 ====
-Private clusters are only enabled for AWS at this time. If the cluster privacy is set to *Private*, you will not be able to access your cluster until you configure private connections in your cloud provider.
+Private clusters are only enabled for Google Cloud with a Customer Cloud Subscription (CCS). For AWS, private clusters are supported for standard and CCS clusters. If the cluster privacy is set to *Private*, you will not be able to access your cluster until you configure private connections in your cloud provider.
 ====
 +
 The following are the default ranges available for your networking IP ranges:
