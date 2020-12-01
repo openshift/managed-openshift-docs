@@ -1,0 +1,10 @@
+server: https://pantheon.stage.corp.redhat.com
+repository: 4.5
+variants:
+
+assemblies:
+  - assemblies/*.adoc    
+modules:
+  - modules/*.adoc
+resources:
+  - images/*.png
