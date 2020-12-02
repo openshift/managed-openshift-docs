@@ -1,6 +1,9 @@
-server: https://pantheon.stage.corp.redhat.com
+server: https://pantheon.corp.stage.redhat.com
 repository: 4.5
 variants:
+  - name: global-attributes
+    path: _attributes/attributes-openshift-dedicated.adoc
+    canonical: true
 
 assemblies:
   - assemblies/*.adoc    
