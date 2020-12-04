@@ -58,11 +58,13 @@ following are the default ranges available for your networking IP ranges:
 [IMPORTANT]
 ====
 CIDR configurations cannot be changed later. Confirm your selections with your network administrator before proceeding.
+
+If the cluster privacy is set to *Private*, you will not be able to access your cluster until you configure private connections in your cloud provider.
 ====
 
-. Select your cluster update method. *Manual* is selected by default, but you can select the *Automatic* option if you want your clusters to be automatically upgraded based on your defined day and start time when new versions are available. If you opt for automatic upgrades, you must specify the preferred day of the week and the time (UTC) for the upgrade to start.
+. Select your cluster update method. *Manual* is selected by default. If you want your clusters to be automatically upgraded when new versions are available, select the *Automatic* option. If you opt for automatic upgrades, you must specify the preferred day of the week and the time (UTC) for the upgrade to start.
 
-. (Optional) You can set a time-based grace period for *Node Draining* during cluster upgrades. *1 hour* is selected by default.
+. Optional: You can set a grace period for *Node Draining* during cluster upgrades. A *1 hour* grace period is set by default.
 
 . Click *Create cluster*. The cluster creation process begins and will take about 30-40 minutes to complete.
 
