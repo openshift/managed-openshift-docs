@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Upgrading your {product-title} cluster
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/template.adoc[]

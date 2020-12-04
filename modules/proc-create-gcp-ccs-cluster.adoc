@@ -61,6 +61,10 @@ If you want to configure your networking IP ranges, or set your cluster privacy,
 CIDR configurations cannot be changed later. Confirm your selections with your network administrator before proceeding.
 ====
 
+. Select your cluster update method. *Manual* is selected by default, but you can select the *Automatic* option if you want your clusters to be automatically upgraded based on your defined day and start time when new versions are available. If you opt for automatic upgrades, you must specify the preferred day of the week and the time (UTC) for the upgrade to start.
+
+. (Optional) You can set a time-based grace period for *Node Draining* during cluster upgrades. *1 hour* is selected by default.
+
 . Click *Create cluster*. The cluster creation process begins and will take about 30-40 minutes to complete.
 
 The *Installing cluster* heading, under the *Overview* tab, will indicate the cluster is installing and you can view the installation logs from this heading. The *Status*

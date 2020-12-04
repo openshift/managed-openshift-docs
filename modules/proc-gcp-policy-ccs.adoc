@@ -87,9 +87,6 @@ The following roles must be link:https://cloud.google.com/iam/docs/granting-role
 |Owner
 |`roles/owner`
 
-|Project Deleter
-|`roles/resourcemanager.projectDeleter`
-
 |Project IAM Admin
 |`roles/resourcemanager.projectIamAdmin`
 
