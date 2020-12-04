@@ -32,7 +32,7 @@ You can use the OpenShift Cluster Manager (OCM) to manually upgrade your {produc
 
 . A confirmation will appear when the cluster upgrade has been scheduled. Click *Close*.
 
-. Optional: Set a grace period for *Node draining* by selecting a designated amount of time from the drop down list. A 30 minute grace period is set by default.
+. Optional: Set a grace period for *Node draining* by selecting a designated amount of time from the drop down list. A 60 minute grace period is set by default.
 
 From the *Overview* tab, next to the cluster version, the UI will notate that the upgrade has been scheduled. Click *View details* to view the upgrade details. If you need to cancel the scheduled upgrade, you can click *Cancel this upgrade* from the *View Details* pop-up.
 

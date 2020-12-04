@@ -4,4 +4,4 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Upgrading your {product-title} cluster
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/template.adoc[]
+include::assemblies/assembly-upgrades.adoc[]

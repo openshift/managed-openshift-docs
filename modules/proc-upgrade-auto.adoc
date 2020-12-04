@@ -7,7 +7,7 @@
 = Automatically upgrading your cluster through OCM
 
 [role="_abstract"]
-You can use the OpenShift Cluster Manager (OCM) to automatically upgrade your {product-title} cluster on a weekly basis. Based on upstream changes, there will times when no updates are released. Therefore, no upgrade will occur for that week.
+You can use the OpenShift Cluster Manager (OCM) to automatically upgrade your {product-title} cluster on a weekly basis. Based on upstream changes, there will be times when no updates are released. Therefore, no upgrade will occur for that week.
 
 [NOTE]
 ====
@@ -26,9 +26,9 @@ Once an automatic upgrade policy has been set, you can only edit or delete the u
 
 . Click *Save*.
 
-. Optional: Set a grace period for *Node draining* by selecting a designated amount of time from the drop down list. A 30 minute grace period is set by default.
+. Optional: Set a grace period for *Node draining* by selecting a designated amount of time from the drop down list. A 60 minute grace period is set by default.
 
-On the *Upgrade settings* tab, the *Upgrade status* box will indicate that an upgrade is scheduled. The date and time at of the next scheduled update will be listed.
+On the *Upgrade settings* tab, the *Upgrade status* box will indicate that an upgrade is scheduled. The date and time of the next scheduled update will be listed.
 
 [WARNING]
 ====
