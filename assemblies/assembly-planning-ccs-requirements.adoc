@@ -9,9 +9,9 @@ Red Hat {product-title} provides a Customer Cloud Subscription (CCS) model that 
 
 There are currently three offerings of Red Hat OpenShift managed services:
 
-. Red Hat OpenShift Dedicated on AWS
-. Red Hat OpenShift Dedicated on Google Cloud
-. Red Hat OpenShift Service on AWS (ROSA)
+- Red Hat OpenShift Dedicated on AWS
+- Red Hat OpenShift Dedicated on Google Cloud
+- Red Hat OpenShift Service on AWS (ROSA)
 
 
 
