@@ -17,9 +17,8 @@ include::modules/proc-create-cluster.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Additional resources
 
-* xref:../assemblies/assembly-understand-aws-private-connections.adoc[Configuring private connections for AWS]
-//* link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_aws/index?lb_target=production[Configuring private connections for AWS]
-* xref:../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+* link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_aws/index?lb_target=production[Configuring private connections for AWS]
+//* xref:../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
 
 //Create AWS CCS cluster
 include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
@@ -33,7 +32,7 @@ include::modules/proc-create-aws-ccs-cluster.adoc[leveloffset=+1]
 .Additional resources
 
 * link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_aws/index?lb_target=production[Configuring private connections for AWS]
-* xref:../../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+//* xref:../../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
 
 // Create GCP CCS cluster
 include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
@@ -47,7 +46,7 @@ include::modules/proc-create-gcp-ccs-cluster.adoc[leveloffset=+1]
 .Additional resources
 
 * link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_gcp/index?lb_target=production[Configuring private connections for Google Cloud]
-* xref:../../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+//* xref:../../assemblies/assembly-upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
 
 // Accessing the cluster
 include::modules/proc-access-cluster.adoc[leveloffset=+1]
