@@ -24,7 +24,7 @@ You can use the OpenShift Cluster Manager (OCM) to manually upgrade your {produc
 
 . To schedule your upgrade:
 - Click *Upgrade now* to upgrade within the next hour.
-- Click *Schedule a different time* and specify the date and time (UTC) you want the cluster to upgrade.
+- Click *Schedule a different time* and specify the date and time you want the cluster to upgrade.
 
 . Click *Next*
 

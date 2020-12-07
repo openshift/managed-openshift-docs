@@ -9,14 +9,13 @@
 [role="_abstract"]
 When upgrades are made available for your {product-title} cluster, you can upgrade to the newest version through the OpenShift Cluster Manager (OCM) or the OCM CLI. You can set your upgrade policies on existing clusters or during cluster creation, and upgrades can be scheduled to occur automatically or manually.
 
-Red Hat Site Reliability Engineers (SRE) will provide a curated list of available versions for your {product-title} clusters. For each cluster you will be able to review the full list of available releases, as well as the corresponding release notes. OCM will enable installation of clusters at the latest supported versions.
+Red Hat Site Reliability Engineers (SRE) will provide a curated list of available versions for your {product-title} clusters. For each cluster you will be able to review the full list of available releases, as well as the corresponding release notes. OCM will enable installation of clusters at the latest supported versions, and upgrades can be cancelled at any time.
 
 You can also set a grace period for how long `PodDisruptionBudget` protected workloads will be respected during upgrades. After this grace period, any workloads protected by  `PodDisruptionBudget` that have not been successfully drained from a node, will be forcibly deleted.
 
 [NOTE]
 ====
-Complete object store backups are taken prior to upgrading the cluster.
-====
+All Kubernetes objects and PVs in each {product-title} cluster are backed up as part of the {product-title} service. Application and application data backups are not a part of the {product-title} service. Ensure you have a backup policy in place for your applications and application data prior to scheduling upgrades.
 
 == Automatic upgrades
 
@@ -55,7 +54,3 @@ The following notifications will be received in the event that CVE is found:
 - CVE upgrade completed
 
 At any time, you may upgrade your cluster manually from OCM.
-
-== Upgrade support
-
-Should something go wrong during a cluster upgrade, the cluster will trigger an alert. The alert will engage the SRE team, who will investigate the alert and respond accordingly.
