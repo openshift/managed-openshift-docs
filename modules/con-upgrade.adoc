@@ -16,6 +16,7 @@ You can also set a grace period for how long `PodDisruptionBudget` protected wor
 [NOTE]
 ====
 All Kubernetes objects and PVs in each {product-title} cluster are backed up as part of the {product-title} service. Application and application data backups are not a part of the {product-title} service. Ensure you have a backup policy in place for your applications and application data prior to scheduling upgrades.
+====
 
 == Automatic upgrades
 
