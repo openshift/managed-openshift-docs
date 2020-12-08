@@ -7,7 +7,12 @@
 = Configuring a GitHub identity provider
 
 [role="_abstract"]
-Configure a GitHub identity provider to access your {product-title} cluster.
+Configure a GitHub identity provider to validate user names and passwords against GitHub or GitHub Enterprise’s OAuth authentication server and access your {product-title} cluster.OAuth facilitates a token exchange flow between {product-title} and GitHub or GitHub Enterprise.
+
+[WARNING]
+====
+Configuring GitHub authentication allows users to log in to {product-title} with their GitHub credentials. To prevent anyone with any GitHub user ID from logging in to your {product-title} cluster, you can restrict access to only those in specific GitHub organizations.
+====
 
 .Procedure
 
