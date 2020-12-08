@@ -11,7 +11,7 @@ Configure a GitHub identity provider to validate user names and passwords agains
 
 [WARNING]
 ====
-Configuring GitHub authentication allows users to log in to {product-title} with their GitHub credentials. To prevent anyone with any GitHub user ID from logging in to your {product-title} cluster, you can restrict access to only those in specific GitHub organizations.
+Configuring GitHub authentication allows users to log in to {product-title} with their GitHub credentials. To prevent anyone with any GitHub user ID from logging in to your {product-title} cluster, you must restrict access to only those in specific GitHub organizations.
 ====
 
 .Procedure
