@@ -1,5 +1,5 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
-[id="assembly-notifications.adoc"]
+[id="assembly-notifications"]
 :context: assembly-keyword
 
 = Notifications for {product-title} clusters
