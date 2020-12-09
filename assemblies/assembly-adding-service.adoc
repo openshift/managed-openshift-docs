@@ -9,3 +9,4 @@ You can add on services to your existing {product-title} clusters.
 
 include::modules/proc-adding-service-existing.adoc[leveloffset=+1]
 include::modules/proc-access-service.adoc[leveloffset=+1]
+include::modules/proc-deleting-service.adoc[leveloffset=+1]

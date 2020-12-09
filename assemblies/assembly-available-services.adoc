@@ -1,4 +1,5 @@
 
+
 include::_attributes/attributes-openshift-dedicated.adoc[]
 [id="assembly-available-services"]
 = Add-on services available for {product-title}

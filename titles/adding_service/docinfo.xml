@@ -1,9 +1,9 @@
-<title>Adding a service to your cluster</title>
+<title>Adding on a service to your {product-title} cluster</title>
 <productname>OpenShift Dedicated</productname>
 <productnumber>4.5</productnumber>
 <subtitle></subtitle>
 <abstract>
-    <para>You can add on services to your OpenShift Dedicated cluster.</para>
+    <para>You can add on services to your {product-title} cluster.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat OpenShift Documentation Team</orgname>
