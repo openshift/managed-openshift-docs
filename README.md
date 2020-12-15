@@ -1,15 +1,17 @@
-This is the development and production branch for the revamped OpenShift Dedicated docs.
+This is the development and production branch for the revamped OpenShift Managed services docs.
 
 Content merged here will appear in stage preview mode. If it passes acks, you can publish it live via Pantheon here: https://pantheon.int.us-west.aws.prod.paas.redhat.com/#/titles/openshift_dedicated/4.5.
 
-An attempt has been made to make this branch and workflow compatible with Pantheon V2. However, as that product is under active development, we are not splitting hairs trying to conform to all its guidelines currently. This branch and workflow will work for Pantheon V1 completely as that is the current available build system.
+An attempt has been made to make this branch and workflow compatible with Pantheon V2. However, as that product is under active development, we are not splitting hairs trying to conform to all its guidelines currently. This branch and workflow will work for Pantheon V1 completely.
+
+This is very much a WIP. Things will change and break. Go ahead and break them so we can get it right eventually before GA.
 
 ## Get started
-To get started, clone this repo on your local machine (no need to fork into your own GitLab instance, _for now_):
+To get started, fork this repo into your own GitHub space, and then clone on your local machine:
 
 ```
-git clone git@gitlab.cee.redhat.com:red-hat-openshift-dedicated-documentation/doc-4.git
-cd doc-4
+git clone git@gitlab.cee.redhat.com:<<your-github-username>>/managed-openshift-docs.git
+cd managed-openshift-docs
 git checkout 4.5
 ```
 
@@ -41,12 +43,19 @@ git commit -m "<Add change description>"
 git push origin 4.5
 ```
 
-## Rebase against origin
+## Set your upstream
+Set up your upstream repo (we will call it github here)
+
+```
+git remote add github https://github.com/openshift/managed-openshift-docs
+```
+
+## Rebase against upstream
 In case others have made changes, you should rebase before pushing your content in:
 
 ```
-git fetch origin 4.5
-git rebase origin/4.5
+git fetch github 4.5
+git rebase github/4.5
 ```
 ## Workflow
 
@@ -54,5 +63,4 @@ git rebase origin/4.5
 * Push them to the repo.
 * If adding a new title, add them via Pantheon. See the example Pantheon `Template` book.
 * Check your titles in Pantheon for build failures. Make changes if required.
-* Get QE/Peer review acks in Pantheon stage builds.
 * Make live via Pantheon when time is right.
