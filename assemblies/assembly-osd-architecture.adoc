@@ -1,0 +1,14 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: osd-architecture
+[id="assembly-osd-architecture"]
+= {product-title} architecture
+
+
+[role="_abstract"]
+{product-title} is a fully managed service of Red Hat OpenShift on Amazon Web Services (AWS) and Google Cloud.
+
+include::modules/con-osd-intro.adoc[leveloffset=+1]
+
+include::modules/con-kubernetes-about.adoc[leveloffset=+1]
+
+include::modules/con-container-benefits.adoc[leveloffset=+1]

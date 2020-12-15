@@ -1,0 +1,14 @@
+[id="assembly-aws-access"]
+= Configuring AWS infrastructure access
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: assembly-aws-access
+
+[role="_abstract"]
+Amazon Web Services (AWS) infrastructure access allows link:https://access.redhat.com/node/3610411[Customer Portal Organization Administrators] and cluster owners to enable AWS Identity and Access Management (IAM) users to have federated access to the AWS Management Console for their {product-title} cluster. Administrators can select between Network Management or Read-only access options.
+
+.Prerequisites
+
+* An AWS account with IAM permissions.
+
+include::modules/proc-aws-account-creation.adoc[leveloffset=+1]
+include::modules/proc-aws-ocm-iam-role.adoc[leveloffset=+1]

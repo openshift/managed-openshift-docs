@@ -1,0 +1,8 @@
+= Getting started with {product-title}
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/assembly-quickstart-osd.adoc[]
+include::assemblies/assembly-scaling-your-cluster.adoc[]
+include::assemblies/assembly-deleting-your-cluster.adoc[]

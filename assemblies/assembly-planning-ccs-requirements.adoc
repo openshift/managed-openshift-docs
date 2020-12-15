@@ -1,0 +1,18 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="assembly-planning-ccs-requirements"]
+:context: osd-ccs-requirements
+
+= Requirements for Customer Cloud Subscriptions (CCS)
+
+[role="_abstract"]
+Red Hat {product-title} provides a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage {product-title} into a customer's AWS or Google Cloud account. Red Hat requires several prerequisites be met in order to provide this service. This service is supported by Red Hat Site Reliability Engineers (SRE).
+
+There are currently three offerings of Red Hat OpenShift managed services:
+
+- Red Hat OpenShift Dedicated on AWS
+- Red Hat OpenShift Dedicated on Google Cloud
+- Red Hat OpenShift Service on AWS (ROSA)
+
+
+
+include::modules/con-ccs-requirements.adoc[leveloffset=+1]

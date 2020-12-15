@@ -1,0 +1,26 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="assembly-control-plane"]
+:context: assembly-control-plane
+
+= Understanding the {product-title} control plane
+
+
+[role="_abstract"]
+The control plane, which is composed of master machines, manages the {product-title} cluster. The control plane machines manage workloads on the compute machines, which are also known as worker machines. The cluster itself manages all upgrades to the machines by the actions of the Cluster Version Operator, the Machine Config Operator, and a set of individual Operators.
+
+
+include::modules/adoc[leveloffset=+1]
+include::modules/adoc[leveloffset=+1]
+include::modules/adoc[leveloffset=+1]
+
+
+[role="_additional-resources"]
+== Additional resources (or Next steps) (optional)
+
+* A bulleted list of links to other material closely related to the contents of the assembly, including xref links to other assemblies in your collection.
+* For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,11 @@
+<title>Notifications and upgrading your {product-title} cluster</title>
+<productname>{product-title}</productname>
+<productnumber>{product-version}</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>You can view cluster notifications and suscribe users to email notifications. You can also schedule automatic or manual upgrade policies to update the version of your {product-title} clusters.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

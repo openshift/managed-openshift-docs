@@ -1,0 +1,20 @@
+[id="assembly-quickstart-osd"]
+= Quick start
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: osd-quickstart
+
+[role="_abstract"]
+Once you have an OpenShift Dedicated subscription, you can access your services. Use this quick start guide to create a cluster, configure access through a GitHub identity provider, and deploy your first application. 
+
+include::modules/proc-create-cluster.adoc[leveloffset=+1]
+include::modules/proc-config-github-idp.adoc[leveloffset=+1]
+include::modules/proc-add-user.adoc[leveloffset=+1]
+include::modules/proc-access-cluster.adoc[leveloffset=+1]
+include::modules/proc-deploy-app.adoc[leveloffset=+1]
+
+
+//[role="_next-steps"]
+//== Next Steps
+
+//- Pick a curated learning path to guide you through {product-title}.
+//** xref:../../installing/installing_aws/installing-aws-default.adoc#installing-aws-default[Quickly install a cluster] with default options on installer-provisioned infrastructure

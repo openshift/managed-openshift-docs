@@ -1,0 +1,27 @@
+// Module included in the following assemblies:
+//
+// * assemblies/assembly-aws-peering.adoc
+
+[id="proc-aws-vpc-accepting-peering"]
+= Accepting the VPC peer request
+
+[role="_abstract"]
+After you create the VPC peering connection, you must accept the request in the Customer AWS Account.
+
+.Prerequisites
+
+* Initiate the VPC peer request.
+
+.Procedure
+
+. Log in to the AWS Web Console.
+
+. Navigate to *VPC Service*.
+
+. Go to *VPC Peering Connections*.
+
+. Click on *Pending peering connection*.
+
+. Confirm the AWS Account and VPC ID that the request originated from. This should be from the OSD AWS Account and {product-title} Cluster VPC.
+
+. Click *Yes, Accept*. A second confirmation dialog displays; choose *Modify my route tables now* to go directly to the route tables page, or choose *Close* to do this later.

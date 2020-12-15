@@ -1,0 +1,11 @@
+// Module included in the following assemblies:
+//
+// * assemblies/assembly-osd-overview.adoc
+
+[id="template_assembly_{context}"]
+= Introduction to {product-title}
+
+[role="_abstract"]
+{product-title} is a complete OpenShift cluster provided as a cloud service, configured for high availability, and dedicated to a single customer.
+
+{product-title} is professionally managed by Red Hat and hosted on AWS or Google Cloud. Each {product-title} cluster comes with a fully managed control plane (Master and Infrastructure nodes), application nodes, installation and management by Red Hat Site Reliability Engineers (SRE), premium Red Hat Support, and cluster services such as logging, metrics, monitoring, notifications portal, and a cluster portal.

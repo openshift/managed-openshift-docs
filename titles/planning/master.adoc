@@ -1,0 +1,12 @@
+= Planning for {product-title}
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/assembly-rh-account-setup.adoc[]
+include::assemblies/assembly-planning-ccs-requirements.adoc[]
+include::assemblies/assembly-aws-ccs.adoc[]
+include::assemblies/assembly-gcp-ccs.adoc[]
+include::assemblies/assembly-config-aws-account.adoc[]
+include::assemblies/assembly-config-gcp-account.adoc[]

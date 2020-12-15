@@ -1,0 +1,19 @@
+[id="assembly-aws-direct-connect"]
+= Configuring AWS Direct Connect
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: assembly-aws-direct-connect
+
+[role="_abstract"]
+This process describes accepting an AWS Direct Connect virtual interface with {product-title}. For more information about AWS Direct Connect types and configuration, see the link:https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html#overview-components[AWS Direct Connect components] documentation.
+
+include::modules/con-aws-dc-methods.adoc[leveloffset=+1]
+include::modules/proc-aws-dc-hvif-type.adoc[leveloffset=+1]
+include::modules/proc-aws-dc-hvif-private.adoc[leveloffset=+1]
+include::modules/proc-aws-dc-hvif-public.adoc[leveloffset=+1]
+include::modules/proc-aws-dc-hvif-verifying.adoc[leveloffset=+1]
+include::modules/proc-aws-dc-existing.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Additional resources
+
+Troubleshooting information can be found in the link:https://docs.aws.amazon.com/directconnect/latest/UserGuide/Troubleshooting.html[Troubleshooting AWS Direct Connect] documentation.
