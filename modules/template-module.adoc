@@ -1,19 +1,11 @@
 // Module included in the following assemblies:
 //
-// * assemblies/template-assembly.adoc
+// * assemblies/assembly-osd-overview.adoc
 
 [id="template_assembly_{context}"]
-= Template module
+= Introduction to {product-title}
 
 [role="_abstract"]
-A short introductory paragraph that provides an overview of the module is required. Procedure modules should include both what users will do and why users want to do it.
-The `[role="system:abstract"]` tag defines the first paragraph of the module for search metadata.
+{product-title} is a complete OpenShift cluster provided as a cloud service, configured for high availability, and dedicated to a single customer.
 
-
-[role="_additional-resources"]
-.Additional resources (optional)
-
-* A bulleted list of links to other material closely related to the contents of the procedure module.
-* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-* For more details on writing procedure modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+{product-title} is professionally managed by Red Hat and hosted on AWS or Google Cloud. Each {product-title} cluster comes with a fully managed control plane (Master and Infrastructure nodes), application nodes, installation and management by Red Hat Site Reliability Engineers (SRE), premium Red Hat Support, and cluster services such as logging, metrics, monitoring, notifications portal, and a cluster portal.
