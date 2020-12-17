@@ -1,0 +1,36 @@
+:system-module-type: PROCEDURE
+// Module included in the following assemblies:
+//
+// * assemblies/aws-direct-connect.adoc
+
+[id="aws-dc-hvif-public"]
+= Creating a Public Direct Connect
+
+[role="_abstract"]
+A Public Direct Connect is created if the Direct Connect Virtual Interface type is Public.
+
+.Procedure
+
+. Log in to the OSD AWS Account Dashboard and select the correct region.
+
+. From the OSD AWS Account region, select *Direct Connect* from the *Services* menu.
+
+. Select *Direct Connect Gateways* and *Create Direct Connect Gateway*.
+
+. Give the Direct Connect Gateway a suitable name.
+
+. In the *Amazon side ASN*, enter the Amazon side ASN value gathered previously.
+
+. Create the Direct Connect Gateway.
+
+. Select *Direct Connect* from the *Services* menu.
+
+. Select one of the Direct Connect Virtual Interfaces from the list.
+
+. Acknowledge the *I understand that Direct Connect port charges apply once I click Accept Connection* message, then choose *Accept Connection*.
+
+. Choose to *Accept* the Direct Connect Gateway Connection and select the Direct Connect Gateway that was created in the previous steps.
+
+. Click *Accept* to accept the connection.
+
+. Repeat the previous steps if there is more than one Virtual Interface.

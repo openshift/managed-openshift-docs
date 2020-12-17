@@ -1,0 +1,23 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="understand-gcp-private-connections"]
+= Understanding private connections for Google Cloud
+:context: osd-understanding-gcp-private
+
+
+[role="_abstract"]
+Google Cloud (GCP) permits link:https://access.redhat.com/node/3610411[Customer Portal Organization Administrators] and cluster owners to enable privacy for their {product-title} cluster. If the cluster privacy is set to *Private*, you cannot access your private cluster until you configure private connections in GCP.
+
+.Prerequisites
+
+- Your GCP account has been configured for use with {product-title}. 
++
+[NOTE]
+====
+At this time, private clusters are only enabled for Customer Cloud Subscriptions (CCS) on GCP.
+====
+
+- A GCP user and project has been created.
+- The GCP user has access to the OpenShift Dedicated GCP account.
+
+include::modules/enable-gcp-private.adoc[leveloffset=+1]

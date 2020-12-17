@@ -4,9 +4,9 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Configuring private connections for AWS
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/assembly-understand-aws-private-connections.adoc[]
-include::assemblies/assembly-aws-access.adoc[]
-include::assemblies/assembly-aws-peering.adoc[]
-include::assemblies/assembly-aws-vpn.adoc[]
-include::assemblies/assembly-aws-direct-connect.adoc[]
-include::assemblies/assembly-private-cluster.adoc[]
+include::assemblies/understand-aws-private-connections.adoc[]
+include::assemblies/aws-access.adoc[]
+include::assemblies/aws-peering.adoc[]
+include::assemblies/aws-vpn.adoc[]
+include::assemblies/aws-direct-connect.adoc[]
+include::assemblies/private-cluster.adoc[]

@@ -1,6 +1,0 @@
-[id="assembly-scaling-your-cluster"]
-= Scaling your cluster
-include::_attributes/attributes-openshift-dedicated.adoc[]
-:context: scaling-cluster
-
-include::modules/proc-scaling-cluster.adoc[leveloffset=+1]
