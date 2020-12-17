@@ -1,0 +1,52 @@
+= Creating your cluster
+[id="creating-your-cluster"]
+:context: creating-your-cluster
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[role="_abstract"]
+Once you have an {product-title} subscription, you can access your services and create your cluster.
+
+//Create a standard cluster
+include::modules/create-cluster.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Next Steps
+
+* xref:config-identity-providers[Configuring your identity providers]
+
+[role="_additional-resources"]
+.Additional resources
+
+* link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_aws/index?lb_target=production[Configuring private connections for AWS]
+//* xref:../assemblies/upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+
+//Create AWS CCS cluster
+include::modules/create-aws-ccs-cluster.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Next Steps
+
+* xref:config-identity-providers[Configuring your identity providers]
+
+[role="_additional-resources"]
+.Additional resources
+
+* link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_aws/index?lb_target=production[Configuring private connections for AWS]
+//* xref:../../assemblies/upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+
+// Create GCP CCS cluster
+include::modules/create-gcp-ccs-cluster.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Next Steps
+
+* xref:config-identity-providers[Configuring your identity providers]
+
+[role="_additional-resources"]
+.Additional resources
+
+* link:https://access.redhat.com/documentation/en-us/openshift_dedicated/4.5/html-single/configuring_private_connections_for_gcp/index?lb_target=production[Configuring private connections for Google Cloud]
+//* xref:../../assemblies/upgrades.adoc[Upgrading your OpenShift Dedicated cluster]
+
+// Accessing the cluster
+include::modules/access-cluster.adoc[leveloffset=+1]

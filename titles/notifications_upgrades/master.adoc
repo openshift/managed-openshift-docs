@@ -5,6 +5,6 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 // INCLUDE ASSEMBLIES HERE
 
-include::assemblies/assembly-notifications.adoc[]
+include::assemblies/notifications.adoc[]
 
-include::assemblies/assembly-upgrades.adoc[]
+include::assemblies/upgrades.adoc[]

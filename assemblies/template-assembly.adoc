@@ -1,6 +1,6 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
 [id="a-collection-of-modules"]
-:context: assembly-keyword
+:context: keyword
 
 = A collection of modules
 

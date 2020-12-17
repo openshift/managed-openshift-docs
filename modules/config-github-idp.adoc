@@ -1,0 +1,71 @@
+:system-module-type: PROCEDURE
+// Module included in the following assemblies:
+//
+// * assemblies/config-identity-providers.adoc
+// * getting_started/quickstart-osd.adoc
+
+[id="config-github-idp_{context}"]
+= Configuring a GitHub identity provider
+
+[role="_abstract"]
+Configure a GitHub identity provider to validate user names and passwords against GitHub or GitHub Enterprise’s OAuth authentication server and access your {product-title} cluster.OAuth facilitates a token exchange flow between {product-title} and GitHub or GitHub Enterprise.
+
+[WARNING]
+====
+Configuring GitHub authentication allows users to log in to {product-title} with their GitHub credentials. To prevent anyone with any GitHub user ID from logging in to your {product-title} cluster, you must restrict access to only those in specific GitHub organizations.
+====
+
+.Procedure
+
+. Navigate to the *Clusters* page and select the cluster you need to configure identity providers for.
+
+. Click the *Access control* tab. Note: You can also click the *AddOauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
+
+. Click *Add identity provider*.
+
+. Select *GitHub* from the drop-down menu.
+
+. Enter a unique name for the identity provider. This name cannot be changed later. An *OAuth callback URL* is automatically generated in the provided field. You will use this to register the GitHub application.
+
+.  Register an application on GitHub:
+- For GitHub, click https://github.com/settings/profile[Settings] ->
+https://github.com/settings/apps[Developer settings] ->
+https://github.com/settings/developers[OAuth Apps] ->
+https://github.com/settings/applications/new[Register a new OAuth application].
+ - For GitHub Enterprise, go to your GitHub Enterprise home page and then click
+*Settings -> Developer settings -> Register a new application*.
+.. Enter an application name, for example `My OpenShift Install`.
+.. Enter a homepage URL, such as
+`\https://oauth-openshift.apps.<cluster-name>.<cluster-domain>`.
+.. Optional: Enter an application description.
+.. Enter the authorization callback URL.
++
+----
+https://oauth-openshift.apps.<cluster-name>.<cluster-domain>/oauth2callback/<idp-provider-name>
+----
++
+For example:
++
+----
+https://oauth-openshift.apps.example-openshift-cluster.com/oauth2callback/github/
+----
+.. Click *Register application*. GitHub provides a Client ID and a Client Secret.
+You need these values to complete the identity provider configuration.
+
+. Return to {product-title} and select a mapping method from the drop-down menu. *Claim* is recommended in most cases.
+
+. Enter the *Client ID* and *Client secret* provided by GitHub.
+
+. You must enter a *hostname* to use with a hosted instance of GitHub Enterprise.
+
+. Optional: You can use a certificate authority (CA) file to validate server certificates for the configured GitHub Enterprise URL. Click *Browse* to locate and attach a *CA file* to the identity provider.
+
+. Select *Use organizations* or *Use teams* to restrict access to a particular GitHub organization or a GitHub team.
+
+. Enter the name of the organization or team you would like to restrict access to. Click *Add more*
+to specify multiple organizations or teams that users can be a member of.
+
+. Click *Confirm*.
+
+The configured identity provider is now visible on the
+ *Access control* tab of the *Clusters* page.

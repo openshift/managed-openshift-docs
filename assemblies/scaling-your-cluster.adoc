@@ -1,0 +1,6 @@
+[id="scaling-your-cluster"]
+= Scaling your cluster
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: scaling-cluster
+
+include::modules/scaling-cluster.adoc[leveloffset=+1]

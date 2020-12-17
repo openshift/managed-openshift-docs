@@ -4,9 +4,9 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 // INCLUDE ASSEMBLIES HERE
 
-include::assemblies/assembly-rh-account-setup.adoc[]
-include::assemblies/assembly-planning-ccs-requirements.adoc[]
-include::assemblies/assembly-aws-ccs.adoc[]
-include::assemblies/assembly-gcp-ccs.adoc[]
-include::assemblies/assembly-config-aws-account.adoc[]
-include::assemblies/assembly-config-gcp-account.adoc[]
+include::assemblies/rh-account-setup.adoc[]
+include::assemblies/planning-ccs-requirements.adoc[]
+include::assemblies/aws-ccs.adoc[]
+include::assemblies/gcp-ccs.adoc[]
+include::assemblies/config-aws-account.adoc[]
+include::assemblies/config-gcp-account.adoc[]

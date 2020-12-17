@@ -4,4 +4,4 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Release notes
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/assembly-release-notes.adoc[]
+include::assemblies/release-notes.adoc[]

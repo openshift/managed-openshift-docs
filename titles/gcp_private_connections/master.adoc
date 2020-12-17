@@ -4,8 +4,8 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Configuring private connections for Google Cloud
 
 // INCLUDE ASSEMBLIES HERE
-include::assemblies/assembly-understand-gcp-private-connections.adoc[]
-include::assemblies/assembly-gcp-peering.adoc[]
-include::assemblies/assembly-gcp-vpn.adoc[]
-include::assemblies/assembly-gcp-direct-connect.adoc[]
-include::assemblies/assembly-private-cluster.adoc[]
+include::assemblies/understand-gcp-private-connections.adoc[]
+include::assemblies/gcp-peering.adoc[]
+include::assemblies/gcp-vpn.adoc[]
+include::assemblies/gcp-direct-connect.adoc[]
+include::assemblies/private-cluster.adoc[]

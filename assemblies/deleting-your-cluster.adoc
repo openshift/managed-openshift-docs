@@ -1,0 +1,6 @@
+[id="deleting-your-cluster"]
+= Deleting your cluster
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: delete-cluster
+
+include::modules/deleting-cluster.adoc[leveloffset=+1]

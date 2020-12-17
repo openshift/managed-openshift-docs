@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// * assemblies/assembly-osd-overview.adoc
+// * assemblies/osd-overview.adoc
 
 [id="template_assembly_{context}"]
 = Introduction to {product-title}
