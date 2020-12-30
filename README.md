@@ -10,7 +10,7 @@ This is very much a WIP. Things will change and break. Go ahead and break them s
 To get started, fork this repo into your own GitHub space, and then clone on your local machine:
 
 ```
-git clone git@gitlab.cee.redhat.com:<<your-github-username>>/managed-openshift-docs.git
+git clone git@github.com:<<your-github-username>>/managed-openshift-docs.git
 cd managed-openshift-docs
 git checkout 4.5
 ```
