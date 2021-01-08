@@ -1,0 +1,73 @@
+:system-module-type: PROCEDURE
+// Module included in the following assemblies:
+//
+// * assemblies/creating-your-cluster.adoc
+
+[id="create-aws-ccs-cluster_{context}"]
+= Creating an AWS CCS Cluster
+
+[role="_abstract"]
+You can create a {product-title} cluster with a Customer Cloud Subscription (CCS) on Amazon Web Services (AWS). With this subscription option, the cluster will be provisioned in an AWS account owned by you or your company. This allows you to pay AWS directly for public cloud costs, leveraging your existing relationship.
+
+.Prerequisites
+
+- Your AWS account has been configured for use with {product-title}.
+- Your AWS account has no services deployed in it.
+- Your AWS account has the necessary quotas and limits to support the desired cluster size.
+- An IAM user called `osdCcsAdmin` exists with the `AdministratorAccess` policy attached.
+- An Organization Service Control Policy (SCP) is set up.
+- It is recommended that you have at least *Business Support* from AWS.
+
+.Procedure
+
+. Log in to link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)].
+
+. Click *Create Cluster* -> *Red Hat OpenShift Dedicated*.
+
+. Select *AWS* as your infrastructure provider.
+
+. Select *Customer cloud subscription*. An informational dialogue window will open. Review the prerequisites for installing an AWS CCS cluster and click *Close*.
+
+. Enter your *AWS account ID*.
+
+. Enter your *AWS access key ID* and *AWS secret access key* to input your AWS IAM user credentials.
+  Note: Revoking these credentials in AWS will result in a loss of access to any cluster created with these credentials.
+
+. Optional: You can select *Bypass AWS Service Control Policy (SCP) checks*. Some AWS Service Control Policies will cause installation to fail, even if the credentials have the correct permissions. Disabling SCP checks allows installation to proceed. The SCP will still be enforced even if the checks are bypassed.
+
+. Enter your *Cluster name*.
+
+. Select a *Region* and choose either a *Single zone* or *Multizone* availability.
+
+. Select your *Compute node instance type* and the *Compute node count (per zone)*. After your cluster is created, you can change the number of compute nodes in your cluster, but you can not change the worker node instance type.
+
+. Optional: Expand *Edit node labels* to add labels to your nodes. Labels must be comma separated pairs in key=value format.
+
+. The *Basic* Network configuration is selected by default. This setting creates a new VPC for your cluster using the default values.
+If you want to configure your networking IP ranges or set your cluster privacy, select *Advanced*. The
+following are the default ranges available for your networking IP ranges:
+
+.. Node CIDR: 10.0.0.0/16
+
+.. Service CIDR: 172.30.0.0/16
+
+.. Pod CIDR: 10.128.0.0/14
+
+.. Host Prefix: /23
+
++
+[IMPORTANT]
+====
+CIDR configurations cannot be changed later. Confirm your selections with your network administrator before proceeding.
+
+If the cluster privacy is set to *Private*, you will not be able to access your cluster until you configure private connections in your cloud provider.
+====
+
+. Select your cluster update method. *Manual* is selected by default. If you want your clusters to be automatically upgraded when new versions are available, select the *Automatic* option. If you opt for automatic upgrades, you must specify the preferred day of the week and the time (UTC) for the upgrade to start.
+
+. Optional: You can set a grace period for *Node Draining* during cluster upgrades. A *1 hour* grace period is set by default.
+
+. Click *Create cluster*. The cluster creation process begins and will take about 30-40 minutes to complete.
+
+The *Installing cluster* heading, under the *Overview* tab, will indicate the cluster is installing and you can view the installation logs from this heading. The *Status*
+indicator under the *Details* heading will indicate when your cluster is *Ready* for use.

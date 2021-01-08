@@ -1,0 +1,14 @@
+[id="rosa-accessing-cluster"]
+= Getting started with {product-title}
+include::modules/attributes-openshift-dedicated.adoc[]
+:context: rosa-accessing-cluster
+
+toc::[]
+
+include::modules/rosa-accessing-your-cluster-quick.adoc[leveloffset=+1]
+
+include::modules/rosa-accessing-your-cluster.adoc[leveloffset=+1]
+
+include::modules/rosa-create-cluster-admins.adoc[leveloffset=+1]
+
+include::modules/rosa-create-dedicated-cluster-admins.adoc[leveloffset=+1]

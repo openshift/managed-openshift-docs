@@ -1,0 +1,8 @@
+[id="rosa-creating-first-cluster"]
+= Getting started with {product-title}
+include::modules/attributes-openshift-dedicated.adoc[]
+:context: rosa-creating-first-cluster
+
+toc::[]
+
+include::modules/rosa-creating-cluster.adoc[leveloffset=+1]

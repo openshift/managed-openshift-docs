@@ -1,0 +1,10 @@
+[id="rosa-required-aws-service-quotas"]
+= Required AWS service quotas
+include::modules/attributes-openshift-dedicated.adoc[]
+:context: rosa-required-aws-service-quotas
+
+toc::[]
+
+This section covers the required AWS service quotas to run an {product-title} cluster.
+
+include::modules/rosa-required-aws-service-quotas.adoc[leveloffset=+1]
