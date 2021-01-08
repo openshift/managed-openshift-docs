@@ -1,0 +1,30 @@
+// Module included in the following assemblies:
+//
+// assemblies/cluster-admin-role.adoc
+
+[id="osd-cluster-admin-grant"]
+= Granting the cluster-admin role to users
+
+[role="_abstract"]
+After enabling cluster-admin rights on your cluster, you can assign the role to users.
+
+.Prerequisites
+
+- You must be the cluster owner to assign roles to a new user.
+
+[WARNING]
+====
+Existing dedicated-admin users cannot elevate their role to cluster-admin. A new user must be created with the cluster-admin role assigned.
+====
+
+.Procedure
+
+. In {OCM}, select the cluster you want to assign cluster-admin privileges to.
+. Under the *Access control* tab, locate the *Cluster administrative users* section. Click *Add user*.
+. After determining an appropriate User ID, select *cluster-admin* from the *Group* selection, then click *Add user*.
++
+[NOTE]
+====
+Cluster-admin user creation can take several minutes to complete.
+====
++

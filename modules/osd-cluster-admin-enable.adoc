@@ -1,0 +1,18 @@
+// Module included in the following assemblies:
+//
+// assemblies/cluster-admin-role.adoc
+
+[id="osd-cluster-admin-enable"]
+= Enabling the cluster-admin role for your cluster
+
+[role="_abstract"]
+The cluster-admin role must be enabled at the cluster level before it can be assigned to a user.
+
+.Prerequisites
+
+- Open a technical support case with Red Hat to request that the `cluster-admin` role be enabled for your cluster.
+
+.Procedure
+
+. In {OCM}, select the cluster you want to assign cluster-admin privileges to.
+. Under the *Actions* dropdown menu, select *Allow cluster-admin access*.

@@ -3,3 +3,4 @@
 :product-short-name: OpenShift Dedicated
 :product-version: 4.5
 :imagesdir: images
+:OCM: link:cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)]

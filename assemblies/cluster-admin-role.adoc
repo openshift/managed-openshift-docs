@@ -1,16 +1,17 @@
-[id="cluster-administrator-role"]
+[id="cluster-admin-role"]
 = The cluster-admin role
-include::modules/common-attributes.adoc[]
-:context: cluster-administrator
-toc::[]
-
-As an administrator of {product-title} with Customer Cloud Subscriptions, you can request additional permissions and access to the *cluster-admin* role within your organization's cluster. While logged into an account with the cluster-admin role, users have increased permissions to run privileged security contexts and install additional Operators for their environment.
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: cluster-administrator role
 
 
-include::modules/dedicated-cluster-admin-enable.adoc[leveloffset=+1]
+[role="_abstract"]
+As an administrator of {product-title} with a Customer Cloud Subscription (CCS), you can request additional permissions and access to the *cluster-admin* role within your organization's cluster. While logged into an account with the cluster-admin role, users have increased permissions to run privileged security contexts and install additional Operators for their environment.
 
-include::modules/dedicated-cluster-admin-grant.adoc[leveloffset=+1]
+
+include::modules/osd-cluster-admin-enable.adoc[leveloffset=+1]
+
+include::modules/osd-cluster-admin-grant.adoc[leveloffset=+1]
 
 .Additional resources
 
-* xref:../assemblies/osd-policy-ccs-requirements[Requirements for a Customer Cloud Subscriptions ]
+* xref:../assemblies/ccs-requirements[Requirements for a Customer Cloud Subscription]
