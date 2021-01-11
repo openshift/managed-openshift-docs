@@ -1,0 +1,14 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="deleting-access-rosa-cluster"]
+= Getting started with {product-title}
+
+:context: deleting-access-rosa-cluster
+
+[role="_abstract"]
+Delete access to a {product-title} cluster using the `rosa` command-line.
+toc::[]
+
+include::modules/rosa-delete-dedicated-admins.adoc[leveloffset=+1]
+
+include::modules/rosa-delete-cluster-admins.adoc[leveloffset=+1]

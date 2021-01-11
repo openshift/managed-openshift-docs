@@ -1,0 +1,14 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Getting started with {product-title}
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/rosa-quickstart.adoc[]
+include::assemblies/rosa-prereqs.adoc[]
+include::assemblies/rosa-creating-cluster.adoc[]
+include::assemblies/rosa-accessing-cluster.adoc[]
+include::assemblies/rosa-deleting-access-cluster.adoc[]
+include::assemblies/rosa-deleting-cluster.adoc[]
+include::assemblies/rosa-faq.adoc[]
+include::assemblies/rosa-required-aws-service-quotas.adoc[]
