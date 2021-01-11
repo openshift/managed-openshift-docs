@@ -1,11 +1,12 @@
+:system-module-type:
+//Specify the system-module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
+
 // Module included in the following assemblies:
 //
-// * assemblies/osd-overview.adoc
+// * assemblies/assembly.adoc
 
-[id="template_assembly_{context}"]
+[id="template-module_{context}"]
 = Introduction to {product-title}
 
 [role="_abstract"]
-{product-title} is a complete OpenShift cluster provided as a cloud service, configured for high availability, and dedicated to a single customer.
-
-{product-title} is professionally managed by Red Hat and hosted on AWS or Google Cloud. Each {product-title} cluster comes with a fully managed control plane (Master and Infrastructure nodes), application nodes, installation and management by Red Hat Site Reliability Engineers (SRE), premium Red Hat Support, and cluster services such as logging, metrics, monitoring, notifications portal, and a cluster portal.
+Enter content here. The abstract role MUST be specified per PV2 requirements.

@@ -85,4 +85,4 @@ This QE review process has been discussed with the QE team and acked by them. Do
 Follow the [OpenShift docs guidelines](https://github.com/openshift/openshift-docs/blob/master/contributing_to_docs/doc_guidelines.adoc) for docs creation with these exceptions:
 
 * Add the `:system-module-type:` attribute at the top of your module (not assemblies). This will be one of `PROCEDURE`, `CONCEPT` or `REFERENCE`. This will change to `_module-type` in the future.
-* Add `rosa_` as the prefix for any titles and assemblies that are ROSA distribution specific. This will help us reuse content from core OSD while also creating distribution specific content.
+* Add `rosa_` as the prefix for any titles that are ROSA distribution specific. Add `rosa-` as the prefix for any assemblies and modules that are ROSA distribution specific. This will help us reuse content from core OSD while also creating distribution specific content.
