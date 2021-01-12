@@ -1,0 +1,17 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="rosa-prereqs"]
+= Getting started with {product-title}
+
+:context: rosa-prereqs
+
+[role="_abstract"]
+Complete the prerequisites for setting up a {product-title} cluster.
+
+toc::[]
+
+include::modules/rosa-installing-prerequisites.adoc[leveloffset=+1]
+
+.Additional resources
+
+* See xref:../getting_started_rosa/required-aws-service-quotas.adoc[Required AWS service quotas] for information about required AWS service quotas and how to request increases.

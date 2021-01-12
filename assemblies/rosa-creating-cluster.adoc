@@ -1,0 +1,12 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="rosa-getting-started"]
+= Getting started with {product-title}
+
+:context: rosa-getting-started
+
+[role="_abstract"]
+Create a {product-title} cluster using the `rosa` command-line.
+toc::[]
+
+include::modules/rosa-creating-cluster.adoc[leveloffset=+1]

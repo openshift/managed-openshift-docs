@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Understanding {product-title}
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/rosa-understanding.adoc[]
+include::assemblies/rosa-basic-concepts.adoc[]

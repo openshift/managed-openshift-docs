@@ -1,0 +1,11 @@
+[id="about-this-product"]
+= About this product
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: product-overview
+
+[role="_abstract"]
+Learn about {product-title} access, supported consoles, the consumption experience, and integration with Amazon Web Services (AWS) services.
+
+toc::[]
+
+include::modules/rosa-understanding.adoc[leveloffset=+1]
