@@ -1,9 +1,9 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
 
-[id="deleting-access-rosa-cluster"]
+[id="rosa-deleting-access-cluster"]
 = Getting started with {product-title}
 
-:context: deleting-access-rosa-cluster
+:context: rosa-deleting-access-cluster
 
 [role="_abstract"]
 Delete access to a {product-title} cluster using the `rosa` command-line.
