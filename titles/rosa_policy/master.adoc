@@ -1,0 +1,8 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+= Policies
+
+include::assemblies/rosa-service-definition.adoc[]
+include::assemblies/rosa-policy-responsibility-matrix.adoc[]
+include::assemblies/rosa-policy-process-security.adoc[]
+include::assemblies/rosa-policy-understand-availability.adoc[]
