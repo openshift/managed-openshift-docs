@@ -1,0 +1,13 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="rosa-pod-webhooks"]
+= Configuring pod webhooks
+
+:context: rosa-pod-webhooks
+
+[role="_abstract"]
+Configure pod webhooks for integration with {product-title}.
+
+toc::[]
+
+include::modules/rosa-pod-identity-webhooks.adoc[leveloffset=+1]
