@@ -17,11 +17,13 @@ You have completed the installation prerequisites.
 
 Enter the following command to create your cluster with the default cluster settings.
 
+* To view other options when creating a cluster, enter `rosa create cluster --help`.
+
+* To follow a set of interactive prompts, enter `rosa create cluster --interactive`.
++
 [NOTE]
 ====
-To view other options when creating a cluster, enter `rosa create cluster --help`.
-
-To follow a set of interactive prompts, enter `rosa create cluster --interactive`.
+Multi-availability zones (AZ) are recommended for ROSA production workloads. The default is a single availability zone. Use either `--help` to set the option manually or use interactive mode to be prompted for this setting.
 ====
 
 [source, terminal]

@@ -1,7 +1,0 @@
-include::_attributes/attributes-openshift-dedicated.adoc[]
-
-// CHANGE TITLE HERE
-= Nodes
-
-// INCLUDE ASSEMBLIES HERE
-include::assemblies/rosa-pod-webhooks.adoc[]
