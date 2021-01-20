@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // getting_started_rosa/rosa-creating-cluster.adoc
@@ -21,11 +21,14 @@ As part of the cluster creation process, `rosa` will create an osdCcsAdmin IAM u
 +
 [NOTE]
 ====
-This user will have Programmatic access enabled and the AdministratorAccess policy attached to it.
+This user will have `Programmatic` access enabled and the `AdministratorAccess` policy attached to it.
 ====
 +
 . Install and configure the AWS CLI.
-.. Follow the link:https://aws.amazon.com/cli/[AWS Command Line Interface] documentation to install and configure the AWS CLI for your operating system.
+.. Follow the AWS Command Line Interface documentation to link:https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html[install] and link:https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html[configure] the AWS CLI for your operating system.
++
+Make sure to specify the correct `aws_access_key_id` and `aws_secret_access_key` in the `.aws/credentials` file. See link:https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics] in the AWS documentation.
+
 .. Optional: Set a default AWS region. `rosa` evaluates regions in the following priority order:
 +
 ... The region specified when running a `rosa` command with the `--region` flag.
