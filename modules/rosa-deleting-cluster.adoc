@@ -1,25 +1,27 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // getting_started_rosa/rosa-creating-cluster.adoc
 
 
 [id="rosa-deleting-cluster_{context}"]
-= Deleting your cluster
+= Deleting a cluster
 
-You can delete an {product-title} cluster using `rosa`.
+You can delete an {product-title} cluster using the `rosa` CLI.
+
+If add-ons are installed, the deletion takes longer because add-ons are uninstalled before the cluster is deleted. The amount of time depends on the number and size of the add-ons.
 
 .Procedure
 
-Enter the following command to delete your cluster and watch the logs, replacing `<my-cluster>` with the name of your cluster:
-
+. Enter the following command to delete a cluster and watch the logs, replacing `<cluster_name>` with the name or ID of your cluster:
++
 [source, terminal]
 ----
-$ rosa delete cluster <my-cluster> --watch
+$ rosa delete cluster --cluster=<cluster_name> --watch
 ----
 
-To clean up your CloudFormation stack, enter the following command. Your CloudFormation stack is initially created when you run the `rosa init` command as part of the prerequisites.
-
+. To clean up your CloudFormation stack, enter the following command:
++
 [source, terminal]
 ----
 $ rosa init --delete-stack
