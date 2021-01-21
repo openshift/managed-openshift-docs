@@ -1,0 +1,11 @@
+<title>Configuring private connections</title>
+<productname>{product-title}</productname>
+<productnumber>{product-version}</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Configure AWS private connections if you plan on enabling private clusters.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

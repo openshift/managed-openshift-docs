@@ -1,0 +1,12 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Configuring AWS private connections
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/understand-aws-private-connections.adoc[]
+include::assemblies/aws-access.adoc[]
+include::assemblies/aws-peering.adoc[]
+include::assemblies/aws-vpn.adoc[]
+include::assemblies/aws-direct-connect.adoc[]
+include::assemblies/rosa-private-cluster.adoc[]
