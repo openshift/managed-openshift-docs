@@ -1,0 +1,11 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-logging_{context}"]
+= Logging
+
+{product-title} (ROSA) offers an optional logging stack based on Elasticsearch, Fluentd, and Kibana (EFK). The logging stack in OpenShift Container Platform is designed for short-term retention to aid application troubleshooting, not for long-term log archiving.
+
+Application logging are supported. Application logs can be forwarded using the CloudWatch add-on service. Add-on services are configured using the `rosa` command-line.

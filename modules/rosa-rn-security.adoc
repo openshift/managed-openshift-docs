@@ -1,0 +1,55 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-security_{context}"]
+= Security
+
+[id="rosa-rn-auth-provider_{context}"]
+== Authentication provider
+
+Authentication for the cluster can be configured using either the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)] cluster creation process or using the `rosa` CLI.
+
+OpenShift Container Platform is not an identity provider, and all access to the cluster must be managed by customers as part of their integrated solution. {product-title} (ROSA) supports the use of multiple identity providers that are simultaneously provisioned.
+
+The following identity providers are supported:
+
+* GitHub or GitHub Enterprise
+* GitLab
+* Google
+* LDAP
+* OpenID connect
+
+[id="rosa-rn-priv-containers_{context}"]
+== Privileged containers
+
+Privileged containers are not available by default on ROSA. For more information, see the Service Definition.
+
+[id="rosa-rn-customer-admin-user_{context}"]
+== Customer administrator user
+
+In addition to regular users, ROSA provides access to a ROSA-specific group called `dedicated-admin`. `dedicated-admin` group members can:
+
+* Use administrator privileges to access all customer-created projects on the cluster
+* Manage resource quotas and limits on the cluster
+* Add and manage `NetworkPolicy` objects
+* View information about specific nodes and persistent volumes (PVs) in the cluster, including scheduler information
+* Access the reserved `dedicated-admin` project on the cluster. This project allows for the creation of service accounts with elevated privileges and gives the ability to update default limits and quotas for projects on the cluster.
+
+[id="rosa-rn-cluster-admin-role_{context}"]
+== Cluster administrator role
+
+An administrator of ROSA can access the `cluster-admin` role within their organization’s cluster. While logged into an account with the `cluster-admin role`, users have increased permissions to run privileged security contexts.
+
+The `cluster-admin` role access is provided using the `rosa` CLI.
+
+[id="rosa-rn-project-self-service_{context}"]
+== Project self-service
+
+By default, all users have the ability to create, update, and delete their projects. This ability can be restricted if a member of the `dedicated-admin` group removes the self-provisioner role from authenticated users.
+
+[id="rosa-rn-network-security_{context}"]
+== Network security
+
+With ROSA, AWS provides standard DDoS protection on all load balancers called AWS Shield. The AWS Shield provides 95% protection against most commonly used level 3 and 4 attacks on all the public facing load balancers used for ROSA. ROSA also provides a 10-second timeout for HTTP requests coming to the ROSA `haproxy` router to receive a response. If the timeout limit is met, the connection is closed to provide additional protection.

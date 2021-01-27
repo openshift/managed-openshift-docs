@@ -1,0 +1,26 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-storage_{context}"]
+= Storage
+
+[id="rosa-rn-encrypted-os-node_{context}"]
+== Encrypted-at-rest OS/Node storage
+
+Red Hat master nodes use encrypted-at-rest-EBS storage. Customers do not have access to the Red Hat master nodes, which are used for managing the {product-title} (ROSA) services.
+
+[id="rosa-rn-encrypted-pv_{context}"]
+== Encrypted-at-rest PV
+
+By default, EBS volumes used for persistent volumes (PVs) are encrypted-at-rest.
+
+[id="rosa-rn-block-storage_{context}"]
+== Block storage (RWO)
+
+PVs are backed by Amazon Web Services (AWS) block storage, known as AWS EBS, that is Read-Write-Once.
+
+PVs can only be attached to a single node at a time and are specific to the availability zone in which they were provisioned, but they can be attached to any node in the availability zone.
+
+Amazon Web Services (AWS) has its own limits for how many PVs can be attached to a single node. See link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#instance-type-volume-limits[AWS instance type limits] for details.

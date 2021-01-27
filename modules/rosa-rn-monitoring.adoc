@@ -1,0 +1,17 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-monitoring_{context}"]
+= Monitoring
+
+[id="rosa-rn-cluster-metrics_{context}"]
+== Cluster metrics
+
+{product-title} (ROSA) clusters use an integrated Prometheus stack for cluster monitoring, including CPU, memory, and network-based metrics. Access this information through the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM) console]. These metrics also allow for horizontal pod autoscaling based on CPU or memory metrics provided by a ROSA customer.
+
+[id="rosa-rn-cluster-status_{context}"]
+== Cluster status notification
+
+Red Hat communicates the health and status of ROSA clusters through the OCM cluster dashboard and through email notifications sent to the email address of the contact that originally deployed the cluster. Notifications are also sent to the contacts that are added to the Support tab in the OCM console.

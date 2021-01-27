@@ -1,0 +1,9 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-about.adoc
+
+[id="rosa-rn-about_{context}"]
+= About this product
+
+{product-title} provides the full range of OpenShift Container Platform features, except for the managed services features that are managed and supported by Red Hat and Amazon Web Services (AWS).

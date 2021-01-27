@@ -1,0 +1,73 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-networking_{context}"]
+= Networking
+
+[id="rosa-rn-custom-domains_{context}"]
+== Custom domains for applications
+
+To use a custom hostname for a route, update the DNS provider by creating a canonical name, or `CNAME`, record. The `CNAME` record must map the OpenShift Container Platform canonical router hostname to the custom domain. The canonical router hostname is shown on the _Route Details_ page after a route is created. Alternatively, a wildcard `CNAME` record can be created one time to route all subdomains for a given hostname to the cluster’s router. For example:
+
+[source,terminal]
+----
+*.openshift.example.com    CNAME    elb.apps.my-example.a1b2.p1.openshiftapps.com
+----
+
+[id="rosa-rn-domain-certificates_{context}"]
+== Domain validated certificates
+
+{product-title} (ROSA) includes wildcard TLS security certificates that are needed for internal and external routes on the cluster. For more information, see the Service Definition.
+
+[id="rosa-rn-custom-certificates_{context}"]
+== Custom certificate authorities for builds
+
+Custom certificate authorities can be configured to be trusted by builds when images are pulled from an image registry.
+
+[id="rosa-rn-load-balancers_{context}"]
+== Load Balancers
+
+ROSA supports load balancers that can be configured link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM) console] or in the `rosa` CLI. These load balancers include:
+
+* An internal master load balancer for internal cluster communications traffic.
+* An external master load balancing for accessing the APIs. This load balancer can be disabled. When this load balancer is disabled, Red Hat reconfigures the API DNS to point to the internal master load balancer.
+* A default external router/ingress load balancer for application loads, denoted by `apps` in the URL. This load balancer can be configured to be either publicly or privately accessible. All application routes on the cluster are exposed on this default router load balancer, including cluster services such as the logging UI, metrics API, and registry.
+* An optional, secondary router/ingress load balancer for application loads, denoted by `apps2` in the URL. This load balancer can be configured to be either publicly accessible or privately accessible. Label matching can be configured so that only application routes matching the label will be exposed on this router load balancer.
+* An optional load balancer for services that can be mapped to services running on ROSA. Mapped services bypass the default and secondary load balancers, and the services have direct TCP access to the backing pods.
+
+[id="rosa-rn-cluster-ingress_{context}"]
+== Cluster ingress
+
+Project administrators can add route annotations for many different purposes, including ingress control through IP whitelisting. Ingress policies can also be changed by using `NetworkPolicy` objects that provide full control over the ingress network policy.
+
+Cluster ingress traffic can go through the default load balancer, an optional secondary load balancer, or an optional load balancer for services. Direct access to all nodes is blocked by cloud configuration.
+
+[id="rosa-rn-cluster-egress_{context}"]
+== Cluster egress
+
+Pod egress traffic control through `EgressNetworkPolicy` objects can be used to prevent or limit outbound traffic in ROSA.
+
+OpenShift Container Platform 4 clusters use NAT gateways to present a public, static IP for any public outbound traffic leaving the cluster. Each availability zone a cluster is deployed into receives a distinct NAT gateway. Any traffic that remains inside the cluster, or does not go out to the public Internet, does not pass through the NAT gateway and, instead, has a source IP address belonging to the node that the traffic originated from. Node IP addresses are dynamic.
+
+Elastic IPs can be viewed in the AWS console.
+
+[id="rosa-rn-cloud-network-config_{context}"]
+== Cloud network configuration
+
+ROSA allows for the configuration of a private network connection through several cloud provider managed technologies:
+
+* VPN connections
+* AWS VPC peering
+* AWS Transit Gateway
+* AWS Direct Connect
+
+The Red Hat site reliability engineers (SREs) do not monitor private network connections.
+
+[id="rosa-rn-dns-forwarding_{context}"]
+== DNS forwarding
+
+For ROSA clusters that have a private cloud network configured, customers can specify internal DNS servers available on that private connection that should be queried for explicitly provided domains.
+
+Additionally, DNS forwarding can be configured using Route 53 rules.

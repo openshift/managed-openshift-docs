@@ -1,0 +1,19 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+[id="rosa-rn-about"]
+= About this release
+
+:context: rosa-rn-about
+
+[role="_abstract"]
+Release notes overview about {product-title}.
+
+toc::[]
+
+{product-title} (ROSA) is a fully-managed OpenShift Container Platform service, jointly managed and supported by Red Hat and Amazon Web Services (AWS). ROSA provides developers and IT organizations with a hybrid cloud application platform for deploying both new and existing applications on secure, scalable resources with minimal configuration and management overhead.
+
+ROSA supports a wide selection of programming languages and frameworks, such as Java, JavaScript, Python, Ruby, and PHP.
+
+Built on Red Hat Enterprise Linux CoreOS (RHCOS) and Kubernetes, ROSA provides a more secure and scalable multi-tenant operating system for today’s enterprise-class applications, while delivering integrated application runtimes and libraries. ROSA enables organizations to meet security, privacy, compliance, and governance requirements.
+
+include::modules/rosa-rn-about.adoc[leveloffset=+1]

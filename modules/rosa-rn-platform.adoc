@@ -1,0 +1,70 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-platform_{context}"]
+= Platform
+
+[id="rosa-rn-backups_{context}"]
+== Cluster backups
+
+Application and application data backups are not a part of the {product-title} (ROSA) service. Customers must have their own backup strategy for their applications and application data.
+
+All Kubernetes objects and persistent volumes (PVs) in each ROSA cluster are backed up to facilitate a prompt recovery in the unlikely event that a cluster becomes irreparably inoperable. These backups are stored in a secure object storage (multiple availability zone) bucket in the same account as the cluster.
+
+Node root volumes are not backed up because Red Hat Enterprise Linux CoreOS is fully managed by the OpenShift Container Platform cluster and no stateful data should be stored on a node’s root volume.
+
+[id="rosa-rn-autoscaling_{context}"]
+== Autoscaling
+
+Autoscaling is available through the `rosa` command-line. ROSA supports autoscaling on nodes. Autoscaling can be configured during cluster creation or on machine pools after a cluster is created.
+
+[id="rosa-rn-daemonsets_{context}"]
+== Daemonsets
+
+Customers can create and run daemonsets on ROSA. Daemonsets can be limited to run on worker nodes using `nodeSelector`.
+
+[id="rosa-rn-multi-az_{context}"]
+== Multiple availability zone
+
+In a multiple availability zone cluster, master nodes are distributed across availability zones and one worker node is required in each availability zone.
+
+[id="rosa-rn-node-labels_{context}"]
+== Node labels
+
+Custom node labels can be defined on machine pools and cannot be edited after they are created.
+
+[id="rosa-rn-versions_{context}"]
+== OpenShift Container Platform Versions
+
+ROSA runs as a service on Amazon Web Services (AWS) and is kept up-to-date with the latest OpenShift Container Platform version. For more information about versions, see the link:https://access.redhat.com/support/policy/updates/openshift/dedicated[OpenShift Dedicated Life Cycle page].
+
+[id="rosa-rn-upgrades_{context}"]
+== Upgrades
+
+Patch level updates, also known as `z-stream` or `x.y.Z`, are applied automatically the week following their release if the updates pass the ROSA-specific end-to-end tests.
+
+Minor version updates, also known as `x.Y.z`, can include Kubernetes version upgrades and API changes. Customers are notified by email two weeks in advance before these upgrades are automatically applied.
+
+Users can select either an automatic or manual upgrade strategy through OCM or the `rosa` CLI. Upgrade scheduling is also available through the `rosa` CLI.
+
+[id="rosa-rn-windows-containers_{context}"]
+== Windows Containers
+
+Windows Containers are not available on ROSA at this time.
+
+[id="rosa-rn-container-engine_{context}"]
+== Container engine
+
+ROSA runs on OpenShift Container Platform 4 and uses link:https://www.redhat.com/en/blog/red-hat-openshift-container-platform-4-now-defaults-cri-o-underlying-container-engine[CRI-O] as the container engine.
+
+[id="rosa-rn-operating-system_{context}"]
+== Operating system
+
+ROSA runs on OpenShift Container Platform 4 and uses Red Hat Enterprise Linux CoreOS as the operating system for all master and worker nodes.
+
+[id="rosa-rn-kubernetes-os_{context}"]
+== Kubernetes Operator support
+
+All of the Operators listed in the Operator Hub marketplace can be installed on ROSA. However, these Operators are customer workloads and are not monitored by Red Hat SRE.

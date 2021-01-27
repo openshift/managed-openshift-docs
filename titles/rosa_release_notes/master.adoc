@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Release notes
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/template-assembly.adoc[]

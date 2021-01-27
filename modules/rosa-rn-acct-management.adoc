@@ -1,0 +1,27 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// rosa_release_notes/rosa-rn-new-features.adoc
+
+[id="rosa-rn-acct-management_{context}"]
+= Account management
+
+[id="rosa-rn-billing_{context}"]
+== Billing
+
+{product-title} (ROSA) is billed through Amazon Web Services (AWS) based on the usage of AWS components by the service, such as load balancers, storage, EC2 instances, and so on. For more information, see the {product-title} Customer Cloud Subscription Requirements (CCS).
+
+[id="rosa-rn-self-service_{context}"]
+== Cluster self-service and consoles
+
+Customers can create, scale, and delete their clusters either from the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM) console] or the `rosa` CLI utility.
+
+[id="rosa-rn-compute_{context}"]
+== Compute
+
+ROSA supports single availability zone and multiple availability zone clusters. Worker nodes must all be the same instance type and size within a single machine pool. You can have multiple machine pools, each configured with a different instance type.
+
+[id="rosa-rn-support_{context}"]
+== Support
+
+ROSA includes Red Hat Premium Support, which can be accessed by using the link:https://access.redhat.com/support[Red Hat Customer Portal], with optional support through link:https://aws.amazon.com/premiumsupport/[AWS Support].
