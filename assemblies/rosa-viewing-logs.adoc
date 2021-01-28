@@ -1,0 +1,14 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="rosa-viewing-logs"]
+:context: rosa-viewing-logs
+
+= Viewing logs
+
+[role="_abstract"]
+View forwarded logs in the AWS console.
+
+.Prerequisites
+
+* Install the `cluster-logging-operator` add-on service.
+
+include::modules/rosa-view-cloudwatch-logs.adoc[leveloffset=+1]
