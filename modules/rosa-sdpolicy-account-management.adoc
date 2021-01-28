@@ -1,0 +1,104 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// * assemblies/rosa-service-definition.adoc
+
+[id="rosa-sdpolicy-account-management_{context}"]
+= Account management
+
+[id="rosa-sdpolicy-billing_{context}"]
+== Billing
+{product-title} is billed through Amazon Web Services (AWS) based on the usage of AWS components used by the service, such as load balancers, storage, EC2 instances, and other components.
+
+Any additional Red Hat software must be purchased separately.
+
+[id="rosa-sdpolicy-cluster-self-service_{context}"]
+== Cluster self-service
+
+Customers can create, scale, and delete their clusters from link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)] or the `rosa` CLI utility.
+
+[id="rosa-sdpolicy-compute_{context}"]
+== Compute
+
+Single availability zone clusters require a minimum of 3 control planes, 2 infrastructure nodes, and 3 worker nodes deployed to a single availability zone. These 3 worker nodes are included in the base subscription.
+
+Multiple availability zone clusters require a minimum of 3 control planes. 3 infrastructure nodes, and 3 worker nodes. These 3 worker nodes are included in the base subscription, and additional nodes must be purchased in multiples of three to maintain proper node distribution.
+
+Worker nodes must all be the same type and size within a single cluster.
+
+[NOTE]
+====
+Worker node type and size cannot be changed afters the cluster has been created.
+====
+
+Master and infrastructure nodes are also provided by Red Hat. There are at least 3 master nodes that handle etcd- and API-related workloads. There are at least 3 infrastructure nodes that handle metrics, routing, the web console, and other workloads. Master and infrastructure nodes are strictly for Red Hat workloads to operate the service, and customer workloads are not permitted to be deployed on these nodes.
+
+[NOTE]
+====
+1 vCPU core and 1 GiB of memory are reserved on each worker node to run processes required as part of the managed service. This includes, but is not limited to, audit log aggregation, metrics collection, DNS, image registry, and SDN.
+====
+
+[id="rosa-sdpolicy-aws-compute-types_{context}"]
+== AWS compute types
+
+{product-title} offers the following worker node types and sizes:
+
+General purpose
+
+- M5.xlarge (4 vCPU, 16 GiB)
+- M5.2xlarge (8 vCPU, 32 GiB)
+- M5.4xlarge (16 vCPU, 64 GiB)
+
+Memory-optimized
+
+- R5.xlarge (4 vCPU, 32 GiB)
+- R5.2xlarge (8 vCPU, 64 GiB)
+- R5.4xlarge (16 vCPU, 128 GiB)
+
+Compute-optimized
+
+- C5.2xlarge (8 vCPU, 16 GiB)
+- C5.4xlarge (16 vCPU, 32 GiB)
+
+[id="rosa-sdpolicy-regions-az_{context}"]
+== Regions and availability zones
+The following AWS regions are supported by Red Hat OpenShift 4 and are supported for {product-title}. Note: China and GovCloud (US) regions are not supported, regardless of their support on OpenShift 4.
+
+- ap-northeast-1 (Tokyo)
+- ap-northeast-2 (Seoul)
+- ap-south-1 (Mumbai)
+- ap-southeast-1 (Singapore)
+- ap-southeast-2 (Sydney)
+- ca-central-1 (Central)
+- eu-central-1 (Frankfurt)
+- eu-north-1 (Stockholm)
+- eu-west-1 (Ireland)
+- eu-west-2 (London)
+- eu-west-3 (Paris)
+- me-south-1 (Bahrain)
+- sa-east-1 (São Paulo)
+- us-east-1 (N. Virginia)
+- us-east-2 (Ohio)
+- us-west-1 (N. California)
+- us-west-2 (Oregon)
+
+Multiple availability zone clusters can only be deployed in regions with at least 3 availability clouds. For more information, see the link:https://aws.amazon.com/about-aws/global-infrastructure/regions_az/[Regions and Availability Zones] section in the AWS documentation.
+
+Each new {product-title} cluster is installed within a dedicated Virtual Private Cloud (VPC) in a single region, with the option to deploy into a single availability zone (Single-AZ) or across multiple availability zones (Multi-AZ). This provides cluster-level network and resource isolation, and enables cloud-provider VPC settings, such as VPN connections and VPC Peering. Persistent volumes (PVs) are backed by cloud block storage and are specific to the availability zone in which they are provisioned. Persistent volumes do not bind to a volume until the associated pod resource is assigned into a specific availability zone to prevent unschedulable pods. Availability zone-specific resources are only usable by resources in the same availability zone.
+
+[WARNING]
+====
+The region and the choice of single or multiple availability zone cannot be changed after a cluster has been deployed.
+====
+
+[id="rosa-sdpolicy-sla_{context}"]
+== Service Level Agreement (SLA)
+Any SLAs for the service itself are defined in Appendix 4 of the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
+
+[id="rosa-sdpolicy-support_{context}"]
+== Support
+{product-title} includes Red Hat Premium Support, which can be accessed by using the link:https://access.redhat.com/support?extIdCarryOver=true&sc_cid=701f2000001Css5AAC[Red Hat Customer Portal].
+
+See the link:https://access.redhat.com/support/offerings/production/scope_moredetail[Scope of Coverage Page] for more details on what is included with support for {product-title}.
+
+See {product-title} link:https://access.redhat.com/support/offerings/openshift/sla?extIdCarryOver=true&sc_cid=701f2000001Css5AAC[SLAs] for support response times.
