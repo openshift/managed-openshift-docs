@@ -1,6 +1,6 @@
 This is the development and production branch for the revamped OpenShift Managed services docs.
 
-Content merged here will appear in stage preview mode. If it passes acks, you can publish it live via Pantheon here: https://pantheon.int.us-west.aws.prod.paas.redhat.com/#/titles/openshift_dedicated/4.5.
+Content merged here will appear in stage preview mode. If it passes acks, you can publish it live via Pantheon.
 
 An attempt has been made to make this branch and workflow compatible with Pantheon V2. However, as that product is under active development, we are not splitting hairs trying to conform to all its guidelines currently. This branch and workflow will work for Pantheon V1 completely.
 
