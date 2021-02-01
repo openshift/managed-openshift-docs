@@ -1,6 +1,6 @@
 <title>Understanding {product-title}</title>
 <productname>{product-title}</productname>
-<productnumber>4.5</productnumber>
+<productnumber>{product-version}</productnumber>
 <subtitle></subtitle>
 <abstract>
     <para>Learn about {product-title} and how it works in your environment.</para>

@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= rosa CLI
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/rosa-get-started-cli.adoc[]
+include::assemblies/rosa-manage-objects-cli.adoc[]
+include::assemblies/rosa-troubleshoot-cli.adoc[]

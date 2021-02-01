@@ -1,9 +1,9 @@
-<title>Getting started with {product-title}</title>
+<title>rosa CLI reference</title>
 <productname>{product-title}</productname>
 <productnumber>{product-version}</productnumber>
 <subtitle></subtitle>
 <abstract>
-    <para>Create and access a cluster to get started with {product-title}.</para>
+    <para>This reference section describes how to use the `rosa` command-line interface (CLI).</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat OpenShift Documentation Team</orgname>

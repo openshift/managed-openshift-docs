@@ -1,10 +1,10 @@
-[id="about-this-product"]
+[id="rosa-understanding"]
 = About this product
 include::_attributes/attributes-openshift-dedicated.adoc[]
-:context: product-overview
+:context: rosa-understanding
 
 [role="_abstract"]
-Learn about {product-title} access, supported consoles, the consumption experience, and integration with Amazon Web Services (AWS) services.
+Learn about {product-title} access, supported consoles, consumption experience, and integration with Amazon Web Services (AWS) services.
 
 toc::[]
 
