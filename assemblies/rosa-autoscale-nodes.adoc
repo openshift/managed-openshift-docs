@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="rosa-autoscaling-nodes"]
+= Autoscaling nodes on a cluster
+:context: autoscaling-nodes
+
+[role="_abstract"]
+Autoscale worker nodes in a cluster to increase or decrease the number of resources available.
+
+include::modules/rosa-autoscaling-nodes.adoc[leveloffset=+1]
