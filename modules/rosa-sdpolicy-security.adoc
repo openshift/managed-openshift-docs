@@ -6,9 +6,12 @@
 [id="rosa-sdpolicy-security_{context}"]
 = Security
 
+[role="_abstract"]
+This section provides information about the service definition for {product-title} security.
+
 [id="rosa-sdpolicy-auth-provider_{context}"]
 == Authentication provider
-Authentication for the cluster can be configured using either the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)] or cluster creation process or using the `rosa` CLI. The `rosa` CLI allows the use of `htpasswd`. {product-title} is not an identity provider, and all access to the cluster must be managed by the customer as part of their integrated solution. The use of multiple identity providers provisioned at the same time is supported. The following identity providers are supported:
+Authentication for the cluster can be configured using either the link:https://cloud.redhat.com/openshift[OpenShift Cluster Manager (OCM)] or cluster creation process or using the `rosa` CLI. {product-title} is not an identity provider, and all access to the cluster must be managed by the customer as part of their integrated solution. The use of multiple identity providers provisioned at the same time is supported. The following identity providers are supported:
 
 - GitHub or GitHub Enterprise
 - GitLab
@@ -18,7 +21,7 @@ Authentication for the cluster can be configured using either the link:https://c
 
 [id="rosa-sdpolicy-privileged-containers_{context}"]
 == Privileged containers
-Privileged containers are not supported on {product-title}. To enable Red Hat to operate {product-title} as a managed service with an SLA, some restrictions are enforced to limit the ability of rogue or accidental changes that can impact the service.
+Privileged containers are available for users with the `cluster-admin` role. Usage of privileged containers as `cluster-admin` is subject to the responsibilities and exclusion notes in the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4] (Online Subscription Services).
 
 [id="rosa-sdpolicy-customer-admin-user_{context}"]
 == Customer administrator user

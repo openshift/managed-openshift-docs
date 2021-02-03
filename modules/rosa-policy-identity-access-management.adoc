@@ -17,12 +17,12 @@ SREs access private clusters using an encrypted tunnel through a hardened SRE su
 
 [id="rosa-policy-privileged-access-control_{context}"]
 == Privileged access controls in {product-title}
-The SRE adheres to the principle of least privilege when accessing {product-title} and public cloud provider components. There are four basic categories of manual SRE access:
+SRE adheres to the principle of least privilege when accessing {product-title} and AWS components. There are four basic categories of manual SRE access:
 
 - SRE admin access through the Red Hat Portal with normal two-factor authentication and no privileged elevation.
 - SRE admin access through the Red Hat corporate SSO with normal two-factor authentication and no privileged elevation.
 - OpenShift elevation, which is a manual elevation using Red Hat SSO. Access is limited to 2 hours, is fully audited, and requires management approval.
-- Cloud provider access or elevation, which is a manual elevation for cloud provider console access. Access is limited to 60 minutes, is fully audited, and requires management approval.
+- AWS access or elevation, which is a manual elevation for AWS console access. Access is limited to 60 minutes, is fully audited, and requires management approval.
 
 Each of these access types have different levels of access to components:
 
@@ -39,21 +39,21 @@ Each of these access types have different levels of access to components:
 
 |===
 
-[id="rosa-policy-sre-cloud-infra-access_{context}"]
-== SRE access to cloud infrastructure accounts
-Red Hat personnel do not access cloud infrastructure accounts in the course of routine {product-title} operations. For emergency troubleshooting purposes, the SREs have well-defined and auditable procedures to access cloud infrastructure accounts.
+[id="rosa-policy-sre-aws-infra-access_{context}"]
+== SRE access to AWS accounts
+Red Hat personnel do not access AWS accounts in the course of routine {product-title} operations. For emergency troubleshooting purposes, the SREs have well-defined and auditable procedures to access cloud infrastructure accounts.
 
-In AWS, SREs generate a short-lived AWS access token for the `osdManagedAdminSRE` user using the AWS Security Token Service (STS). Access to the STS token is audit-logged and traceable back to individual users. The `osdManagedAdminSRE` user has the AdministratorAccess IAM policy attached.
+SREs generate a short-lived AWS access token for the `osdManagedAdminSRE` user using the AWS Security Token Service (STS). Access to the STS token is audit-logged and traceable back to individual users. The `osdManagedAdminSRE` user has the AdministratorAccess IAM policy attached.
 
 [id="rosa-policy-rh-access_{context}"]
 == Red Hat support access
-Members of the Red Hat Customer Experience and Engagement (CEE) team typically has read-only access to parts of the cluster. Specifically, CEE has limited access to the core and product namespaces and does not have access to the customer namespaces.
+Members of the Red Hat Customer Experience and Engagement (CEE) team typically have read-only access to parts of the cluster. Specifically, CEE has limited access to the core and product namespaces and does not have access to the customer namespaces.
 
 [cols= "2a,4a,4a,4a,4a",options="header"]
 
 |===
 
-| Role | Core namespace | Layered product namespace | Customer namespace | Cloud infrastructure account^*^
+| Role | Core namespace | Layered product namespace | Customer namespace | AWS account^*^
 
 |OpenShift SRE| Read: All
 
@@ -100,9 +100,9 @@ Write: None
 
 Write: All
 
-|Read: Limited^[4]^
+|Read: All
 
-Write: Limited^[4]^
+Write: All
 
 |Customer user
 |Read: None
@@ -113,9 +113,9 @@ Write: None
 
 Write: None
 
-|Read: Limited^[5]^
+|Read: Limited^[4]^
 
-Write: Limited^[5]^
+Write: Limited^[4]^
 
 |Read: None
 
@@ -137,13 +137,10 @@ Write: None
 
 |===
 --
-Cloud Infrastructure Account refers to the underlying AWS account:
-
 1. Limited to addressing common use cases such as failing deployments, upgrading a cluster, and replacing bad worker nodes.
 2. Red Hat associates have no access to customer data by default.
-3. The SRE access to the cloud infrastructure account is an emergency procedure for exceptional troubleshooting during a documented incident.
-4. The Customer Administrator has limited access to the cloud infrastructure account console through Cloud Infrastructure Access.
-5. Limited to what is granted through RBAC by the Customer Administrator, as well as namespaces created by the user.
+3. SRE access to the AWS account is an emergency procedure for exceptional troubleshooting during a documented incident.
+4. Limited to what is granted through RBAC by the Customer Administrator, as well as namespaces created by the user.
 --
 
 [id="rosa-policy-customer-access_{context}"]
