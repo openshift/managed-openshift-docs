@@ -1,0 +1,8 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="alerts"]
+:context: alerts
+
+= Alerts
+
+[role="_abstract"]
+Alerts for user-defined workloads are not currently supported on this product.

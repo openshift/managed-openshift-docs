@@ -1,0 +1,11 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="troubleshooting-monitoring-issues"]
+:context: keyword
+
+= Troubleshooting monitoring issues
+
+
+[role="_abstract"]
+This section describes how to troubleshoot common monitoring issues.
+
+include::modules/troubleshooting-monitoring-issues.adoc[leveloffset=+1]

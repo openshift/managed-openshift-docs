@@ -1,0 +1,11 @@
+<title>Monitoring user workloads</title>
+<productname>{product-title}</productname>
+<productnumber>{product-version}</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Learn about monitoring user workloads, configuring the monitoring stack, enabling monitoring, managing metrics, and troubleshooting guidance.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

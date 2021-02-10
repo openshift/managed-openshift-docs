@@ -1,0 +1,26 @@
+[id="understanding-the-monitoring-stack"]
+= Understanding the monitoring stack
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: understanding-the-monitoring-stack
+
+[role="_abstract"]
+User-workload monitoring lets you monitor your own applications using a different Prometheus instance on your own worker nodes, without interfering with Red Hat Site Reliability Engineer (SRE) platform metrics.
+
+[NOTE]
+Follow the instructions in this section carefully to configure a supported Prometheus instance. Custom Prometheus instances are not supported by {product-title}.
+
+// Understanding the monitoring stack
+include::modules/monitoring-understanding-the-monitoring-stack.adoc[leveloffset=+1]
+include::modules/monitoring-default-monitoring-components.adoc[leveloffset=+2]
+include::modules/monitoring-default-monitoring-targets.adoc[leveloffset=+2]
+include::modules/monitoring-components-for-monitoring-user-defined-projects.adoc[leveloffset=+2]
+include::modules/monitoring-targets-for-user-defined-projects.adoc[leveloffset=+2]
+
+== Additional resources
+
+* link:https://docs.openshift.com/container-platform/4.6/support/remote_health_monitoring/about-remote-health-monitoring.html[About remote health monitoring]
+* xref:../assemblies/accessing-monitoring-for-user-defined-projects.adoc#granting-users-permission-to-monitor-user-defined-projects[Granting users permission to monitor user-defined projects]
+
+== Next steps
+
+* xref:../assemblies/configuring-the-monitoring-stack.adoc#configuring-the-monitoring-stack[Configuring the monitoring stack]

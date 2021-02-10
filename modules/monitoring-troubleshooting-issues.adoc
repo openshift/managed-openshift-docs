@@ -1,0 +1,101 @@
+:_module-type: PROCEDURE
+
+// Module included in the following assemblies:
+//
+// * assemblies/troubleshooting-monitoring-issues.adoc
+
+[id="troubleshooting-monitoring-issues_{context}"]
+= Troubleshooting monitoring issues
+
+[role="_abstract"]
+If metrics are not displaying when monitoring user-defined projects, follow these steps to troubleshoot the issue.
+
+.Procedure
+
+. Query the metric name and verify that the namespace is correct:
+.. From the Developer perspective in the OpenShift Container Platform web console, select *Monitoring > Metrics*.
+.. Select the project that you want to view metrics for in the *Project:* list.
+.. Choose a query from the *Select Query* list, or run a custom PromQL query by selecting *Show PromQL*.
++
+Queries must be done on a per-namespace basis, so if you are on the wrong namespace, the metric does not appear.
+. Verify that the pod is serving metrics. From the cluster, run `oc exec` or `rsh` into a pod with a `curl` command to target the `podIP`, `port`, and `/metrics`.
++
+[NOTE]
+====
+You must run the command on a pod that has `curl` installed.
+====
++
+[source,terminal]
+----
+$ oc exec <sample_pod> -n <sample_namespace> -- curl <target_pod_IP>:<port>/metrics
+----
++
+The following example output shows a result with a valid version metric.
++
+.Example output
+[source,terminal]
+----
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+# HELP version Version information about this binary-- --:--:-- --:--:--     0
+# TYPE version gauge
+version{version="v0.1.0"} 1
+100   102  100   102    0     0  51000      0 --:--:-- --:--:-- --:--:-- 51000
+----
++
+Invalid output indicates that there is a problem with the corresponding application.
+
+. If you are using PodMonitor, verify that PodMonitor is configured to point to the correct pods.
+. If you are using ServiceMonitor:
+.. If the pod's `/metrics` endpoint is showing metric data, verify that the service is pointed to the right place.
++
+.Example output
+[source,terminal]
+----
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: prometheus-example-app
+  name: prometheus-example-app
+  namespace: ns1
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+    name: web
+  selector:
+    app: prometheus-example-app
+  type: ClusterIP
+----
+.. Run a `curl` command on the `serviceIP`, `port`, and `/metrics` to see if the same metrics from the previous step appear:
+... Run the following command to find the service IP:
++
+[source,terminal]
+----
+$ oc get service -n <target_namespace>
+----
+... Run the following `curl` command on the service:
++
+[source,terminal]
+----
+$ exec <sample_pod> -n <sample_namespace> -- curl <service_IP>:<port>/metrics
+----
++
+The following example output shows a result with a valid values.
++
+.Example output
+[source,terminal]
+----
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                               Dload  Upload   Total   Spent    Left  Speed
+100   102  100   102    0     0  51000      0 --:--:-- --:--:-- --:--:--   99k
+# HELP version Version information about this binary
+# TYPE version gauge
+version{version="v0.1.0"} 1
+----
+.. Use label matching to verify that the `ServiceMonitor` is configured to point to the desired service.
++
+Notice how the “Service” object has the “app: prometheus-example-app” label and the “ServiceMonitor” object has the same “app: prometheus-example-app” match label.
+. If everything looks valid, please contact the support team for further help.

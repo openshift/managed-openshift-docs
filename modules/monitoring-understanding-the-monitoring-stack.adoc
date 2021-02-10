@@ -1,0 +1,16 @@
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// * assemblies/understanding-the-monitoring-stack.adoc
+
+[id="understanding-the-monitoring-stack_{context}"]
+= Understanding the monitoring stack
+
+[role="_abstract"]
+The {product-title} monitoring stack is based on the link:https://prometheus.io/[Prometheus] open source project and its wider ecosystem. The monitoring stack includes the following:
+
+* *Default platform monitoring components*. A set of platform monitoring components are installed in the `openshift-monitoring` project by default during an {product-title} installation. This provides monitoring for core {product-title} components including Kubernetes services. The default monitoring stack also enables remote health monitoring for clusters. These components are illustrated in the *Installed by default* section in the following diagram.
+
+* *Components for monitoring user-defined projects*. This feature is enabled by default and provides monitoring for user-defined projects. These components are illustrated in the *User* section in the following diagram.
+
+image:monitoring-architecture.svg[{product-title} monitoring architecture]

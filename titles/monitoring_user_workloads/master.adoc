@@ -1,0 +1,12 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Monitoring user workloads
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/understanding-the-monitoring-stack.adoc[]
+include::assemblies/configuring-the-monitoring-stack.adoc[]
+include::assemblies/accessing-monitoring-for-user-defined-projects.adoc[]
+include::assemblies/managing-metrics.adoc[]
+include::assemblies/managing-alerts.adoc[]
+include::assemblies/troubleshooting-monitoring-issues.adoc[]
