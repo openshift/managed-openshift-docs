@@ -1,0 +1,8 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Logging
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/cluster-logging-deploying.adoc[]
+include::assemblies/cluster-logging-upgrading-46.adoc[]

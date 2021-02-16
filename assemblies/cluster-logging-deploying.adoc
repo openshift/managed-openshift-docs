@@ -1,0 +1,27 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:context: cluster-logging-deploying
+[id="cluster-logging-deploying"]
+= Installing cluster logging
+
+[role="_abstract"]
+You can install cluster logging by deploying the Elasticsearch and Cluster Logging Operators. The Elasticsearch Operator creates and manages the Elasticsearch cluster used by cluster logging. The Cluster Logging Operator creates and manages the components of the logging stack.
+
+The process for deploying cluster logging to {product-title} involves:
+
+* Reviewing the link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.6/html/logging/configuring-your-cluster-logging-deployment#cluster-logging-deploy-storage-considerations_cluster-logging-storage[cluster logging storage considerations].
+
+* Installing the Elasticsearch Operator and Cluster Logging Operator using the OpenShift web console or the OpenShift CLI.
+
+include::modules/cluster-logging-deploy-console.adoc[leveloffset=+1]
+
+include::modules/cluster-logging-deploy-cli.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Post-installation tasks
+
+include::modules/cluster-logging-deploy-multitenant.adoc[leveloffset=+2]
+
+[role="_additional-resources"]
+== Additional resources
+
+* For more information on installing Operators, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.6/html/operators/user-tasks#olm-installing-operators-from-operatorhub_olm-installing-operators-in-namespace[Installing Operators from the OperatorHub].
