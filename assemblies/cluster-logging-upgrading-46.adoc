@@ -1,0 +1,11 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="cluster-logging-upgrading-46"]
+:context: cluster-logging-upgrading-46
+
+= Upgrading cluster logging from 4.4 to 4.6
+
+
+[role="_abstract"]
+This section explains how to the upgrade cluster logging version from 4.4 to 4.6.
+
+include::modules/cluster-logging-updating-logging-46.adoc[leveloffset=+1]
