@@ -1,4 +1,5 @@
 include::_attributes/attributes-openshift-dedicated.adoc[]
+include::_attributes/attributes-openshift-dedicated.adoc[]
 
 [id="gcp-private-connections"]
 = Understanding private connections for Google Cloud
@@ -9,11 +10,11 @@ If your {product-title} cluster privacy is set to *Private*, you must configure 
 
 You can use one or more of the following methods to establish a private connection to your cluster:
 
-* Configuring AWS VPC peering: Enable Virtual Private Cloud (VPC) peering to route network traffic between two private IP addresses.
+* xref:../modules/gcp-vpc.adoc#gcp-vpc[Configuring GCP VPC peering]: Enable Virtual Private Cloud (VPC) peering to route network traffic between two private IP addresses.
 
-* Configuring AWS VPN peering: Establish a Virtual Private Network (VPN) to securely connect your private network to your Amazon VPC.
+* xref:../modules/gcp-vpn.adoc#gcp-vpn[Configuring GCP Cloud VPN]: Establish a Virtual Private Network (VPN) to securely connect your private network to your GCP VPC.
 
-* Configuring AWS Direct Connect: Configure AWS Direct Connect to establish a dedicated network connection between your private network and an AWS Direct Connect location.
+* xref:../modules/gcp-direct-connect.adoc#gcp-direct-connect[Configuring GCP Cloud Interconnect]: Provides low latency, high availability connections that enable you to reliably transfer data between your on-premises and Google Cloud Virtual Private Cloud (VPC) networks.
 
 .Prerequisites
 
@@ -21,17 +22,18 @@ You can use one or more of the following methods to establish a private connecti
 +
 [NOTE]
 ====
-At this time, private clusters are only enabled for Customer Cloud Subscriptions (CCS) on GCP.
+At this time, private clusters is only enabled for {product-title} with a Customer Cloud Subscription (CCS) on GCP.
 ====
 
 - A GCP user and project has been created.
 - The GCP user has access to the OpenShift Dedicated GCP account.
 
-include::modules/gcp-vpc.adoc[leveloffset=+1]
-include::modules/gcp-vpn.adoc[leveloffset=+1]
-include::modules/aws-direct-connect.adoc[leveloffset=+1]
-
 [role="_additional-resources"]
 .Next steps
 
-After configuring your AWS cloud infrastructure access, learn more about xref:../assemblies/private-cluster.adoc#private-cluster[Configuring a private cluster].
+After configuring the private connections for your GCP project, learn more about xref:../assemblies/private-cluster.adoc#private-cluster[Configuring a private cluster].
+
+
+include::modules/gcp-vpc.adoc[leveloffset=+1]
+include::modules/gcp-vpn.adoc[leveloffset=+1]
+include::modules/gcp-interconnect.adoc[leveloffset=+1]

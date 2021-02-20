@@ -1,0 +1,40 @@
+:_module-type: PROCEDURE
+//Specify the module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
+
+// Module included in the following assemblies:
+//
+// * assemblies/gcp-private-connections.adoc
+
+[id="template-module_{context}"]
+= Configuring GCP Cloud Interconnect
+
+[role="_abstract"]
+{GCP} Cloud Interconnect provides low latency, high availability connections that enable you to reliably transfer data between your on-premises and Google Cloud Virtual Private Cloud (VPC) networks. Also, Interconnect connections provide internal IP address communication, which means internal IP addresses are directly accessible from both networks.
+
+Cloud Interconnect offers two options for extending your on-premises network:
+
+* *Dedicated Interconnect*: Provides a direct physical connection between your on-premises network and Google's network.
+* *Partner Interconnect*: Provides connectivity between your on-premises and VPC networks through a supported service provider.
+
+.Prerequisites
+
+* The proper link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/ordering-dedicated-interconnect#expandable-1[permissions or IAM roles].
+
+.Procedure
+
+. To create and configure a *Dedicated Interconnect* connection, follow these steps:
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/ordering-dedicated-interconnect[Order a Dedicated Interconenct connection].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/retrieving-loas[Retrieve LOA-CFAs].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/testing-connections[Test the connection].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments[Create VLAN attachments].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/configuring-onprem-routers[Configure your on-premises routers].
+
+. To create and configure a *Partner Interconnect* connection, follow these steps:
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/creating-vlan-attachments[Create a VLAN attachment].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/requesting-connections[Request a connection from your service provider].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/activating-connections[Activate your connection].
+.. link:https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/configuring-onprem-routers[Configure your on-premises routers].    
+
+
+
+For more information and troubleshooting help, see the link:https://cloud.google.com/network-connectivity/docs/interconnect/[GCP Cloud Interconnect] documentation.

@@ -1,0 +1,51 @@
+:_module-type: PROCEDURE
+//Specify the module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
+
+// Module included in the following assemblies:
+//
+// * assemblies/gcp-private-connections.adoc
+
+[id="gcp-vpn_{context}"]
+= Configuring a GCP Cloud VPN
+
+[role="_abstract"]
+You can configure a {GCP} {product-title} cluster to securely connect your High Availability (HA) Virtual Private Network (VPN) to your Virtual Private Cloud (VPC) network through an IPsec tunnel.
+
+.Prerequisites
+* For peering a HA VPN to a peer gateway:
+** Your peer VPN gateway supports Border Gateway Protocol (BGP).
+** A GCP project with billing enabled.
+** An installed GCP SDK.
+** A VPC and at least one subnet in the region where the VPN gateway resides.
+** The proper link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#expandable-1[permissions or IAM roles] needed to create the VPN gateway.
+
+* For HA VPN peering between GCP networks:
+** Place one HA VPN gateway in each VPC network.
+** Place both HA VPN gateways in the same GCP region.
+** Configure a tunnel on each interface of each gateway.
+** Match gateway interfaces.
+
+
+.Procedure
+
+. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#creating-ha-gw-peer-tunnel[Create a HA VPN gateway and tunnel pair to a peer VPN].
++
+.. Create the following:
++
+* A HA VPN gateway
+* A peer VPN gateway resource
+* VPN tunnels
+* BGP sessions
+
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#completing_the_configuration[Complete the configuration] before you can use a new Cloud VPN gateway and its associated VPN tunnels.
+
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn#applying-vpn-org-policy[Apply an organization policy constraint] that restricts peer VPN gateway IP addresses.
+
+. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn2[Create a HA VPN between GCP networks].
+
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn2#create-network-subnet[Create a custom VPC network and subnet].
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn2#creating-ha-gw-2-gw-and-tunnel[Create two fully configured HA VPN gateways that connect to each other].
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn2#completing_the_configuration[Complete the configuration] before you can use a new Cloud VPC gateway and its associated tunnels.
+.. link:https://cloud.google.com/network-connectivity/docs/vpn/how-to/creating-ha-vpn2#applying-vpn-org-policy[Applying an organization policy constraint] that restricts peer VPN gateway IP addresses.
+
+For more information and troubleshooting help, see the link:https://cloud.google.com/network-connectivity/docs/vpn[GCP Cloud VPN] guide.

@@ -1,0 +1,34 @@
+:_module-type: PROCEDURE
+//Specify the module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
+
+// Module included in the following assemblies:
+//
+// * assemblies/gcp-private-connections.adoc
+
+[id="gcp-vpc_{context}"]
+= Configuring GCP VPC peering
+
+[role="_abstract"]
+A Virtual Private Cloud (VPC) peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. You can configure a {GCP} VPC containing an {product-title} cluster to peer with another GPC VPC network.
+
+[WARNING]
+====
+Private clusters cannot be fully deleted by the {cloud-redhat-com} if the VPC the cluster is installed in is peered.
+====
+
+.Prerequisites
+
+* Gather the following information about the Customer VPC that is required to initiate the peering request:
+** GCP project ID that contains the VPC you want to peer.
+** Customer VPC ID
+** A subnet CIDR range in one peered VPC network cannot overlap with a static route in another peered network. This rule covers both subnet routes and static routes. See the link:https://cloud.google.com/vpc/docs/vpc-peering#restrictions[restrictions] in the GCP documentation for more information.
+
+.Procedure
+
+. link:https://cloud.google.com/vpc/docs/using-vpc-peering#creating_a_peering_configuration[Create the VPC peering configuration].
+
+. link:https://cloud.google.com/vpc/docs/using-vpc-peering#update-peer-connection[Updating your peering network connection].
+
+. link:https://cloud.google.com/vpc/docs/using-vpc-peering#list-peer-connections[List your peering connections].
+
+For more information and troubleshooting help, see the link:https://cloud.google.com/vpc/docs/vpc-peering[GCP VPC] guide.

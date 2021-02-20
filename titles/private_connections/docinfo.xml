@@ -1,6 +1,6 @@
 <title>Configuring private connections</title>
-<productname>{product-title}</productname>
-<productnumber>{product-version}</productnumber>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
 <subtitle></subtitle>
 <abstract>
     <para>If you enable private clusters, you must configure the private connections for your provider to access your cluster.</para>

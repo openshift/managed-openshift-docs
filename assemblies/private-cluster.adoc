@@ -9,9 +9,13 @@ An {product-title} cluster can be made private so that internal applications can
 
 {product-title} administrators can choose between public and private cluster configuration from within the *OpenShift Cluster Manager* (OCM). Privacy settings can be configured during cluster creation or after a cluster is established.
 
-[NOTE]
+[WARNING]
 ====
-Red Hat Service Reliability Engineers (SREs) can access a public or private cluster through the `cloud-ingress-operator` and existing ElasticSearch Load Balancer or Amazon S3 framework. SREs can access clusters through a secure endpoint to perform maintenance and service tasks.
+Private clusters are enabled only for {product-title} {GCP} clusters with a Customer Cloud Subscription (CCS).
+
+For {product-title} {AWS} clusters, private clusters are supported for standard and CCS clusters.
+
+If the cluster privacy is set to Private, you will not be able to access your cluster until you configure private connections in your cloud provider.
 ====
 
 include::modules/enable-private-cluster-new.adoc[leveloffset=+1]
@@ -19,3 +23,11 @@ include::modules/enable-private-cluster-new.adoc[leveloffset=+1]
 include::modules/enable-private-cluster-existing.adoc[leveloffset=+1]
 
 include::modules/enable-public-cluster.adoc[leveloffset=+1]
+
+
+[role="_additional-resources"]
+== Additional resources
+
+* Learn more about configuring private connections for AWS, see xref:../assemblies/aws-private-connections.adoc#aws-private-connections[Understanding private connections for AWS].
+
+* Learn more about configuring private connections for GCP, see xref:../assemblies/gcp-private-connections.adoc#gcp-private-connections[Understanding private connections for GCP].
