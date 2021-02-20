@@ -1,0 +1,11 @@
+<title>OpenShift Dedicated availability</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Understanding the availability for the OpenShift Dedicated managed service.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

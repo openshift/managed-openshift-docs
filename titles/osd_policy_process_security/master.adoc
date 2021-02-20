@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// CHANGE TITLE HERE
+= {product-title} process and security overview
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/policy-process-security.adoc[]

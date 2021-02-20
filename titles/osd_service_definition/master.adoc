@@ -1,0 +1,8 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// CHANGE TITLE HERE
+= {product-title} service definition
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/osd-service-definition.adoc[]

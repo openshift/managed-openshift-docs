@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Setting up your GCP account to use Red Hat managed services
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/config-GCP-account.adoc[]

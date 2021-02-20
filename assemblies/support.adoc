@@ -1,0 +1,14 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="a-collection-of-modules"]
+:context: keyword
+
+= {product-title} support options
+
+[role="_abstract"]
+Learn about the support options that are available to you as an {product-title} customer.
+
+include::modules/documentation-support.adoc[leveloffset=+1]
+
+include::modules/knowledebase-support.adoc[leveloffset=+1]
+
+include::modules/submit-support-case.adoc[leveloffset=+1]

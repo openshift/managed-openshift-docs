@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/config-identity-providers.adoc
@@ -55,9 +55,14 @@ If the LDAP directory requires authentication to search, specify a `bindDN` and
 
 . Navigate to the *Clusters* page and select the cluster you need to configure identity providers for.
 
-. Click the *Access control* tab. Note: You can also click the *AddOauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
+. Click the *Access control* tab.
 
 . Click *Add identity provider*.
++
+[NOTE]
+====
+You can also click the *Add Oauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
+====
 
 . Select *LDAP* from the drop-down menu.
 
@@ -67,16 +72,14 @@ If the LDAP directory requires authentication to search, specify a `bindDN` and
 
 . Enter a *LDAP URL* to specify the LDAP search parameters to use.
 
-. Enter a *Bind DN* and *Bind password*.
+. Optional: Enter a *Bind DN* and *Bind password*.
 
-. Enter an *ID* attribute whose value should be used as the user ID. Click *Add more* to add multiple ID attributes.
-
-. Enter a *Preferred username* attribute whose value should be used as the display name. Click *Add more* to add multiple preferred username attributes.
-
-. Enter an *Email* attribute whose value should be used as the email address. Click *Add more* to add multiple email attributes.
+. Enter the attributes that will map LDAP attributes to identities.
+- Enter an *ID* attribute whose value should be used as the user ID. Click *Add more* to add multiple ID attributes.
+- Optional: Enter a *Preferred username* attribute whose value should be used as the display name. Click *Add more* to add multiple preferred username attributes.
+- Optional: Enter an *Email* attribute whose value should be used as the email address. Click *Add more* to add multiple email attributes.
 
 . Optional: Click *Show advanced Options* to add a certificate authority (CA) file to your LDAP identity provider to validate server certificates for the configured URL. Click *Browse* to locate and attach a *CA file* to the identity provider.
-
 
 . Optional: Under the advanced options, you can choose to make the LDAP provider *Insecure*. If you select this option, a CA file cannot be used.
 +
@@ -86,5 +89,7 @@ If you are using an insecure LDAP connection (ldap:// or port 389), then you mus
 ====
 
 . Click *Confirm*.
+
+.Verification
 
 The configured identity provider is now visible on the *Access control* tab of the *Clusters* page.

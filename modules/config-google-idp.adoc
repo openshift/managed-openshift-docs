@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/config-identity-providers.adoc
@@ -9,10 +9,6 @@
 [role="_abstract"]
 Configure a Google identity provider to allow users to authenticate with their Google credentials.
 
-.Prerequisite
-
-- Configure a Google identity provider using link:https://developers.google.com/identity/protocols/OpenIDConnect[Google's OpenID Connect integration].
-+
 [WARNING]
 ====
 Using Google as an identity provider allows any Google user to authenticate to your server.
@@ -25,15 +21,32 @@ You can limit authentication to members of a specific hosted domain with the
 . Navigate to the *Clusters* page and select the cluster you need to configure identity providers for.
 
 . Click the *Access control* tab.
-Note: You can also click the *AddOauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
 
 . Click *Add identity provider*.
++
+[NOTE]
+====
+You can also click the *Add Oauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
+====
 
 . Select *Google* from the drop-down menu.
 
-. Enter a unique name for the identity provider. This name cannot be changed later. An *OAuth callback URL* is automatically generated in the provided field. You will provide this URL to Google.
+. Enter a unique name for the identity provider. This name cannot be changed later.
+- An *OAuth callback URL* is automatically generated in the provided field. You will provide this URL to Google.
++
+----
+https://oauth-openshift.apps.<cluster-name>.<cluster-domain>/oauth2callback/<idp-provider-name>
+----
++
+For example:
++
+----
+https://oauth-openshift.apps.example-openshift-cluster.com/oauth2callback/github/
+----
 
-. Select a mapping method from the drop-down menu. *Claim* is recommended in most cases.
+. Configure a Google identity provider using link:https://developers.google.com/identity/protocols/OpenIDConnect[Google's OpenID Connect integration].
+
+. Return to {product-title} and select a mapping method from the drop-down menu. *Claim* is recommended in most cases.
 
 . Enter the *Client ID* of a registered Google project and the *Client secret* issued by Google.
 
@@ -41,5 +54,6 @@ Note: You can also click the *AddOauth configuration* link in the warning messag
 
 . Click *Confirm*.
 
-The configured identity provider is now visible on the
- *Access control* tab of the *Clusters* page.
+.Verification
+
+The configured identity provider is now visible on the *Access control* tab of the *Clusters* page.

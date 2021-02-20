@@ -1,0 +1,11 @@
+<title>Requirements for Customer Cloud Subscriptions on AWS</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
+<abstract>
+  <para>Requirements for deploying and managing your OpenShift Dedicated cluster in your existing AWS account.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/config-identity-providers.adoc
@@ -46,17 +46,34 @@ for more information.
 . Navigate to the *Clusters* page and select the cluster you need to configure identity providers for.
 
 . Click the *Access control* tab.
-Note: You can also click the *AddOauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
 
 . Click *Add identity provider*.
++
+[NOTE]
+====
+You can also click the *Add Oauth configuration* link in the warning message displayed after cluster creation to configure your identity providers.
+====
 
 . Select *OpenID* from the drop-down menu.
 
-. Enter a unique name for the identity provider. This name cannot be changed later. An *OAuth callback URL* is automatically generated in the provided field.
+. Enter a unique name for the identity provider. This name cannot be changed later.
+- An *OAuth callback URL* is automatically generated in the provided field.
++
+----
+https://oauth-openshift.apps.<cluster-name>.<cluster-domain>/oauth2callback/<idp-provider-name>
+----
++
+For example:
++
+----
+https://oauth-openshift.apps.example-openshift-cluster.com/oauth2callback/openid/
+----
 
-. Select a mapping method from the drop-down menu. *Claim* is recommended in most cases.
+. link:https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest[Create an authorization request using an Authorization Code Flow].
 
-. Enter a *Client ID* and *Client secret*.
+. Return to {product-title} and select a mapping method from the drop-down menu. *Claim* is recommended in most cases.
+
+. Enter a *Client ID* and *Client secret* provided from OpenID.
 
 . Enter an *Issuer URL*. This is the URL that the OpenID provider asserts as the Issuer Identifier. It must use the https scheme with no URL query parameters or fragments.
 
@@ -68,10 +85,10 @@ Note: You can also click the *AddOauth configuration* link in the warning messag
 
 . Optional: Click *Show advanced Options* to add a certificate authority (CA) file to your OpenID identity provider.
 
-. Optional: Under the advanced options, you can *Additional scopes*. By default, the `OpenID` scope is requested.
+. Optional: Under the advanced options, you can add *Additional scopes*. By default, the `OpenID` scope is requested.
 
 . Click *Confirm*.
 
+.Verification
 
-The configured identity provider is now visible on the
- *Access control* tab of the *Clusters* page.
+The configured identity provider is now visible on the *Access control* tab of the *Clusters* page.

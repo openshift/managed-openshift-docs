@@ -1,5 +1,5 @@
-:system-module-type:
-//Specify the system-module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
+:_module-type:
+//Specify the module-type as either "CONCEPT, PROCEDURE, or REFERENCE"
 
 // Module included in the following assemblies:
 //

@@ -1,0 +1,11 @@
+<title>Setting up your AWS account to use Red Hat managed services</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Your Amazon Web Services (AWS) account must be configured before you can begin using your OpenShift Dedicated subscription./para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -5,7 +5,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 = Responsibility Assignment Matrix
 
 [role="_abstract"]
-This documentation outlines Red Hat, cloud provider, and customer responsibilities for the {product-title} managed service.
+Understanding the Red Hat, cloud provider, and customer responsibilities for the OpenShift Dedicated managed service.
 
 include::modules/policy-responsibilities.adoc[leveloffset=+1]
 include::modules/policy-shared-responsibility.adoc[leveloffset=+1]

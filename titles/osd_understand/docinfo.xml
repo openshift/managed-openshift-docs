@@ -1,0 +1,11 @@
+<title>Understanding OpenShift Dedicated</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Learn more about the architecture behind OpenShift Dedicated, the basic concepts for Kubernetes and containers, and how OpenShift Dedicated differs from the Red Hat OpenShift Container Platform.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

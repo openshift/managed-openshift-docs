@@ -1,7 +1,7 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
-// * assemblies/config--gcp-account.adoc
+// * assemblies/config-gcp-account.adoc
 
 [id="create-gcp-project_{context}"]
 = Creating a GCP project

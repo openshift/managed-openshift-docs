@@ -1,7 +1,7 @@
-:system-module-type: CONCEPT
+:_module-type: CONCEPT
 // Module included in the following assemblies:
 //
-// * assemblies/osd-overview.adoc
+// * assemblies/osd-architecture.adoc
 
 [id="kubernetes-about_{context}"]
 = About Kubernetes

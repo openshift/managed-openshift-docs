@@ -1,0 +1,7 @@
+= Requirements for Customer Cloud Subscriptions on GCP
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/gcp-ccs.adoc[]

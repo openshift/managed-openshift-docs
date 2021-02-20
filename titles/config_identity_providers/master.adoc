@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Configuring identity providers to access your cluster
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/config-identity-providers.adoc[]

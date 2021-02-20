@@ -1,13 +1,16 @@
-[id="osd-vs-ocp{context}"]
+:_module-type: CONCEPT
+// Module included in the following assemblies:
+//
+// * assemblies/osd-architecture.adoc
 
-= How is {product-title} different from OpenShift Container Platform?
+[id="osd-vs-ocp_{context}"]
+
+= Understanding how {product-title} differs from {OCP}
 
 [role="_abstract"]
+{product-title} uses the same code base as {OCP} but is installed in an opinionated way to be optimized for performance, scalability, and security. {product-title} is a fully managed service, therefore many of the {product-title} components and settings that you manually set up in {OCP} are set up for you by default.
 
-
-{product-title} is a fully managed service, therefore many of the {product-title} components and settings that you manually set up in Red Hat OpenShift Container Platform are set up for you by default.
-
-Review the following differences between {product-title} and a standard installation of Red Hat OpenShift Container Platform on your own infrastructure.
+Review the following differences between {product-title} and a standard installation of {OCP} on your own infrastructure:
 
 
 [options="header"]

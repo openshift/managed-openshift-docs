@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/config-gcp-account.adoc
@@ -7,11 +7,11 @@
 = Enabling API services in GCP
 
 [role="_abstract"]
-Your Google Cloud Platform (GCP) project requires access to several API services to complete {product-title} installation.
+Your Google Cloud Platform (GCP) project requires access to several API services to use your {product-title} subscription.
 
 .Prerequisites
 
-You created a project to host your cluster.
+* You created a project to host your cluster.
 
 .Procedure
 

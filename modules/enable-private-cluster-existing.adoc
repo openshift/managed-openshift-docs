@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/private-cluster.adoc
@@ -20,9 +20,18 @@ After a cluster has been created, you can later enable the cluster to be private
 
 .Procedure
 
-. Access your cluster in the OpenShift Cluster Manager.
-. Navigate to the *Networking* tab.
-. Select *Make API private* under *Master API endpoint*
+. Log in to {cloud-redhat-com}.
+
+. Select the public cluster you would like to make private.
+
+. On the *Networking* tab, select *Make API private* under *Control Plane API endpoint*.
++
+
+[WARNING]
+====
+When set to *Private*, you will not be able to access your cluster unless you have configured the private connections in your cloud provider as outlined in the prerequisites.
+====
+
 . Click *Change settings*.
 +
 [NOTE]

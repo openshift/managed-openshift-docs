@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// CHANGE TITLE HERE
+= {product-title} responsibility assignment matrix
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/policy-responsibility-matrix.adoc[]
