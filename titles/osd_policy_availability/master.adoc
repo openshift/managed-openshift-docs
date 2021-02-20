@@ -1,0 +1,9 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+:imagesdir: images
+
+// CHANGE TITLE HERE
+= {product-title} availability
+
+// INCLUDE ASSEMBLIES HERE
+
+include::assemblies/policy-understand-availability.adoc[]

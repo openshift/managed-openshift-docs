@@ -4,7 +4,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 :context: installing-aws-account
 
 [role="_abstract"]
-Before you can install {product-title}, you must configure an Amazon Web Services (AWS) account.
+You must configure your Amazon Web Services (AWS) account to begin using your {product-title} subscription.
 
 include::modules/aws-route53.adoc[leveloffset=+1]
 

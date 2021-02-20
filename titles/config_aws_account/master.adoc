@@ -1,0 +1,7 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+
+// CHANGE TITLE HERE
+= Setting up your AWS account to use Red Hat managed services
+
+// INCLUDE ASSEMBLIES HERE
+include::assemblies/config-aws-account.adoc[]

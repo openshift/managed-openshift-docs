@@ -1,20 +1,20 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/deleting_your_cluster.adoc
 
 [id="deleting-cluster_{context}"]
 
-= How to delete your cluster
+= Deleting your cluster
 
 [role="_abstract"]
-You can delete your {product-title} cluster in the OpenShift Cluster Manager (OCM.
+You can delete your {product-title} cluster in the {OCM}.
 
 .Procedure
 
-. From link:https://cloud.redhat.com/openshift[OCM], click on the cluster you want to delete.
+. From {cloud-redhat-com}, click on the cluster you want to delete.
 
-. Click the *Actions* button, then *Delete Cluster*.
+. Click *Actions* -> *Delete Cluster*.
 
 . Type the name of the cluster highlighted in bold, then click *Delete*.
 

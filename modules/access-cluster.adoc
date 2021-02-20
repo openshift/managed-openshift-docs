@@ -1,20 +1,28 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/accessing-cluster.adoc
 // * assemblies/quickstart-osd.adoc
 
 [id="access-cluster_{context}"]
-= How to access your cluster
+= Accessing your cluster
 
 [role="_abstract"]
-You can access your cluster from the *OpenShift Cluster Manager (OCM)*.
+After you have configured your identity providers, users can access the cluster from the {OCM}.
+
+.Prerequisites
+
+* You have created a cluster.
+* Identity providers have been configured for your cluster.
 
 .Procedure
 
-. From link:https://cloud.redhat.com/openshift[OCM], click
- on the cluster you want to access.
+. From {cloud-redhat-com}, click on the cluster you want to access.
 
- . Click *Open Console*.
+. Click *Open Console*.
 
- . Click on your identity provider and provide your credentials to log into the cluster.
+. Click on your identity provider and provide your credentials to log into the cluster.
+
+.Verification
+
+After you have accessed the cluster, you will be directed to the console for your {product-title} cluster. 

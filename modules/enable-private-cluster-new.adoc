@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/private-cluster.adoc
@@ -21,12 +21,20 @@ You can enable private cluster settings when creating a new cluster.
 
 .Procedure
 
-. In the OpenShift Cluster Manager, click *Create cluster* and select *{product-title}*.
-. Configure your cluster details, then select *Advanced* in the Networking section.
-. Determine your CIDR requirements for your network and input the required fields.
+. Log in to {cloud-redhat-com}.
+. Click *Create cluster* -> *{product-title}* -> *Create cluster*.
+. Configure your cluster details.
+. When selecting your preferred network configuration, select *Advanced*.
+. Select *Private*.
 +
-[IMPORTANT]
+[WARNING]
 ====
-CIDR configurations cannot be changed later. Confirm your selections with your network administrator before proceeding.
+When set to *Private*, you will not be able to access your cluster unless you have configured the private connections in your cloud provider as outlined in the prerequisites.
 ====
-. Under *Cluster Privacy*, select *Private*.
+
+. Click *Create cluster*. The cluster creation process begins and will take about 30-40 minutes to complete.
+
+.Verification
+
+The *Installing cluster* heading, under the *Overview* tab, will indicate the cluster is installing and you can view the installation logs from this heading. The *Status*
+indicator under the *Details* heading will indicate when your cluster is *Ready* for use.

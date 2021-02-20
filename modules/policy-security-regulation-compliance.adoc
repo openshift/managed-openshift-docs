@@ -1,4 +1,4 @@
-:system-module-type: CONCEPT
+:_module-type: REFERENCE
 // Module included in the following assemblies:
 //
 // * assemblies/policy-process-security.adoc

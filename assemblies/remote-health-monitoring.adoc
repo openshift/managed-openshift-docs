@@ -1,0 +1,20 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="remote-health-monitoring"]
+:context: keyword
+
+= Remote health monitoring
+
+[role="_abstract"]
+{product-title} collects telemetry and configuration data about your cluster and reports it to Red Hat by using the Telemeter Client and the Insights Operator.
+
+include::modules/about-remote-health-monitoring.adoc[leveloffset=+1]
+
+include::modules/about-telemetry.adoc[leveloffset=+1]
+
+include::modules/about-insights-operator.adoc[leveloffset=+1]
+
+include::modules/additional-details-remote-health.adoc[leveloffset=+1]
+
+include::modules/telemtry-showing-collected-data.adoc[leveloffset=+1]
+
+include::modules/insights-operator-showing-collected-data.adoc[leveloffset=+1]

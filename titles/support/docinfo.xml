@@ -1,0 +1,11 @@
+<title>Support</title>
+<productname>OpenShift Dedicated</productname>
+<productnumber>4.5</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>Learn how to get support should you have a concern with your OpenShift Dedicated cluster.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat OpenShift Documentation Team</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

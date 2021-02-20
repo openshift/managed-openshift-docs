@@ -1,4 +1,4 @@
-:system-module-type: REFERENCE
+:_module-type: REFERENCE
 // Module included in the following assemblies:
 //
 // * assemblies/config-aws-account.adoc

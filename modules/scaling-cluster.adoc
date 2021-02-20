@@ -1,10 +1,10 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
-// * assemblies/scaling_your_cluster.adoc
+// * assemblies/osd-quickstart.adoc
 
 [id="scaling-cluster_{context}"]
-= How to scale your cluster
+= Scaling your cluster
 
 [role="_abstract"]
 You can scale your {product-title} cluster from the OpenShift Cluster Manager (OCM).
@@ -13,8 +13,16 @@ You can scale your {product-title} cluster from the OpenShift Cluster Manager (O
 
 . From link:https://cloud.redhat.com/openshift[OCM], click on the cluster you want to resize.
 
-. Click the *Actions* button, then *Scale Cluster*.
+. Click *Actions* -> *Edit load balancers and persistent storage*
+.. Use the drop down menu to select how many *Load balancers* you would like to scale to.
+.. Use the drop down menu to select the amount of *Persistent storage* you would like to scale to.
+.. Click *Apply*. Scaling occurs automatically. 
 
-. Select how many compute nodes are required, then click *Apply*.
+. Click *Actions* -> *Edit node count*.
+.. Use the drop down menu to select the *Machine Pool* setting you would like to scale to.
+.. Use the drop down menu to select the *Node Count* you would like to scale to.
+.. Click *Apply*. Scaling occurs automatically.
 
-Scaling occurs automatically. In the *Overview* tab under the *Details* heading, the *Status* indicator shows that your cluster is *Ready* for use.
+
+.Verification
+In the *Overview* tab under the *Details* heading, the *Status* indicator shows that your cluster is *Ready* for use.

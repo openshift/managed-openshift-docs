@@ -1,4 +1,4 @@
-:system-module-type: PROCEDURE
+:_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
 // * assemblies/config-gcp-account.adoc
@@ -7,16 +7,18 @@
 = Configuring DNS for GCP
 
 [role="_abstract"]
-To install {product-title}, the Google Cloud Platform (GCP) account you use must have a dedicated public hosted zone in the same project that you host the {product-title} cluster. This zone must be authoritative for the domain. The DNS service provides cluster DNS resolution and name lookup for external connections to the cluster.
+To use {product-title}, the Google Cloud Platform (GCP) account you use must have a dedicated public hosted zone in the same project that you host the {product-title} cluster. This zone must be authoritative for the domain. The DNS service provides cluster DNS resolution and name lookup for external connections to the cluster.
 
-.Procedure
+.Prerequisites
 
-Identify your domain, or subdomain, and registrar. You can transfer an existing domain and registrar or obtain a new one through GCP or another source.
-
+* Identify your domain, or subdomain, and registrar. You can transfer an existing domain and registrar or obtain a new one through GCP or another source.
++
 [NOTE]
 ====
 If you purchase a new domain, it can take time for the relevant DNS changes to propagate. For more information about purchasing domains through Google, see link:https://domains.google/[Google Domains].
 ====
+
+.Procedure
 
 . Create a public hosted zone for your domain or subdomain in your GCP project. See link:https://cloud.google.com/dns/zones/#creating_public_zones[Creating public zones] in the GCP documentation.
 +

@@ -2,14 +2,14 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 [id="config-identity-providers"]
 :context: config-identity-providers
 
-= Configuring your identity providers
+= Configuring identity providers
 
-Once your {product-title} cluster is created, you must configure your identity providers. Identity providers determine how users log into the cluster.
+After your {product-title} cluster is created, you must configure identity providers to determine how users log in to access the cluster.
 
-include::modules/supported-idp.adoc[leveloffset=+1]
-include::modules/idp-paramaters.adoc[leveloffset=+1]
+include::modules/understanding-idp.adoc[leveloffset=+1]
 include::modules/config-github-idp.adoc[leveloffset=+1]
 include::modules/config-gitlab-idp.adoc[leveloffset=+1]
 include::modules/config-google-idp.adoc[leveloffset=+1]
 include::modules/config-ldap-idp.adoc[leveloffset=+1]
 include::modules/config-openid-idp.adoc[leveloffset=+1]
+include::modules/access-cluster.adoc[leveloffset=+1]
