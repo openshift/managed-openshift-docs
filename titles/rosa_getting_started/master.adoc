@@ -5,7 +5,8 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 // INCLUDE ASSEMBLIES HERE
 include::assemblies/rosa-quickstart.adoc[]
-include::assemblies/rosa-prereqs.adoc[]
+include::assemblies/rosa-aws-prereqs.adoc[]
+include::assemblies/rosa-setting-up-environment.adoc[]
 include::assemblies/rosa-creating-cluster.adoc[]
 include::assemblies/rosa-accessing-cluster.adoc[]
 include::assemblies/rosa-deleting-access-cluster.adoc[]
