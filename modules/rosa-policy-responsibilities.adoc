@@ -7,11 +7,11 @@
 = Overview of responsibilities for {product-title}
 
 [role="_abstract"]
-While Red Hat and Amazon Web Services (AWS) manage the {product-title} service, the customer shares certain responsibilities. The {product-title} services are accessed remotely, hosted on public cloud resources, created in customer-owned cloud service provider accounts, and have underlying platform and data security that is owned by Red Hat.
+While Red Hat and Amazon Web Services (AWS) manage the {product-title} service, the customer shares certain responsibilities. The {product-title} services are accessed remotely, hosted on public cloud resources, created in customer-owned AWS accounts, and have underlying platform and data security that is owned by Red Hat.
 
 [IMPORTANT]
 ====
-If the `cluster-admin` role is enabled on a cluster, see the responsibilities and exclusion notes in the link:https://www.Red Hat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
+If the `cluster-admin` role is added to a user, see the responsibilities and exclusion notes in the link:https://www.redhat.com/en/about/agreements[Red Hat Enterprise Agreement Appendix 4 (Online Subscription Services)].
 ====
 
 [cols="2a,3a,3a,3a,3a,3a",options="header"]

@@ -1,4 +1,4 @@
-:system-module-type: CONCEPT
+:_module-type: CONCEPT
 // Module included in the following assemblies:
 //
 // * assemblies/rosa-service-definition.adoc
@@ -6,14 +6,13 @@
 [id="rosa-sdpolicy-logging_{context}"]
 = Logging
 
-{product-title} includes an optional logging stack based on Elasticsearch, Fluentd, and Kibana (EFK). When deployed, a three-shard Elasticsearch cluster is deployed with one replica per shard. The logging stack in {product-title} is designed for short-term retention to aid application troubleshooting, not for long-term log archiving.
+[role="_abstract"]
+{product-title} provides optional integrated log forwarding to AWS CloudWatch.
 
 [id="rosa-sdpolicy-cluster-audit-logging_{context}"]
 == Cluster audit logging
-Cluster audit logs are always enabled. Audit logs are streamed to a log aggregation system outside the cluster VPC for automated security analysis and secure retention for 90 days. Red Hat controls the log aggregation system. Customers do not have access. Customers can receive a copy of their cluster's audit logs upon request through a support ticket. Audit log requests must specify a date and time range not to exceed 21 days. When requesting audit logs, customers should be aware that audit logs are many GB per day in size.
+Cluster audit logs are always enabled. Audit logs are streamed to a log aggregation system outside the cluster VPC for automated security analysis and secure retention for 1 year. Red Hat controls the log aggregation system. Customers do not have access. Customers can receive a copy of their cluster's audit logs upon request through a support ticket. Audit log requests must specify a date and time range not to exceed 21 days. When requesting audit logs, customers should be aware that audit logs are many GB per day in size.
 
 [id="rosa-sdpolicy-application-logging_{context}"]
 == Application logging
-Application logs sent to `STDOUT` are collected by Fluentd and forwarded through the cluster logging stack, if it is installed. Retention is set to 7 days, but will not exceed 200GiB worth of logs per shard. For longer term retention, customers should follow the sidecar container design in their deployments and forward logs to the log aggregation or analytics service of their choice.
-
-Red Hat expects that application logging workloads are scheduled on a customer's worker nodes. This includes workloads such as ElasticSearch and the Kibana dashboard. Application logging is considered a customer workload, given that the rates of logging are different per cluster and per customer.
+Application logs sent to `STDOUT` are collected by Fluentd and forwarded to AWS CloudWatch through the cluster logging stack, if it is installed.

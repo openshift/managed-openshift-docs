@@ -6,6 +6,9 @@
 [id="rosa-sdpolicy-platform_{context}"]
 = Platform
 
+[role="_abstract"]
+This section provides information about the service definition for the {product-title} platform.
+
 [id="rosa-sdpolicy-backup-policy_{context}"]
 == Cluster backup policy
 
@@ -64,11 +67,11 @@ spec:
 
 [id="rosa-sdpolicy-multiple-availability-zone_{context}"]
 == Multiple availability zone
-In a multiple availability zone cluster, master nodes are distributed across availability zones and at least one worker nodes is required in each availability zone.
+In a multiple availability zone cluster, control plane nodes are distributed across availability zones and at least one worker node is required in each availability zone.
 
 [id="rosa-sdpolicy-node-labels_{context}"]
 == Node labels
-Custom node labels are created by Red Hat during node creation and cannot be changed on {product-title} clusters at this time.
+Custom node labels are created by Red Hat during node creation and cannot be changed on {product-title} clusters at this time. However, custom labels are supported when creating new machine pools.
 
 [id="rosa-sdpolicy-openshift-version_{context}"]
 == OpenShift version
@@ -76,11 +79,9 @@ Custom node labels are created by Red Hat during node creation and cannot be cha
 
 [id="rosa-sdpolicy-upgrades_{context}"]
 == Upgrades
-Upgrades can be scheduled using the `rosa` CLI utility.
+Upgrades can be scheduled using the `rosa` CLI utility or through OpenShift Cluster Manager (OCM).
 
-Patch level, also known as z-stream or x.y.Z, updates are applied automatically the week following their release as long as {product-title}-specific end-to-end tests pass.
-
-Minor version updates, also known as x.Y.z, can include Kubernetes version upgrades and API changes. Therefore, customers are notified by email two weeks in advance before these upgrades are automatically applied.
+See the link:https://access.redhat.com/support/policy/updates/openshift/dedicated[OpenShift Dedicated Life Cycle] for more information on the upgrade policy and procedures.
 
 [id="rosa-sdpolicy-window-containers_{context}"]
 == Windows Containers
@@ -92,8 +93,8 @@ Windows Containers are not available on {product-title} at this time.
 
 [id="rosa-sdpolicy-operating-system_{context}"]
 == Operating system
-{product-title} runs on OpenShift 4 and uses Red Hat CoreOS as the operating system for all master and worker nodes.
+{product-title} runs on OpenShift 4 and uses Red Hat CoreOS as the operating system for all control plane and worker nodes.
 
 [id="rosa-sdpolicy-kubernetes-operator_{context}"]
 == Kubernetes Operator support
-{product-title} supports privileged and non-privileged Operators created by Red Hat and Certified ISVs.
+All Operators listed in the Operator Hub marketplace should be available for installation. These operators are considered customer workloads, and are not monitored by Red Hat SRE.
