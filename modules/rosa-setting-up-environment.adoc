@@ -1,22 +1,26 @@
 :_module-type: PROCEDURE
 // Module included in the following assemblies:
 //
-// getting_started_rosa/rosa-creating-cluster.adoc
+// * assemblies/rosa-setting-up-environment.adoc
 
 
-[id="rosa-installing-prerequisites_{context}"]
-= Installing prerequisites
+[id="rosa-setting-up-environment_{context}"]
+= Setting up the environment
 
-Complete the following prerequisites before creating your {product-title} cluster.
+Complete the following steps to set up your environment before creating your cluster.
+
+.Prerequisites
+
+* Review and complete the deployment prerequisites and policies.
 
 .Procedure
 
 . Create a link:https://cloud.redhat.com[Red Hat account], if you do not already have one. Then, check your email for a verification link. You will need the credentials to install ROSA.
 . Select the Amazon Web Services (AWS) account that you want to use.
 +
-Unless you are only testing {product-title}, it is recommended to use a dedicated AWS account to run any production clusters. If you are using AWS Organizations, you can use an AWS account within your organization or link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html#orgs_manage_accounts_create-new[create a new one].
+It is recommended to use a dedicated AWS account to run production clusters. If you are using AWS Organizations, you can use an AWS account within your organization or link:https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html#orgs_manage_accounts_create-new[create a new one].
 +
-If you are using AWS Organizations and you need to have a Service Control Policy (SCP) applied to the AWS account you plan to use, see the link:https://www.openshift.com/dedicated/ccs#scp[Red Hat Requirements for Customer Cloud Subscriptions] for details on the minimum required SCP.
+If you are using AWS Organizations and you need to have a Service Control Policy (SCP) applied to the AWS account you plan to use, see the prerequisites for details on the minimum required SCP.
 +
 As part of the cluster creation process, `rosa` creates an `osdCcsAdmin` IAM user. This user uses the IAM credentials you provide when configuring the AWS CLI.
 +
@@ -42,35 +46,19 @@ Specify the correct `aws_access_key_id` and `aws_secret_access_key` in the `.aws
 +
 [source,terminal]
 ----
-$ aws ec2 describe-regions
+$ aws sts get-caller-identity
 ----
 +
 .Example output
 [source,terminal]
 ----
 ---------------------------------------------------------------------------------
-|                                DescribeRegions                                |
+|                                GetCallerIdentity                              |
 +-------------------------------------------------------------------------------+
-||                                   Regions                                   ||
 |+-----------------------------------+-----------------------+-----------------+|
-||             Endpoint              |      OptInStatus      |   RegionName    ||
+||      Account        |                Arn              |       UserID        ||
 |+-----------------------------------+-----------------------+-----------------+|
-||  ec2.eu-north-1.amazonaws.com     |  opt-in-not-required  |  eu-north-1     ||
-||  ec2.ap-south-1.amazonaws.com     |  opt-in-not-required  |  ap-south-1     ||
-||  ec2.eu-west-3.amazonaws.com      |  opt-in-not-required  |  eu-west-3      ||
-||  ec2.eu-west-2.amazonaws.com      |  opt-in-not-required  |  eu-west-2      ||
-||  ec2.eu-west-1.amazonaws.com      |  opt-in-not-required  |  eu-west-1      ||
-||  ec2.ap-northeast-2.amazonaws.com |  opt-in-not-required  |  ap-northeast-2 ||
-||  ec2.ap-northeast-1.amazonaws.com |  opt-in-not-required  |  ap-northeast-1 ||
-||  ec2.sa-east-1.amazonaws.com      |  opt-in-not-required  |  sa-east-1      ||
-||  ec2.ca-central-1.amazonaws.com   |  opt-in-not-required  |  ca-central-1   ||
-||  ec2.ap-southeast-1.amazonaws.com |  opt-in-not-required  |  ap-southeast-1 ||
-||  ec2.ap-southeast-2.amazonaws.com |  opt-in-not-required  |  ap-southeast-2 ||
-||  ec2.eu-central-1.amazonaws.com   |  opt-in-not-required  |  eu-central-1   ||
-||  ec2.us-east-1.amazonaws.com      |  opt-in-not-required  |  us-east-1      ||
-||  ec2.us-east-2.amazonaws.com      |  opt-in-not-required  |  us-east-2      ||
-||  ec2.us-west-1.amazonaws.com      |  opt-in-not-required  |  us-west-1      ||
-||  ec2.us-west-2.amazonaws.com      |  opt-in-not-required  |  us-west-2      ||
+||  <account_name>     |  arn:aws:iam<string>:user:name  |      <userID>       ||
 |+-----------------------------------+-----------------------+-----------------+|
 ----
 +
