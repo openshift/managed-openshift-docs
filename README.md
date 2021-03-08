@@ -1,3 +1,5 @@
+**This repo is no longer being updated. All existing content is being migrated back to the Core OpenShift docs repo. Do not submit a new PR to this repo. This repo will be shut down in the near future.**
+
 This is the development and production branch for the revamped OpenShift Managed services docs.
 
 Content merged here will appear in stage preview mode. If it passes acks, you can publish it live via Pantheon.
