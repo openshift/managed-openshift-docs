@@ -1,0 +1,17 @@
+include::_attributes/attributes-openshift-dedicated.adoc[]
+[id="planning limits and scalability"]
+:context: planning-limits-scalability
+
+= Planning limits and scalability
+
+
+[role="_abstract"]
+Consider the following tested object maximums when you plan your {product-title} cluster.
+
+These guidelines are based on a cluster of 27 workers in a multi-availability zone configuration. For smaller clusters, the maximums are lower. For larger clusters, infrastructure node sizing can become a large impacting factor to scalability. There are many factors that influence the stated thresholds, including the etcd version or storage data format.
+
+Exceeding these limits does not necessarily mean that the cluster will fail. In most cases, exceeding these numbers results in lower overall performance.
+
+
+include::modules/rosa-planning-cluster-maximums.adoc[leveloffset=+1]
+include::modules/rosa-planning-cluster-maximums-environment.adoc[leveloffset=+1]
